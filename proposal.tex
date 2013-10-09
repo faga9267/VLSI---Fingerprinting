@@ -1,0 +1,60 @@
+\documentclass[dvips,12pt]{article}
+
+
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{-1in}
+\setlength{\textheight}{10.5in}
+
+
+\begin{document}
+
+
+\title{ECSE 548: Introduction to VLSI Systems\protect\\Project Proposal - Group 1}
+
+\author{Xinchi Chen, Kaushik Boga, Georgi Kostadinov, Mojing Liu}
+\date{\today}
+
+% You can leave out "date" and it will be added automatically for today
+% You can change the "\today" date to any text you like
+
+
+\maketitle
+
+% This command causes the title to be created in the document
+
+\section{Project Definition}
+
+% An article style is separated into sections and subsections with 
+%   markup such as this.  Use \section*{Principles} for unnumbered sections.
+
+Traditional error mitigation techniques such as Error Correcting Code (ECC)
+has limited error coverage rate at the cost of performance and area overhead. Another solution widely used in
+industry namely Dual Modular Redundancy (DMR) in Lockstep consists of two redundant cores executing the same application
+in lockstep. Both results are compared and only on a match that the data will be commited to the outside world. 
+Resolving the issue of performance impact, lockstep execution has been shown to be a great waste of computational
+power. Therefore in this project we propose to implement Execution fingerprinting which will greatly enhance the performance
+of a DMR.
+
+
+\section{Targets}
+
+For the course of this project we plan to:
+\begin{itemize}
+\item A single core execution fingerprinting will be designed using CRC
+\item 2 CRC layout will be designed to fit the MIPS8 multicycle processor that will generate the fingerprints
+\item The generated fingerprints will be stored in a buffer
+\item The performance impact, area overhead and error coverage will be evaluated
+\end{itemize}
+
+The fingerprinting design will consist of monitering the output ports of the current MIPS8 processor. 
+Then it will be compressed using the CRC circuit, generating a fingerprint. This fingerprint will then be
+stored in a buffer.
+By the mid-project status report, we target to finish the layout of both CRC circuits for a functional
+fingerprinting circuit. From that point, we will be able to optimize the circuit according to the behavior
+of the MIPS8 core. Then, a series of benchmarks will be executed in order to analyse the performance
+impact, area overhead and error coverage of the circuit.
+
+
+
+\end{document}
