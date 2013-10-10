@@ -51,7 +51,11 @@ The fingerprinting module will monitor the output ports of the current MIPS8 pro
 The output will be compressed using the CRC circuit, generating a fingerprint. This fingerprint will then be
 stored in a buffer.
 
-By the mid-project status report, we target to finish the layout of both CRC circuits for a functional
+The two CRC layouts could differ in the specific algorithm used for the implementation and in the CRC bit size, among other things.
+A preliminary study will be done to pick an appropriate approach before delving into the layout. 
+Logic minimization will be used to make the schematic as simple as possible, and the gates will be sized appropriately to achieve minimal delay.
+
+By the mid-project status report, we target to finish the layouts of both CRC circuits for a functional
 fingerprinting circuit. From that point, we will be able to optimize the circuit according to the behavior
 of the MIPS8 core. Then, a series of benchmarks will be executed in order to analyse the performance
 impact, area overhead and error coverage of the circuit.
