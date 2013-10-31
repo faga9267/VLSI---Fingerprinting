@@ -3668,7 +3668,7 @@ Ezero||D5G2;|pin@53||I
 X
 
 # Cell datapath;1{ic}
-Cdatapath;1{ic}||artwork|1184635470125|1382946053372|E
+Cdatapath;1{ic}||artwork|1184635470125|1383242210748|E
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NOpened-Thicker-Polygon|art@1||25|11|34|8|||SCHEM_function(D5G1;)Sdatapath|trace()V[-17/-4,-17/4,17/4,17/-4,-17/-4]
 Nschematic:Bus_Pin|pin@2||30|17||||
@@ -3709,8 +3709,8 @@ Nschematic:Bus_Pin|pin@59||45|11||||
 Nschematic:Bus_Pin|pin@60||42.5|11||||
 Nschematic:Bus_Pin|pin@61||28|15.5||||
 Nschematic:Wire_Pin|pin@62||36|15||||
-Nschematic:Bus_Pin|pin@63||33|10||||
-Ngeneric:Invisible-Pin|pin@64||33|12|1|1||
+Nschematic:Bus_Pin|pin@63||25|5||||
+Ngeneric:Invisible-Pin|pin@64||25|7|1|1||
 Aschematic:bus|net@4|||IJ2700|pin@9||40|15|pin@8||40|17
 Aschematic:bus|net@8|||IJ0|pin@17||8|10|pin@16||5|10
 Aschematic:bus|net@10|||IJ2700|pin@21||38|15|pin@20||38|17
@@ -3730,10 +3730,10 @@ Aschematic:wire|net@36|||900|pin@34||22|17|pin@58||22|15
 Aschematic:bus|net@37|||I0|pin@59||45|11|pin@60||42.5|11
 Aschematic:bus|net@38|||I900|pin@14||28|17|pin@61||28|15.5
 Aschematic:wire|net@39|||900|pin@40||36|17|pin@62||36|15
-Aschematic:bus|net@40|||IJ900|pin@64||33|12|pin@63||33|10
+Aschematic:bus|net@40|||IJ900|pin@64||25|7|pin@63||25|5
 Eadr[7:0]||D5G2;|pin@59||U
 Ealucontrol[2:0]||D5G2;|pin@2||I
-Ealuout[7:0]||D5G2;|pin@63||O
+Ealuout[7:0]||D5G2;Y-1;|pin@63||O
 Ealusrca||D5G2;|pin@4||I
 Ealusrcb[1:0]||D5G2;|pin@6||I
 Efunct[5:0]||D5G2;|pin@8||P
@@ -16001,7 +16001,7 @@ Ewritedata[7]||D5G2;|pin@64||O
 X
 
 # Cell mipsfgpnt;2{ic}
-Cmipsfgpnt;2{ic}||artwork|1185235392734|1185235392750|E
+Cmipsfgpnt;2{ic}||artwork|1185235392734|1383242405919|E
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NOpened-Thicker-Polygon|art@1||0|0|6|36|||SCHEM_function(D5G1;)Smipsfgpnt|trace()V[-3/-18,-3/18,3/18,3/-18,-3/-18]
 Nschematic:Bus_Pin|pin@0||5|17||||
@@ -16062,6 +16062,22 @@ Nschematic:Bus_Pin|pin@54||5|-15||||
 Nschematic:Wire_Pin|pin@55||3|-15||||
 Nschematic:Bus_Pin|pin@56||5|-17||||
 Nschematic:Wire_Pin|pin@57||3|-17||||
+Nschematic:Bus_Pin|pin@58||2|-15||||
+Nschematic:Wire_Pin|pin@59||2|-13||||
+Nschematic:Bus_Pin|pin@60||2|-15||||
+Nschematic:Wire_Pin|pin@61||2|-13||||
+Nschematic:Bus_Pin|pin@62||2|-16||||
+Nschematic:Wire_Pin|pin@63||2|-14||||
+Nschematic:Bus_Pin|pin@64||2|-16||||
+Nschematic:Wire_Pin|pin@65||2|-14||||
+Nschematic:Bus_Pin|pin@66||2|-17||||
+Nschematic:Wire_Pin|pin@67||2|-15||||
+Nschematic:Bus_Pin|pin@68||2|-17||||
+Nschematic:Wire_Pin|pin@69||2|-15||||
+Nschematic:Bus_Pin|pin@70||2|-18||||
+Nschematic:Wire_Pin|pin@71||2|-16||||
+Nschematic:Bus_Pin|pin@72||2|-19||||
+Nschematic:Wire_Pin|pin@73||2|-17||||
 Aschematic:wire|net@0|||1800|pin@1||3|17|pin@0||5|17
 Aschematic:wire|net@1|||1800|pin@3||3|15|pin@2||5|15
 Aschematic:wire|net@2|||1800|pin@5||3|13|pin@4||5|13
@@ -16091,6 +16107,14 @@ Aschematic:wire|net@25|||1800|pin@51||3|-11|pin@50||5|-11
 Aschematic:wire|net@26|||1800|pin@53||3|-13|pin@52||5|-13
 Aschematic:wire|net@27|||1800|pin@55||3|-15|pin@54||5|-15
 Aschematic:wire|net@28|||1800|pin@57||3|-17|pin@56||5|-17
+Aschematic:wire|net@29|||900|pin@59||2|-13|pin@58||2|-15
+Aschematic:wire|net@30|||900|pin@61||2|-13|pin@60||2|-15
+Aschematic:wire|net@31|||900|pin@63||2|-14|pin@62||2|-16
+Aschematic:wire|net@32|||900|pin@65||2|-14|pin@64||2|-16
+Aschematic:wire|net@33|||900|pin@67||2|-15|pin@66||2|-17
+Aschematic:wire|net@34|||900|pin@69||2|-15|pin@68||2|-17
+Aschematic:wire|net@35|||900|pin@71||2|-16|pin@70||2|-18
+Aschematic:wire|net@36|||900|pin@73||2|-17|pin@72||2|-19
 Eadr[0]||D5G2;|pin@0||O
 Eadr[1]||D5G2;|pin@2||O
 Eadr[2]||D5G2;|pin@4||O
@@ -16099,6 +16123,14 @@ Eadr[4]||D5G2;|pin@8||O
 Eadr[5]||D5G2;|pin@10||O
 Eadr[6]||D5G2;|pin@12||O
 Eadr[7]||D5G2;|pin@14||O
+Ealuout[0]||D5G2;|pin@58||U
+Ealuout[1]||D5G2;|pin@60||U
+Ealuout[2]||D5G2;|pin@62||U
+Ealuout[3]||D5G2;|pin@64||U
+Ealuout[4]||D5G2;|pin@66||U
+Ealuout[5]||D5G2;|pin@68||U
+Ealuout[6]||D5G2;|pin@70||U
+Ealuout[7]||D5G2;|pin@72||U
 Ememdata[0]||D5G2;|pin@16||I
 Ememdata[1]||D5G2;|pin@18||I
 Ememdata[2]||D5G2;|pin@20||I
@@ -16326,7 +16358,7 @@ Ewritedata[7]||D5G2;|datapath@0|writedata[7]|O
 X
 
 # Cell mipsfgpnt;1{sch}
-Cmipsfgpnt;1{sch}||schematic|1184714937078|1382945103115|
+Cmipsfgpnt;1{sch}||schematic|1184714937078|1383242603103|
 Ngeneric:Facet-Center|art@0||0|0||||AV
 Icontroller;1{ic}|controll@0||26|19|||D5G4;
 Idatapath;1{ic}|datapath@0||3|-24|||D5G4;
@@ -16389,6 +16421,23 @@ NWire_Pin|pin@81||50|8||||
 NWire_Pin|pin@82||59|8||||
 NBus_Pin|pin@83||54|-13||||
 NBus_Pin|pin@84||54|-15||||
+NWire_Pin|pin@86||40|-25||||
+NWire_Pin|pin@87||46|-25||||
+NWire_Pin|pin@88||40|-26||||
+NWire_Pin|pin@89||46|-26||||
+NWire_Pin|pin@90||40|-27||||
+NWire_Pin|pin@91||46|-27||||
+NWire_Pin|pin@92||40|-28||||
+NWire_Pin|pin@93||46|-28||||
+NWire_Pin|pin@94||40|-29||||
+NWire_Pin|pin@95||46|-29||||
+NWire_Pin|pin@96||40|-30||||
+NWire_Pin|pin@97||46|-30||||
+NWire_Pin|pin@98||40|-31||||
+NWire_Pin|pin@99||46|-31||||
+NWire_Pin|pin@100||40|-32||||
+NWire_Pin|pin@101||46|-32||||
+NBus_Pin|pin@102||28|-21||||
 Awire|adr[0]|D5G1;||1800|pin@33||50|0|pin@34||59|0
 Awire|adr[1]|D5G1;||1800|pin@35||50|-1|pin@36||59|-1
 Awire|adr[2]|D5G1;||1800|pin@37||50|-2|pin@38||59|-2
@@ -16399,6 +16448,15 @@ Awire|adr[6]|D5G1;||1800|pin@45||50|-6|pin@46||59|-6
 Abus|adr[7:0]|D5G1;||IJ1800|datapath@0|adr[7:0]|48|-13|pin@83||54|-13
 Awire|adr[7]|D5G1;||1800|pin@47||50|-7|pin@48||59|-7
 Abus|alucontrol[2:0]|D5FLeave alone;G1;R||IJ2700|datapath@0|alucontrol[2:0]|33|-7|controll@0|alucontrol[2:0]|33|11
+Awire|aluout[0]|D5G1;||1800|pin@86||40|-25|pin@87||46|-25
+Awire|aluout[1]|D5G1;||1800|pin@88||40|-26|pin@89||46|-26
+Awire|aluout[2]|D5G1;||1800|pin@90||40|-27|pin@91||46|-27
+Awire|aluout[3]|D5G1;||1800|pin@92||40|-28|pin@93||46|-28
+Awire|aluout[4]|D5G1;||1800|pin@94||40|-29|pin@95||46|-29
+Awire|aluout[5]|D5G1;||1800|pin@96||40|-30|pin@97||46|-30
+Awire|aluout[6]|D5G1;||1800|pin@98||40|-31|pin@99||46|-31
+Abus|aluout[7:0]|D5G1;||IJ900|datapath@0|aluout[7:0]|28|-19|pin@102||28|-21
+Awire|aluout[7]|D5G1;||1800|pin@100||40|-32|pin@101||46|-32
 Awire|alusrca|D5FLeave alone;G1;R||900|controll@0|alusrca|35|11|datapath@0|alusrca|35|-7
 Abus|alusrcb[1:0]|D5FLeave alone;G1;R||IJ900|controll@0|alusrcb[1:0]|37|11|datapath@0|alusrcb[1:0]|37|-7
 Abus|funct[3:0]|D5G1;R||IJ900|controll@0|funct[3:0]|43|11|pin@28||43|8
@@ -16446,6 +16504,14 @@ Eadr[4]||D5G2;|pin@42||O
 Eadr[5]||D5G2;|pin@44||O
 Eadr[6]||D5G2;|pin@46||O
 Eadr[7]||D5G2;|pin@48||O
+Ealuout[0]||D5G2;|pin@87||O
+Ealuout[1]||D5G2;|pin@89||O
+Ealuout[2]||D5G2;|pin@91||O
+Ealuout[3]||D5G2;|pin@93||O
+Ealuout[4]||D5G2;|pin@95||O
+Ealuout[5]||D5G2;|pin@97||O
+Ealuout[6]||D5G2;|pin@99||O
+Ealuout[7]||D5G2;|pin@101||O
 Ememdata[0]||D5G2;|pin@65||I
 Ememdata[1]||D5G2;|pin@67||I
 Ememdata[2]||D5G2;|pin@69||I
