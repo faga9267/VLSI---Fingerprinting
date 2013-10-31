@@ -8,13 +8,13 @@
 celllibrary muddpads13_ami05.jelib
 
 ; create a top-level facet containing the padframe and core
-cell chip
+cell chipfgpnt
 
 ; place this facet as the "core"
-core mips
+core mipsfgpnt
 
 ; generate schematic and layout views
-views lay sch
+views ic lay sch
 
 ; set the alignment of the pads (specifying input and output port names)
 align pad_corner      dvdd-1 dvdd
@@ -66,19 +66,19 @@ place pad_out dout=adr[3] export pad=adr[3]
 place pad_out dout=adr[2] export pad=adr[2]
 place pad_out dout=adr[1] export pad=adr[1]
 place pad_out dout=adr[0] export pad=adr[0]
-place pad_dvdd 
-place pad_dgnd
+place pad_out dout=aluout[0] export pad=aluout[0]
+place pad_out dout=aluout[1] export pad=aluout[1]
 
 
 ; place the right edge of pads
 rotate cc
 place pad_corner
-place pad_dgnd
-place pad_dvdd 
-place pad_dgnd
-place pad_dvdd 
-place pad_dgnd
-place pad_dvdd 
+place pad_out dout=aluout[2] export pad=aluout[2]
+place pad_out dout=aluout[3] export pad=aluout[3]
+place pad_out dout=aluout[4] export pad=aluout[4]
+place pad_out dout=aluout[5] export pad=aluout[5]
+place pad_out dout=aluout[6] export pad=aluout[6]
+place pad_out dout=aluout[7] export pad=aluout[7]
 place pad_dgnd
 place pad_in din=reset export pad=reset
 place pad_dgnd export pad = GND
