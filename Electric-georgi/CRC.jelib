@@ -8,8 +8,6 @@ Vschematic|sch
 
 # External Libraries:
 
-LCRC_gk|CRC_gk
-
 Lmuddlib07|muddlib07
 
 # Technologies:
@@ -397,21 +395,21 @@ X
 CCRC_stage_output;1{lay}||mocmos|1383191670616|1383193257729||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1383254642227
 Ngeneric:Facet-Center|art@0||0|0||||AV
 Imuddlib07:xor3_1x;1{lay}|xor3_1x@0||0|660|||D5G4;
-ICRC_gk:xor_4;1{lay}|xor_4@1||0|440|||D5G4;
-ICRC_gk:xor_4;1{lay}|xor_4@2||0|770|||D5G4;
-ICRC_gk:xor_4;1{lay}|xor_4@3||0|880|||D5G4;
-ICRC_gk:xor_4;1{lay}|xor_4@4||0|990|||D5G4;
-ICRC_gk:xor_4;1{lay}|xor_4@5||0|1100|||D5G4;
-ICRC_gk:xor_4;1{lay}|xor_4@6||0|1210|||D5G4;
-ICRC_gk:xor_4;1{lay}|xor_4@7||0|1320|||D5G4;
-ICRC_gk:xor_4;1{lay}|xor_4@8||0|1540|||D5G4;
-ICRC_gk:xor_4;1{lay}|xor_4[0]|D5G1;|0|220|||D5G4;
-ICRC_gk:xor_5;1{lay}|xor_5@0||0|330|||D5G4;
-ICRC_gk:xor_5;1{lay}|xor_5@1||0|550|||D5G4;
-ICRC_gk:xor_5;1{lay}|xor_5@2||0|1430|||D5G4;
-ICRC_gk:xor_5;1{lay}|xor_5@3||0|1650|||D5G4;
-ICRC_gk:xor_6;1{lay}|xor_6[0]|D5G1;|0|0|||D5G4;
-ICRC_gk:xor_6;1{lay}|xor_6[1]|D5G1;|0|110|||D5G4;
+Ixor_4;1{lay}|xor_4@1||0|440|||D5G4;
+Ixor_4;1{lay}|xor_4@2||0|770|||D5G4;
+Ixor_4;1{lay}|xor_4@3||0|880|||D5G4;
+Ixor_4;1{lay}|xor_4@4||0|990|||D5G4;
+Ixor_4;1{lay}|xor_4@5||0|1100|||D5G4;
+Ixor_4;1{lay}|xor_4@6||0|1210|||D5G4;
+Ixor_4;1{lay}|xor_4@7||0|1320|||D5G4;
+Ixor_4;1{lay}|xor_4@8||0|1540|||D5G4;
+Ixor_4;1{lay}|xor_4[0]|D5G1;|0|220|||D5G4;
+Ixor_5;1{lay}|xor_5@0||0|330|||D5G4;
+Ixor_5;1{lay}|xor_5@1||0|550|||D5G4;
+Ixor_5;1{lay}|xor_5@2||0|1430|||D5G4;
+Ixor_5;1{lay}|xor_5@3||0|1650|||D5G4;
+Ixor_6;1{lay}|xor_6[0]|D5G1;|0|0|||D5G4;
+Ixor_6;1{lay}|xor_6[1]|D5G1;|0|110|||D5G4;
 Ea0[0]||D5G2;|xor_6[0]|a1[0]|I
 Ea0[1]||D5G2;|xor_6[0]|a1[1]|I
 Ea0[2]||D5G2;|xor_6[0]|a1[2]|I
@@ -650,7 +648,7 @@ EData[15:0]||D5G2;X-3;Y-2;|pin@4||I
 X
 
 # Cell crc16;1{lay}
-Ccrc16;1{lay}||mocmos|1383254066724|1383277297056||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1383278240792
+Ccrc16;1{lay}||mocmos|1383254066724|1383277297056||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1383277024809
 ICRC_stage1;1{lay}|CRC_stag@0||0|0|||D5G4;
 ICRC_stage2;1{lay}|CRC_stag@1||56|0|||D5G4;
 ICRC_stage3;1{lay}|CRC_stag@2||112|0|||D5G4;
