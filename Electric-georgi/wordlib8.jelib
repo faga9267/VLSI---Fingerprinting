@@ -586,7 +586,7 @@ Ereset||D5G2;|pin@10||I
 X
 
 # Cell flopenr_1x_8;1{lay}
-Cflopenr_1x_8;1{lay}||mocmos|1173315174390|1380749970737||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1380750033021
+Cflopenr_1x_8;1{lay}||mocmos|1173315174390|1383356649331||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1383356650377
 Ngeneric:Facet-Center|art@0||0|0||||AV
 Imuddlib07:clkinvbufdual_4x;1{lay}|clkinvbu@0||56|880|||D5G4;
 NMetal-1-Metal-2-Con|contact@0||18|920||||
@@ -618,6 +618,11 @@ Imuddlib07:inv_4x;1{lay}|inv_4x@0||40|880|||D5G4;
 Imuddlib07:inv_4x;1{lay}|inv_4x@1||24|880|||D5G4;
 Imuddlib07:inv_4x;1{lay}|inv_4x@2||8|880|||D5G4;
 NMetal-2-Pin|pin@0||122|870||||
+NMetal-2-Pin|pin@1||50|-12.5||||
+NMetal-2-Pin|pin@2||106|-12.5||||
+NMetal-2-Pin|pin@3||10|-12.5||||
+NMetal-2-Pin|pin@4||18|-12.5||||
+NMetal-2-Pin|pin@5||10|-13.5||||
 AMetal-1|net@217||5|S0|clkinvbu@0|gnd|58|880|inv_4x@0|gnd|42|880
 AMetal-1|net@218||5|S0|clkinvbu@0|vdd|58|970|inv_4x@0|vdd|42|970
 AMetal-1|net@219||5|S0|inv_4x@0|gnd|42|880|inv_4x@1|gnd|26|880
@@ -699,6 +704,15 @@ AMetal-1|net@398||1|S1800|contact@20||114|870|contact@19||122|870
 AMetal-2|net@399||1|S900|contact@20||114|870|flopenr_@38|ph1b|114|826
 AMetal-2|net@400||1|S900|contact@12||82|870|flopenr_@38|ph2b|82|826
 AMetal-2|net@401||1|S900|contact@14||50|870|flopenr_@38|ph2|50|816
+AMetal-2|net@402||1|S900|flopenr_@0|ph2|50|45|pin@1||50|-12.5
+AMetal-2|net@403||1|S900|flopenr_@0|ph1|106|27|pin@2||106|-12.5
+AMetal-2|net@404||1|S900|flopenr_@0|en|10|37|pin@3||10|-12.5
+AMetal-2|net@405||1|S2700|flopenr_@0|en|10|37|flopenr_@0|en|10|38
+AMetal-2|net@406||1|S0|flopenr_@0|ph2|50|45|flopenr_@0|ph2|50|45
+AMetal-2|net@407||1|S2700|flopenr_@0|ph1|106|27|flopenr_@0|ph1|106|28
+AMetal-2|net@408||1|S900|flopenr_@0|resetb|18|55|pin@4||18|-12.5
+AMetal-2|net@409||1|S2700|pin@4||18|-12.5|flopenr_@0|resetb|18|54
+AMetal-2|net@410||1|S2700|pin@5||10|-13.5|flopenr_@0|en|10|36
 Ed[0]||D5G2;|flopenr_@0|d|I
 Ed[1]||D5G2;|flopenr_@32|d|I
 Ed[2]||D5G2;|flopenr_@33|d|I
