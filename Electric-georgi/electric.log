@@ -1,100 +1,2028 @@
 Electric Version 8.06
 --------------- 0 --------------
-  Sat Nov 02 14:44:26 EDT 2013
+  Sat Nov 02 15:35:39 EDT 2013
 Menu Activated: File | Open Library...
 --------------- 1 --------------
-  Sat Nov 02 14:44:45 EDT 2013
-ProcessKeyBinding 401 when=1383417885619 modifiers=80 code=11 char=ffff false false
+  Sat Nov 02 15:35:53 EDT 2013
+ProcessKeyBinding 401 when=1383420953583 modifiers=80 code=11 char=ffff false false
 --------------- 2 --------------
-  Sat Nov 02 14:44:45 EDT 2013
-ProcessKeyBinding 401 when=1383417885762 modifiers=80 code=37 char=37(7) false false
+  Sat Nov 02 15:35:54 EDT 2013
+ProcessKeyBinding 401 when=1383420954082 modifiers=80 code=11 char=ffff false false
 --------------- 3 --------------
-  Sat Nov 02 14:44:45 EDT 2013
-Menu Activated: Window | Zoom In
+  Sat Nov 02 15:35:54 EDT 2013
+ProcessKeyBinding 401 when=1383420954095 modifiers=80 code=37 char=37(7) false false
 --------------- 4 --------------
-  Sat Nov 02 14:44:45 EDT 2013
-ProcessKeyBinding 402 when=1383417885898 modifiers=80 code=37 char=37(7) false false
---------------- 5 --------------
-  Sat Nov 02 14:44:46 EDT 2013
-ProcessKeyBinding 401 when=1383417886018 modifiers=80 code=37 char=37(7) false false
---------------- 6 --------------
-  Sat Nov 02 14:44:46 EDT 2013
+  Sat Nov 02 15:35:54 EDT 2013
 Menu Activated: Window | Zoom In
+--------------- 5 --------------
+  Sat Nov 02 15:35:54 EDT 2013
+ProcessKeyBinding 402 when=1383420954271 modifiers=80 code=37 char=37(7) false false
+--------------- 6 --------------
+  Sat Nov 02 15:35:54 EDT 2013
+ProcessKeyBinding 401 when=1383420954351 modifiers=80 code=37 char=37(7) false false
 --------------- 7 --------------
-  Sat Nov 02 14:44:46 EDT 2013
-ProcessKeyBinding 402 when=1383417886218 modifiers=80 code=37 char=37(7) false false
+  Sat Nov 02 15:35:54 EDT 2013
+Menu Activated: Window | Zoom In
 --------------- 8 --------------
-  Sat Nov 02 14:44:46 EDT 2013
-ProcessKeyBinding 402 when=1383417886234 modifiers=0 code=11 char=ffff false false
+  Sat Nov 02 15:35:54 EDT 2013
+ProcessKeyBinding 402 when=1383420954495 modifiers=80 code=37 char=37(7) false false
 --------------- 9 --------------
-  Sat Nov 02 14:44:49 EDT 2013
-ProcessKeyBinding 401 when=1383417889651 modifiers=0 code=74 char=ffff false false
+  Sat Nov 02 15:35:54 EDT 2013
+ProcessKeyBinding 401 when=1383420954615 modifiers=80 code=37 char=37(7) false false
 --------------- 10 --------------
-  Sat Nov 02 14:44:49 EDT 2013
-Menu Activated: Tool | DRC | Check Hierarchically
+  Sat Nov 02 15:35:54 EDT 2013
+Menu Activated: Window | Zoom In
 --------------- 11 --------------
-  Sat Nov 02 14:44:49 EDT 2013
-ProcessKeyBinding 402 when=1383417889811 modifiers=0 code=74 char=ffff false false
+  Sat Nov 02 15:35:54 EDT 2013
+ProcessKeyBinding 402 when=1383420954766 modifiers=80 code=37 char=37(7) false false
 --------------- 12 --------------
-  Sat Nov 02 14:44:51 EDT 2013
-ProcessKeyBinding 401 when=1383417891563 modifiers=0 code=74 char=ffff false false
+  Sat Nov 02 15:35:54 EDT 2013
+ProcessKeyBinding 402 when=1383420954950 modifiers=0 code=11 char=ffff false false
 --------------- 13 --------------
-  Sat Nov 02 14:44:51 EDT 2013
-Menu Activated: Tool | DRC | Check Hierarchically
+  Sat Nov 02 15:35:55 EDT 2013
+ProcessKeyBinding 401 when=1383420955551 modifiers=80 code=11 char=ffff false false
 --------------- 14 --------------
-  Sat Nov 02 14:44:51 EDT 2013
-ProcessKeyBinding 402 when=1383417891755 modifiers=0 code=74 char=ffff false false
+  Sat Nov 02 15:35:55 EDT 2013
+ProcessKeyBinding 401 when=1383420955967 modifiers=80 code=30 char=30(0) false false
 --------------- 15 --------------
-  Sat Nov 02 14:45:08 EDT 2013
-Menu Activated: Tool | NCC | Schematic and Layout Views of Cell in Current Window
+  Sat Nov 02 15:35:55 EDT 2013
+Menu Activated: Window | Zoom Out
 --------------- 16 --------------
-  Sat Nov 02 14:45:22 EDT 2013
-ProcessKeyBinding 401 when=1383417922947 modifiers=40 code=10 char=ffff false false
+  Sat Nov 02 15:35:56 EDT 2013
+ProcessKeyBinding 402 when=1383420956111 modifiers=80 code=30 char=30(0) false false
 --------------- 17 --------------
-  Sat Nov 02 14:45:23 EDT 2013
-ProcessKeyBinding 401 when=1383417923322 modifiers=40 code=2e char=3e(>) false false
+  Sat Nov 02 15:35:56 EDT 2013
+ProcessKeyBinding 402 when=1383420956222 modifiers=0 code=11 char=ffff false false
 --------------- 18 --------------
-  Sat Nov 02 14:45:23 EDT 2013
-Menu Activated: Edit | Selection | Show Next Error
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420976998 modifiers=80 code=11 char=ffff false false
 --------------- 19 --------------
-  Sat Nov 02 14:45:23 EDT 2013
-ProcessKeyBinding 400 when=1383417923322 modifiers=40 code=0 char=3e(>) false false
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420977498 modifiers=80 code=11 char=ffff false false
 --------------- 20 --------------
-  Sat Nov 02 14:45:23 EDT 2013
-ProcessKeyBinding 402 when=1383417923562 modifiers=40 code=2e char=3e(>) false false
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420977531 modifiers=80 code=11 char=ffff false false
 --------------- 21 --------------
-  Sat Nov 02 14:45:24 EDT 2013
-ProcessKeyBinding 402 when=1383417924042 modifiers=0 code=10 char=ffff false false
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420977564 modifiers=80 code=11 char=ffff false false
 --------------- 22 --------------
-  Sat Nov 02 14:45:26 EDT 2013
-ProcessKeyBinding 401 when=1383417926747 modifiers=0 code=7f char=7f false false
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420977597 modifiers=80 code=11 char=ffff false false
 --------------- 23 --------------
-  Sat Nov 02 14:45:26 EDT 2013
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420977630 modifiers=80 code=11 char=ffff false false
+--------------- 24 --------------
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420977663 modifiers=80 code=11 char=ffff false false
+--------------- 25 --------------
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420977696 modifiers=80 code=11 char=ffff false false
+--------------- 26 --------------
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420977729 modifiers=80 code=11 char=ffff false false
+--------------- 27 --------------
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420977762 modifiers=80 code=11 char=ffff false false
+--------------- 28 --------------
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420977795 modifiers=80 code=11 char=ffff false false
+--------------- 29 --------------
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420977828 modifiers=80 code=11 char=ffff false false
+--------------- 30 --------------
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420977861 modifiers=80 code=11 char=ffff false false
+--------------- 31 --------------
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420977894 modifiers=80 code=11 char=ffff false false
+--------------- 32 --------------
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420977927 modifiers=80 code=11 char=ffff false false
+--------------- 33 --------------
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420977960 modifiers=80 code=11 char=ffff false false
+--------------- 34 --------------
+  Sat Nov 02 15:36:17 EDT 2013
+ProcessKeyBinding 401 when=1383420977993 modifiers=80 code=11 char=ffff false false
+--------------- 35 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978026 modifiers=80 code=11 char=ffff false false
+--------------- 36 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978059 modifiers=80 code=11 char=ffff false false
+--------------- 37 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978092 modifiers=80 code=11 char=ffff false false
+--------------- 38 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978125 modifiers=80 code=11 char=ffff false false
+--------------- 39 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978158 modifiers=80 code=11 char=ffff false false
+--------------- 40 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978191 modifiers=80 code=11 char=ffff false false
+--------------- 41 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978224 modifiers=80 code=11 char=ffff false false
+--------------- 42 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978257 modifiers=80 code=11 char=ffff false false
+--------------- 43 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978290 modifiers=80 code=11 char=ffff false false
+--------------- 44 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978323 modifiers=80 code=11 char=ffff false false
+--------------- 45 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978356 modifiers=80 code=11 char=ffff false false
+--------------- 46 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978389 modifiers=80 code=11 char=ffff false false
+--------------- 47 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978422 modifiers=80 code=11 char=ffff false false
+--------------- 48 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978455 modifiers=80 code=11 char=ffff false false
+--------------- 49 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978488 modifiers=80 code=11 char=ffff false false
+--------------- 50 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978522 modifiers=80 code=11 char=ffff false false
+--------------- 51 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978555 modifiers=80 code=11 char=ffff false false
+--------------- 52 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978587 modifiers=80 code=11 char=ffff false false
+--------------- 53 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 401 when=1383420978620 modifiers=80 code=11 char=ffff false false
+--------------- 54 --------------
+  Sat Nov 02 15:36:18 EDT 2013
+ProcessKeyBinding 402 when=1383420978622 modifiers=0 code=11 char=ffff false false
+--------------- 55 --------------
+  Sat Nov 02 15:36:29 EDT 2013
+ProcessKeyBinding 401 when=1383420989534 modifiers=80 code=11 char=ffff false false
+--------------- 56 --------------
+  Sat Nov 02 15:36:29 EDT 2013
+ProcessKeyBinding 401 when=1383420989870 modifiers=80 code=37 char=37(7) false false
+--------------- 57 --------------
+  Sat Nov 02 15:36:29 EDT 2013
+Menu Activated: Window | Zoom In
+--------------- 58 --------------
+  Sat Nov 02 15:36:29 EDT 2013
+ProcessKeyBinding 402 when=1383420989990 modifiers=80 code=37 char=37(7) false false
+--------------- 59 --------------
+  Sat Nov 02 15:36:30 EDT 2013
+ProcessKeyBinding 401 when=1383420990086 modifiers=80 code=37 char=37(7) false false
+--------------- 60 --------------
+  Sat Nov 02 15:36:30 EDT 2013
+Menu Activated: Window | Zoom In
+--------------- 61 --------------
+  Sat Nov 02 15:36:30 EDT 2013
+ProcessKeyBinding 402 when=1383420990190 modifiers=80 code=37 char=37(7) false false
+--------------- 62 --------------
+  Sat Nov 02 15:36:30 EDT 2013
+ProcessKeyBinding 401 when=1383420990270 modifiers=80 code=37 char=37(7) false false
+--------------- 63 --------------
+  Sat Nov 02 15:36:30 EDT 2013
+Menu Activated: Window | Zoom In
+--------------- 64 --------------
+  Sat Nov 02 15:36:30 EDT 2013
+ProcessKeyBinding 402 when=1383420990366 modifiers=80 code=37 char=37(7) false false
+--------------- 65 --------------
+  Sat Nov 02 15:36:30 EDT 2013
+ProcessKeyBinding 402 when=1383420990430 modifiers=0 code=11 char=ffff false false
+--------------- 66 --------------
+  Sat Nov 02 15:36:35 EDT 2013
+ProcessKeyBinding 401 when=1383420995046 modifiers=80 code=11 char=ffff false false
+--------------- 67 --------------
+  Sat Nov 02 15:36:35 EDT 2013
+ProcessKeyBinding 401 when=1383420995478 modifiers=80 code=30 char=30(0) false false
+--------------- 68 --------------
+  Sat Nov 02 15:36:35 EDT 2013
+Menu Activated: Window | Zoom Out
+--------------- 69 --------------
+  Sat Nov 02 15:36:35 EDT 2013
+ProcessKeyBinding 402 when=1383420995598 modifiers=80 code=30 char=30(0) false false
+--------------- 70 --------------
+  Sat Nov 02 15:36:35 EDT 2013
+ProcessKeyBinding 401 when=1383420995758 modifiers=80 code=30 char=30(0) false false
+--------------- 71 --------------
+  Sat Nov 02 15:36:35 EDT 2013
+Menu Activated: Window | Zoom Out
+--------------- 72 --------------
+  Sat Nov 02 15:36:35 EDT 2013
+ProcessKeyBinding 402 when=1383420995918 modifiers=80 code=30 char=30(0) false false
+--------------- 73 --------------
+  Sat Nov 02 15:36:36 EDT 2013
+ProcessKeyBinding 402 when=1383420996134 modifiers=0 code=11 char=ffff false false
+--------------- 74 --------------
+  Sat Nov 02 15:36:36 EDT 2013
+ProcessKeyBinding 401 when=1383420996334 modifiers=80 code=11 char=ffff false false
+--------------- 75 --------------
+  Sat Nov 02 15:36:36 EDT 2013
+ProcessKeyBinding 401 when=1383420996382 modifiers=80 code=30 char=30(0) false false
+--------------- 76 --------------
+  Sat Nov 02 15:36:36 EDT 2013
+Menu Activated: Window | Zoom Out
+--------------- 77 --------------
+  Sat Nov 02 15:36:36 EDT 2013
+ProcessKeyBinding 402 when=1383420996558 modifiers=0 code=11 char=ffff false false
+--------------- 78 --------------
+  Sat Nov 02 15:36:36 EDT 2013
+ProcessKeyBinding 402 when=1383420996574 modifiers=0 code=30 char=30(0) false false
+--------------- 79 --------------
+  Sat Nov 02 15:37:19 EDT 2013
+ProcessKeyBinding 401 when=1383421039646 modifiers=80 code=11 char=ffff false false
+--------------- 80 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040146 modifiers=80 code=11 char=ffff false false
+--------------- 81 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040179 modifiers=80 code=11 char=ffff false false
+--------------- 82 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040212 modifiers=80 code=11 char=ffff false false
+--------------- 83 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040245 modifiers=80 code=11 char=ffff false false
+--------------- 84 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040278 modifiers=80 code=11 char=ffff false false
+--------------- 85 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040311 modifiers=80 code=11 char=ffff false false
+--------------- 86 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040344 modifiers=80 code=11 char=ffff false false
+--------------- 87 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040377 modifiers=80 code=11 char=ffff false false
+--------------- 88 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040410 modifiers=80 code=11 char=ffff false false
+--------------- 89 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040443 modifiers=80 code=11 char=ffff false false
+--------------- 90 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040476 modifiers=80 code=11 char=ffff false false
+--------------- 91 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040509 modifiers=80 code=11 char=ffff false false
+--------------- 92 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040542 modifiers=80 code=11 char=ffff false false
+--------------- 93 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040575 modifiers=80 code=11 char=ffff false false
+--------------- 94 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040608 modifiers=80 code=11 char=ffff false false
+--------------- 95 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040641 modifiers=80 code=11 char=ffff false false
+--------------- 96 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040674 modifiers=80 code=11 char=ffff false false
+--------------- 97 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 401 when=1383421040678 modifiers=80 code=37 char=37(7) false false
+--------------- 98 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+Menu Activated: Window | Zoom In
+--------------- 99 --------------
+  Sat Nov 02 15:37:20 EDT 2013
+ProcessKeyBinding 402 when=1383421040830 modifiers=80 code=37 char=37(7) false false
+--------------- 100 --------------
+  Sat Nov 02 15:37:21 EDT 2013
+ProcessKeyBinding 402 when=1383421041350 modifiers=0 code=11 char=ffff false false
+--------------- 101 --------------
+  Sat Nov 02 15:38:12 EDT 2013
+ProcessKeyBinding 401 when=1383421092965 modifiers=80 code=11 char=ffff false false
+--------------- 102 --------------
+  Sat Nov 02 15:38:13 EDT 2013
+ProcessKeyBinding 401 when=1383421093246 modifiers=80 code=38 char=38(8) false false
+--------------- 103 --------------
+  Sat Nov 02 15:38:13 EDT 2013
+Menu Activated: Window | Pan Up
+--------------- 104 --------------
+  Sat Nov 02 15:38:13 EDT 2013
+ProcessKeyBinding 402 when=1383421093421 modifiers=80 code=38 char=38(8) false false
+--------------- 105 --------------
+  Sat Nov 02 15:38:13 EDT 2013
+ProcessKeyBinding 402 when=1383421093446 modifiers=0 code=11 char=ffff false false
+--------------- 106 --------------
+  Sat Nov 02 15:38:15 EDT 2013
+ProcessKeyBinding 401 when=1383421095630 modifiers=80 code=11 char=ffff false false
+--------------- 107 --------------
+  Sat Nov 02 15:38:15 EDT 2013
+ProcessKeyBinding 401 when=1383421095709 modifiers=80 code=38 char=38(8) false false
+--------------- 108 --------------
+  Sat Nov 02 15:38:15 EDT 2013
+Menu Activated: Window | Pan Up
+--------------- 109 --------------
+  Sat Nov 02 15:38:15 EDT 2013
+ProcessKeyBinding 402 when=1383421095869 modifiers=0 code=11 char=ffff false false
+--------------- 110 --------------
+  Sat Nov 02 15:38:15 EDT 2013
+ProcessKeyBinding 402 when=1383421095910 modifiers=0 code=38 char=38(8) false false
+--------------- 111 --------------
+  Sat Nov 02 15:38:16 EDT 2013
+ProcessKeyBinding 401 when=1383421096374 modifiers=80 code=11 char=ffff false false
+--------------- 112 --------------
+  Sat Nov 02 15:38:16 EDT 2013
+ProcessKeyBinding 401 when=1383421096454 modifiers=80 code=38 char=38(8) false false
+--------------- 113 --------------
+  Sat Nov 02 15:38:16 EDT 2013
+Menu Activated: Window | Pan Up
+--------------- 114 --------------
+  Sat Nov 02 15:38:16 EDT 2013
+ProcessKeyBinding 402 when=1383421096574 modifiers=0 code=11 char=ffff false false
+--------------- 115 --------------
+  Sat Nov 02 15:38:16 EDT 2013
+ProcessKeyBinding 402 when=1383421096613 modifiers=0 code=38 char=38(8) false false
+--------------- 116 --------------
+  Sat Nov 02 15:38:23 EDT 2013
+ProcessKeyBinding 401 when=1383421103109 modifiers=80 code=11 char=ffff false false
+--------------- 117 --------------
+  Sat Nov 02 15:38:23 EDT 2013
+ProcessKeyBinding 401 when=1383421103229 modifiers=80 code=38 char=38(8) false false
+--------------- 118 --------------
+  Sat Nov 02 15:38:23 EDT 2013
+Menu Activated: Window | Pan Up
+--------------- 119 --------------
+  Sat Nov 02 15:38:23 EDT 2013
+ProcessKeyBinding 402 when=1383421103406 modifiers=0 code=11 char=ffff false false
+--------------- 120 --------------
+  Sat Nov 02 15:38:23 EDT 2013
+ProcessKeyBinding 402 when=1383421103445 modifiers=0 code=38 char=38(8) false false
+--------------- 121 --------------
+  Sat Nov 02 15:38:24 EDT 2013
+ProcessKeyBinding 401 when=1383421104517 modifiers=80 code=11 char=ffff false false
+--------------- 122 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105017 modifiers=80 code=11 char=ffff false false
+--------------- 123 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105050 modifiers=80 code=11 char=ffff false false
+--------------- 124 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105083 modifiers=80 code=11 char=ffff false false
+--------------- 125 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105116 modifiers=80 code=11 char=ffff false false
+--------------- 126 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105149 modifiers=80 code=11 char=ffff false false
+--------------- 127 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105182 modifiers=80 code=11 char=ffff false false
+--------------- 128 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105215 modifiers=80 code=11 char=ffff false false
+--------------- 129 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105248 modifiers=80 code=11 char=ffff false false
+--------------- 130 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105281 modifiers=80 code=11 char=ffff false false
+--------------- 131 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105314 modifiers=80 code=11 char=ffff false false
+--------------- 132 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105347 modifiers=80 code=11 char=ffff false false
+--------------- 133 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105380 modifiers=80 code=11 char=ffff false false
+--------------- 134 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105413 modifiers=80 code=11 char=ffff false false
+--------------- 135 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105446 modifiers=80 code=11 char=ffff false false
+--------------- 136 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105479 modifiers=80 code=11 char=ffff false false
+--------------- 137 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105514 modifiers=80 code=11 char=ffff false false
+--------------- 138 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105545 modifiers=80 code=11 char=ffff false false
+--------------- 139 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105578 modifiers=80 code=11 char=ffff false false
+--------------- 140 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105611 modifiers=80 code=11 char=ffff false false
+--------------- 141 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105644 modifiers=80 code=11 char=ffff false false
+--------------- 142 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105677 modifiers=80 code=11 char=ffff false false
+--------------- 143 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105710 modifiers=80 code=11 char=ffff false false
+--------------- 144 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 401 when=1383421105725 modifiers=80 code=37 char=37(7) false false
+--------------- 145 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+Menu Activated: Window | Zoom In
+--------------- 146 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 402 when=1383421105949 modifiers=80 code=37 char=37(7) false false
+--------------- 147 --------------
+  Sat Nov 02 15:38:25 EDT 2013
+ProcessKeyBinding 402 when=1383421105965 modifiers=0 code=11 char=ffff false false
+--------------- 148 --------------
+  Sat Nov 02 15:38:43 EDT 2013
+Menu Activated: Edit | Modes | Edit | Toggle Measure Distance
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightLine in cell 'flopenr_1x_16{lay}': 
+    com.sun.electric.tool.user.HighlightLine in cell 'flopenr_1x_16{lay}': 
+    com.sun.electric.tool.user.HighlightLine in cell 'flopenr_1x_16{lay}': 
+    com.sun.electric.tool.user.HighlightLine in cell 'flopenr_1x_16{lay}': 
+--------------- 149 --------------
+  Sat Nov 02 15:38:51 EDT 2013
+ProcessKeyBinding 400 when=1383421131229 modifiers=0 code=0 char=1b false false
+--------------- 150 --------------
+  Sat Nov 02 15:38:51 EDT 2013
+ProcessKeyBinding 402 when=1383421131365 modifiers=0 code=1b char=1b false false
+--------------- 151 --------------
+  Sat Nov 02 15:38:52 EDT 2013
+Menu Activated: Edit | Modes | Edit | Click/Zoom/Wire
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightLine in cell 'flopenr_1x_16{lay}': 
+    com.sun.electric.tool.user.HighlightLine in cell 'flopenr_1x_16{lay}': 
+    com.sun.electric.tool.user.HighlightLine in cell 'flopenr_1x_16{lay}': 
+    com.sun.electric.tool.user.HighlightLine in cell 'flopenr_1x_16{lay}': 
+--------------- 152 --------------
+  Sat Nov 02 15:39:06 EDT 2013
+ProcessKeyBinding 401 when=1383421146477 modifiers=80 code=11 char=ffff false false
+--------------- 153 --------------
+  Sat Nov 02 15:39:06 EDT 2013
+ProcessKeyBinding 402 when=1383421146973 modifiers=0 code=11 char=ffff false false
+--------------- 154 --------------
+  Sat Nov 02 15:39:10 EDT 2013
+ProcessKeyBinding 401 when=1383421150621 modifiers=80 code=11 char=ffff false false
+--------------- 155 --------------
+  Sat Nov 02 15:39:10 EDT 2013
+ProcessKeyBinding 401 when=1383421150933 modifiers=80 code=5a char=1a false false
+--------------- 156 --------------
+  Sat Nov 02 15:39:10 EDT 2013
+Menu Activated: Edit | Undo
+--------------- 157 --------------
+  Sat Nov 02 15:39:10 EDT 2013
+ProcessKeyBinding 400 when=1383421150933 modifiers=80 code=0 char=1a false false
+--------------- 158 --------------
+  Sat Nov 02 15:39:11 EDT 2013
+ProcessKeyBinding 402 when=1383421151093 modifiers=80 code=5a char=1a false false
+--------------- 159 --------------
+  Sat Nov 02 15:39:11 EDT 2013
+ProcessKeyBinding 402 when=1383421151117 modifiers=0 code=11 char=ffff false false
+--------------- 160 --------------
+  Sat Nov 02 15:39:14 EDT 2013
+ProcessKeyBinding 401 when=1383421154237 modifiers=80 code=11 char=ffff false false
+--------------- 161 --------------
+  Sat Nov 02 15:39:14 EDT 2013
+ProcessKeyBinding 402 when=1383421154541 modifiers=0 code=11 char=ffff false false
+--------------- 162 --------------
+  Sat Nov 02 15:39:19 EDT 2013
+ProcessKeyBinding 401 when=1383421159325 modifiers=80 code=11 char=ffff false false
+--------------- 163 --------------
+  Sat Nov 02 15:39:19 EDT 2013
+ProcessKeyBinding 401 when=1383421159516 modifiers=80 code=5a char=1a false false
+--------------- 164 --------------
+  Sat Nov 02 15:39:19 EDT 2013
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-1-Pin[pin@51].metal-1'
+--------------- 165 --------------
+  Sat Nov 02 15:39:19 EDT 2013
+ProcessKeyBinding 400 when=1383421159517 modifiers=80 code=0 char=1a false false
+--------------- 166 --------------
+  Sat Nov 02 15:39:19 EDT 2013
+ProcessKeyBinding 402 when=1383421159692 modifiers=0 code=11 char=ffff false false
+--------------- 167 --------------
+  Sat Nov 02 15:39:19 EDT 2013
+ProcessKeyBinding 402 when=1383421159716 modifiers=0 code=5a char=1a false false
+--------------- 168 --------------
+  Sat Nov 02 15:39:21 EDT 2013
+ProcessKeyBinding 401 when=1383421161621 modifiers=80 code=11 char=ffff false false
+--------------- 169 --------------
+  Sat Nov 02 15:39:21 EDT 2013
+ProcessKeyBinding 401 when=1383421161725 modifiers=80 code=5a char=1a false false
+--------------- 170 --------------
+  Sat Nov 02 15:39:21 EDT 2013
+Menu Activated: Edit | Undo
+--------------- 171 --------------
+  Sat Nov 02 15:39:21 EDT 2013
+ProcessKeyBinding 400 when=1383421161725 modifiers=80 code=0 char=1a false false
+--------------- 172 --------------
+  Sat Nov 02 15:39:21 EDT 2013
+ProcessKeyBinding 402 when=1383421161917 modifiers=80 code=5a char=1a false false
+--------------- 173 --------------
+  Sat Nov 02 15:39:21 EDT 2013
+ProcessKeyBinding 402 when=1383421161941 modifiers=0 code=11 char=ffff false false
+--------------- 174 --------------
+  Sat Nov 02 15:39:22 EDT 2013
+ProcessKeyBinding 401 when=1383421162765 modifiers=80 code=11 char=ffff false false
+--------------- 175 --------------
+  Sat Nov 02 15:39:22 EDT 2013
+ProcessKeyBinding 401 when=1383421162901 modifiers=80 code=5a char=1a false false
+--------------- 176 --------------
+  Sat Nov 02 15:39:22 EDT 2013
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@79].metal-2-metal-3'
+--------------- 177 --------------
+  Sat Nov 02 15:39:22 EDT 2013
+ProcessKeyBinding 400 when=1383421162901 modifiers=80 code=0 char=1a false false
+--------------- 178 --------------
+  Sat Nov 02 15:39:23 EDT 2013
+ProcessKeyBinding 402 when=1383421163005 modifiers=0 code=11 char=ffff false false
+--------------- 179 --------------
+  Sat Nov 02 15:39:23 EDT 2013
+ProcessKeyBinding 402 when=1383421163061 modifiers=0 code=5a char=1a false false
+--------------- 180 --------------
+  Sat Nov 02 15:39:29 EDT 2013
+ProcessKeyBinding 401 when=1383421169566 modifiers=80 code=11 char=ffff false false
+--------------- 181 --------------
+  Sat Nov 02 15:39:29 EDT 2013
+ProcessKeyBinding 401 when=1383421169629 modifiers=80 code=5a char=1a false false
+--------------- 182 --------------
+  Sat Nov 02 15:39:29 EDT 2013
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@46].metal-2-metal-3'
+--------------- 183 --------------
+  Sat Nov 02 15:39:29 EDT 2013
+ProcessKeyBinding 400 when=1383421169629 modifiers=80 code=0 char=1a false false
+--------------- 184 --------------
+  Sat Nov 02 15:39:29 EDT 2013
+ProcessKeyBinding 402 when=1383421169709 modifiers=0 code=11 char=ffff false false
+--------------- 185 --------------
+  Sat Nov 02 15:39:29 EDT 2013
+ProcessKeyBinding 402 when=1383421169789 modifiers=0 code=5a char=1a false false
+--------------- 186 --------------
+  Sat Nov 02 15:39:30 EDT 2013
+ProcessKeyBinding 401 when=1383421170485 modifiers=80 code=11 char=ffff false false
+--------------- 187 --------------
+  Sat Nov 02 15:39:30 EDT 2013
+ProcessKeyBinding 401 when=1383421170565 modifiers=80 code=5a char=1a false false
+--------------- 188 --------------
+  Sat Nov 02 15:39:30 EDT 2013
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , Metal-2-Metal-3-Con['contact@79']
+--------------- 189 --------------
+  Sat Nov 02 15:39:30 EDT 2013
+ProcessKeyBinding 400 when=1383421170565 modifiers=80 code=0 char=1a false false
+--------------- 190 --------------
+  Sat Nov 02 15:39:30 EDT 2013
+ProcessKeyBinding 402 when=1383421170661 modifiers=0 code=11 char=ffff false false
+--------------- 191 --------------
+  Sat Nov 02 15:39:30 EDT 2013
+ProcessKeyBinding 402 when=1383421170724 modifiers=0 code=5a char=1a false false
+--------------- 192 --------------
+  Sat Nov 02 15:39:34 EDT 2013
+ProcessKeyBinding 401 when=1383421174636 modifiers=0 code=75 char=ffff false false
+--------------- 193 --------------
+  Sat Nov 02 15:39:34 EDT 2013
+Menu Activated: Edit | Array...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , Metal-2-Metal-3-Con['contact@79']
+--------------- 194 --------------
+  Sat Nov 02 15:39:49 EDT 2013
+ProcessKeyBinding 401 when=1383421189781 modifiers=0 code=70 char=ffff false false
+--------------- 195 --------------
+  Sat Nov 02 15:39:49 EDT 2013
+Menu Activated: Tool | Routing | Mimic-Stitch Now
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'muddlib07:flopenr_dp_1x{lay}[flopenr_@19].q'
+--------------- 196 --------------
+  Sat Nov 02 15:39:59 EDT 2013
+ProcessKeyBinding 401 when=1383421199453 modifiers=0 code=74 char=ffff false false
+--------------- 197 --------------
+  Sat Nov 02 15:39:59 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'muddlib07:flopenr_dp_1x{lay}[flopenr_@19].q'
+--------------- 198 --------------
+  Sat Nov 02 15:39:59 EDT 2013
+ProcessKeyBinding 402 when=1383421199572 modifiers=0 code=74 char=ffff false false
+--------------- 199 --------------
+  Sat Nov 02 15:40:02 EDT 2013
+ProcessKeyBinding 401 when=1383421202277 modifiers=80 code=11 char=ffff false false
+--------------- 200 --------------
+  Sat Nov 02 15:40:02 EDT 2013
+ProcessKeyBinding 402 when=1383421202652 modifiers=0 code=11 char=ffff false false
+--------------- 201 --------------
+  Sat Nov 02 15:40:07 EDT 2013
+ProcessKeyBinding 401 when=1383421207004 modifiers=0 code=7f char=7f false false
+--------------- 202 --------------
+  Sat Nov 02 15:40:07 EDT 2013
 Menu Activated: Edit | Erase | Selected
 Currently highlighted: 
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , Metal-1-Pin['pin@40']
-    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , Metal-1-Pin['pin@39']
---------------- 24 --------------
-  Sat Nov 02 14:45:26 EDT 2013
-ProcessKeyBinding 400 when=1383417926747 modifiers=0 code=0 char=7f false false
---------------- 25 --------------
-  Sat Nov 02 14:45:26 EDT 2013
-ProcessKeyBinding 402 when=1383417926891 modifiers=0 code=7f char=7f false false
---------------- 26 --------------
-  Sat Nov 02 14:45:28 EDT 2013
-Menu Activated: File | Save Library
---------------- 27 --------------
-  Sat Nov 02 14:45:30 EDT 2013
-ProcessKeyBinding 401 when=1383417930131 modifiers=0 code=74 char=ffff false false
---------------- 28 --------------
-  Sat Nov 02 14:45:30 EDT 2013
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , Metal-1['net@237']
+--------------- 203 --------------
+  Sat Nov 02 15:40:07 EDT 2013
+ProcessKeyBinding 400 when=1383421207004 modifiers=0 code=0 char=7f false false
+--------------- 204 --------------
+  Sat Nov 02 15:40:07 EDT 2013
+ProcessKeyBinding 402 when=1383421207100 modifiers=0 code=7f char=7f false false
+--------------- 205 --------------
+  Sat Nov 02 15:40:08 EDT 2013
+ProcessKeyBinding 401 when=1383421208452 modifiers=0 code=70 char=ffff false false
+--------------- 206 --------------
+  Sat Nov 02 15:40:08 EDT 2013
+Menu Activated: Tool | Routing | Mimic-Stitch Now
+--------------- 207 --------------
+  Sat Nov 02 15:40:08 EDT 2013
+ProcessKeyBinding 402 when=1383421208612 modifiers=0 code=70 char=ffff false false
+--------------- 208 --------------
+  Sat Nov 02 15:40:10 EDT 2013
+ProcessKeyBinding 401 when=1383421210492 modifiers=0 code=70 char=ffff false false
+--------------- 209 --------------
+  Sat Nov 02 15:40:10 EDT 2013
+Menu Activated: Tool | Routing | Mimic-Stitch Now
+--------------- 210 --------------
+  Sat Nov 02 15:40:10 EDT 2013
+ProcessKeyBinding 402 when=1383421210708 modifiers=0 code=70 char=ffff false false
+--------------- 211 --------------
+  Sat Nov 02 15:40:16 EDT 2013
+ProcessKeyBinding 401 when=1383421216445 modifiers=0 code=7f char=7f false false
+--------------- 212 --------------
+  Sat Nov 02 15:40:16 EDT 2013
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , Metal-1['net@240']
+--------------- 213 --------------
+  Sat Nov 02 15:40:16 EDT 2013
+ProcessKeyBinding 400 when=1383421216445 modifiers=0 code=0 char=7f false false
+--------------- 214 --------------
+  Sat Nov 02 15:40:16 EDT 2013
+ProcessKeyBinding 402 when=1383421216549 modifiers=0 code=7f char=7f false false
+--------------- 215 --------------
+  Sat Nov 02 15:40:19 EDT 2013
+ProcessKeyBinding 401 when=1383421219965 modifiers=0 code=7f char=7f false false
+--------------- 216 --------------
+  Sat Nov 02 15:40:19 EDT 2013
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , Metal-1['net@241']
+--------------- 217 --------------
+  Sat Nov 02 15:40:19 EDT 2013
+ProcessKeyBinding 400 when=1383421219965 modifiers=0 code=0 char=7f false false
+--------------- 218 --------------
+  Sat Nov 02 15:40:20 EDT 2013
+ProcessKeyBinding 402 when=1383421220060 modifiers=0 code=7f char=7f false false
+--------------- 219 --------------
+  Sat Nov 02 15:40:21 EDT 2013
+ProcessKeyBinding 401 when=1383421221924 modifiers=0 code=7f char=7f false false
+--------------- 220 --------------
+  Sat Nov 02 15:40:21 EDT 2013
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , Metal-1['net@242']
+--------------- 221 --------------
+  Sat Nov 02 15:40:21 EDT 2013
+ProcessKeyBinding 400 when=1383421221924 modifiers=0 code=0 char=7f false false
+--------------- 222 --------------
+  Sat Nov 02 15:40:22 EDT 2013
+ProcessKeyBinding 402 when=1383421222020 modifiers=0 code=7f char=7f false false
+--------------- 223 --------------
+  Sat Nov 02 15:40:26 EDT 2013
+ProcessKeyBinding 401 when=1383421226412 modifiers=0 code=7f char=7f false false
+--------------- 224 --------------
+  Sat Nov 02 15:40:26 EDT 2013
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , Metal-1['net@238']
+--------------- 225 --------------
+  Sat Nov 02 15:40:26 EDT 2013
+ProcessKeyBinding 400 when=1383421226412 modifiers=0 code=0 char=7f false false
+--------------- 226 --------------
+  Sat Nov 02 15:40:26 EDT 2013
+ProcessKeyBinding 402 when=1383421226508 modifiers=0 code=7f char=7f false false
+--------------- 227 --------------
+  Sat Nov 02 15:40:28 EDT 2013
+ProcessKeyBinding 401 when=1383421228628 modifiers=0 code=7f char=7f false false
+--------------- 228 --------------
+  Sat Nov 02 15:40:28 EDT 2013
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , Metal-1['net@239']
+--------------- 229 --------------
+  Sat Nov 02 15:40:28 EDT 2013
+ProcessKeyBinding 400 when=1383421228628 modifiers=0 code=0 char=7f false false
+--------------- 230 --------------
+  Sat Nov 02 15:40:28 EDT 2013
+ProcessKeyBinding 402 when=1383421228748 modifiers=0 code=7f char=7f false false
+--------------- 231 --------------
+  Sat Nov 02 15:40:30 EDT 2013
+ProcessKeyBinding 401 when=1383421230541 modifiers=0 code=7f char=7f false false
+--------------- 232 --------------
+  Sat Nov 02 15:40:30 EDT 2013
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , Metal-1['net@243']
+--------------- 233 --------------
+  Sat Nov 02 15:40:30 EDT 2013
+ProcessKeyBinding 400 when=1383421230541 modifiers=0 code=0 char=7f false false
+--------------- 234 --------------
+  Sat Nov 02 15:40:30 EDT 2013
+ProcessKeyBinding 402 when=1383421230653 modifiers=0 code=7f char=7f false false
+--------------- 235 --------------
+  Sat Nov 02 15:40:32 EDT 2013
+ProcessKeyBinding 401 when=1383421232092 modifiers=0 code=7f char=7f false false
+--------------- 236 --------------
+  Sat Nov 02 15:40:32 EDT 2013
+Menu Activated: Edit | Erase | Selected
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , Metal-1['net@244']
+--------------- 237 --------------
+  Sat Nov 02 15:40:32 EDT 2013
+ProcessKeyBinding 400 when=1383421232093 modifiers=0 code=0 char=7f false false
+--------------- 238 --------------
+  Sat Nov 02 15:40:32 EDT 2013
+ProcessKeyBinding 402 when=1383421232189 modifiers=0 code=7f char=7f false false
+--------------- 239 --------------
+  Sat Nov 02 15:40:34 EDT 2013
+ProcessKeyBinding 401 when=1383421234317 modifiers=80 code=11 char=ffff false false
+--------------- 240 --------------
+  Sat Nov 02 15:40:34 EDT 2013
+ProcessKeyBinding 401 when=1383421234541 modifiers=80 code=53 char=13 false false
+--------------- 241 --------------
+  Sat Nov 02 15:40:34 EDT 2013
+Menu Activated: File | Save All Libraries
+--------------- 242 --------------
+  Sat Nov 02 15:40:34 EDT 2013
+ProcessKeyBinding 400 when=1383421234541 modifiers=80 code=0 char=13 false false
+--------------- 243 --------------
+  Sat Nov 02 15:40:34 EDT 2013
+ProcessKeyBinding 402 when=1383421234676 modifiers=80 code=53 char=13 false false
+--------------- 244 --------------
+  Sat Nov 02 15:40:34 EDT 2013
+ProcessKeyBinding 402 when=1383421234716 modifiers=0 code=11 char=ffff false false
+--------------- 245 --------------
+  Sat Nov 02 15:41:02 EDT 2013
+ProcessKeyBinding 401 when=1383421262788 modifiers=80 code=11 char=ffff false false
+--------------- 246 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263287 modifiers=80 code=11 char=ffff false false
+--------------- 247 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263320 modifiers=80 code=11 char=ffff false false
+--------------- 248 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263353 modifiers=80 code=11 char=ffff false false
+--------------- 249 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263386 modifiers=80 code=11 char=ffff false false
+--------------- 250 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263419 modifiers=80 code=11 char=ffff false false
+--------------- 251 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263452 modifiers=80 code=11 char=ffff false false
+--------------- 252 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263485 modifiers=80 code=11 char=ffff false false
+--------------- 253 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263518 modifiers=80 code=11 char=ffff false false
+--------------- 254 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263551 modifiers=80 code=11 char=ffff false false
+--------------- 255 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263584 modifiers=80 code=11 char=ffff false false
+--------------- 256 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263617 modifiers=80 code=11 char=ffff false false
+--------------- 257 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263650 modifiers=80 code=11 char=ffff false false
+--------------- 258 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263683 modifiers=80 code=11 char=ffff false false
+--------------- 259 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263716 modifiers=80 code=11 char=ffff false false
+--------------- 260 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263749 modifiers=80 code=11 char=ffff false false
+--------------- 261 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263782 modifiers=80 code=11 char=ffff false false
+--------------- 262 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263815 modifiers=80 code=11 char=ffff false false
+--------------- 263 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 401 when=1383421263844 modifiers=80 code=5a char=1a false false
+--------------- 264 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Pin[pin@51].metal-2'
+--------------- 265 --------------
+  Sat Nov 02 15:41:03 EDT 2013
+ProcessKeyBinding 400 when=1383421263844 modifiers=80 code=0 char=1a false false
+--------------- 266 --------------
+  Sat Nov 02 15:41:04 EDT 2013
+ProcessKeyBinding 402 when=1383421264020 modifiers=80 code=5a char=1a false false
+--------------- 267 --------------
+  Sat Nov 02 15:41:04 EDT 2013
+ProcessKeyBinding 402 when=1383421264060 modifiers=0 code=11 char=ffff false false
+--------------- 268 --------------
+  Sat Nov 02 15:41:15 EDT 2013
+ProcessKeyBinding 401 when=1383421275716 modifiers=80 code=11 char=ffff false false
+--------------- 269 --------------
+  Sat Nov 02 15:41:16 EDT 2013
+ProcessKeyBinding 401 when=1383421276216 modifiers=80 code=11 char=ffff false false
+--------------- 270 --------------
+  Sat Nov 02 15:41:16 EDT 2013
+ProcessKeyBinding 401 when=1383421276249 modifiers=80 code=11 char=ffff false false
+--------------- 271 --------------
+  Sat Nov 02 15:41:16 EDT 2013
+ProcessKeyBinding 401 when=1383421276282 modifiers=80 code=11 char=ffff false false
+--------------- 272 --------------
+  Sat Nov 02 15:41:16 EDT 2013
+ProcessKeyBinding 401 when=1383421276315 modifiers=80 code=11 char=ffff false false
+--------------- 273 --------------
+  Sat Nov 02 15:41:16 EDT 2013
+ProcessKeyBinding 401 when=1383421276316 modifiers=80 code=5a char=1a false false
+--------------- 274 --------------
+  Sat Nov 02 15:41:16 EDT 2013
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Pin[pin@51].metal-2'
+--------------- 275 --------------
+  Sat Nov 02 15:41:16 EDT 2013
+ProcessKeyBinding 400 when=1383421276316 modifiers=80 code=0 char=1a false false
+--------------- 276 --------------
+  Sat Nov 02 15:41:16 EDT 2013
+ProcessKeyBinding 402 when=1383421276493 modifiers=80 code=5a char=1a false false
+--------------- 277 --------------
+  Sat Nov 02 15:41:16 EDT 2013
+ProcessKeyBinding 402 when=1383421276532 modifiers=0 code=11 char=ffff false false
+--------------- 278 --------------
+  Sat Nov 02 15:41:17 EDT 2013
+ProcessKeyBinding 401 when=1383421277044 modifiers=80 code=11 char=ffff false false
+--------------- 279 --------------
+  Sat Nov 02 15:41:17 EDT 2013
+ProcessKeyBinding 401 when=1383421277543 modifiers=80 code=11 char=ffff false false
+--------------- 280 --------------
+  Sat Nov 02 15:41:17 EDT 2013
+ProcessKeyBinding 401 when=1383421277576 modifiers=80 code=11 char=ffff false false
+--------------- 281 --------------
+  Sat Nov 02 15:41:17 EDT 2013
+ProcessKeyBinding 401 when=1383421277609 modifiers=80 code=11 char=ffff false false
+--------------- 282 --------------
+  Sat Nov 02 15:41:17 EDT 2013
+ProcessKeyBinding 401 when=1383421277642 modifiers=80 code=11 char=ffff false false
+--------------- 283 --------------
+  Sat Nov 02 15:41:17 EDT 2013
+ProcessKeyBinding 401 when=1383421277675 modifiers=80 code=11 char=ffff false false
+--------------- 284 --------------
+  Sat Nov 02 15:41:17 EDT 2013
+ProcessKeyBinding 401 when=1383421277708 modifiers=80 code=11 char=ffff false false
+--------------- 285 --------------
+  Sat Nov 02 15:41:17 EDT 2013
+ProcessKeyBinding 401 when=1383421277741 modifiers=480 code=11 char=ffff false false
+--------------- 286 --------------
+  Sat Nov 02 15:41:17 EDT 2013
+ProcessKeyBinding 401 when=1383421277774 modifiers=480 code=11 char=ffff false false
+--------------- 287 --------------
+  Sat Nov 02 15:41:17 EDT 2013
+ProcessKeyBinding 401 when=1383421277807 modifiers=480 code=11 char=ffff false false
+--------------- 288 --------------
+  Sat Nov 02 15:41:17 EDT 2013
+ProcessKeyBinding 401 when=1383421277840 modifiers=480 code=11 char=ffff false false
+--------------- 289 --------------
+  Sat Nov 02 15:41:17 EDT 2013
+ProcessKeyBinding 401 when=1383421277873 modifiers=80 code=11 char=ffff false false
+--------------- 290 --------------
+  Sat Nov 02 15:41:17 EDT 2013
+ProcessKeyBinding 401 when=1383421277906 modifiers=80 code=11 char=ffff false false
+--------------- 291 --------------
+  Sat Nov 02 15:41:17 EDT 2013
+ProcessKeyBinding 401 when=1383421277939 modifiers=80 code=11 char=ffff false false
+--------------- 292 --------------
+  Sat Nov 02 15:41:17 EDT 2013
+ProcessKeyBinding 401 when=1383421277973 modifiers=80 code=11 char=ffff false false
+--------------- 293 --------------
+  Sat Nov 02 15:41:18 EDT 2013
+ProcessKeyBinding 401 when=1383421278005 modifiers=80 code=11 char=ffff false false
+--------------- 294 --------------
+  Sat Nov 02 15:41:18 EDT 2013
+ProcessKeyBinding 401 when=1383421278038 modifiers=80 code=11 char=ffff false false
+--------------- 295 --------------
+  Sat Nov 02 15:41:18 EDT 2013
+ProcessKeyBinding 401 when=1383421278071 modifiers=80 code=11 char=ffff false false
+--------------- 296 --------------
+  Sat Nov 02 15:41:18 EDT 2013
+ProcessKeyBinding 401 when=1383421278104 modifiers=80 code=11 char=ffff false false
+--------------- 297 --------------
+  Sat Nov 02 15:41:18 EDT 2013
+ProcessKeyBinding 401 when=1383421278137 modifiers=80 code=11 char=ffff false false
+--------------- 298 --------------
+  Sat Nov 02 15:41:18 EDT 2013
+ProcessKeyBinding 401 when=1383421278170 modifiers=80 code=11 char=ffff false false
+--------------- 299 --------------
+  Sat Nov 02 15:41:18 EDT 2013
+ProcessKeyBinding 402 when=1383421278196 modifiers=0 code=11 char=ffff false false
+--------------- 300 --------------
+  Sat Nov 02 15:41:20 EDT 2013
+ProcessKeyBinding 401 when=1383421280620 modifiers=80 code=11 char=ffff false false
+--------------- 301 --------------
+  Sat Nov 02 15:41:20 EDT 2013
+ProcessKeyBinding 401 when=1383421280700 modifiers=80 code=5a char=1a false false
+--------------- 302 --------------
+  Sat Nov 02 15:41:20 EDT 2013
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@46].metal-2-metal-3'
+--------------- 303 --------------
+  Sat Nov 02 15:41:20 EDT 2013
+ProcessKeyBinding 400 when=1383421280700 modifiers=80 code=0 char=1a false false
+--------------- 304 --------------
+  Sat Nov 02 15:41:20 EDT 2013
+ProcessKeyBinding 402 when=1383421280899 modifiers=80 code=5a char=1a false false
+--------------- 305 --------------
+  Sat Nov 02 15:41:20 EDT 2013
+ProcessKeyBinding 402 when=1383421280923 modifiers=0 code=11 char=ffff false false
+--------------- 306 --------------
+  Sat Nov 02 15:41:23 EDT 2013
+ProcessKeyBinding 401 when=1383421283653 modifiers=80 code=11 char=ffff false false
+--------------- 307 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284152 modifiers=80 code=11 char=ffff false false
+--------------- 308 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284185 modifiers=80 code=11 char=ffff false false
+--------------- 309 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284218 modifiers=80 code=11 char=ffff false false
+--------------- 310 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284251 modifiers=80 code=11 char=ffff false false
+--------------- 311 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284284 modifiers=80 code=11 char=ffff false false
+--------------- 312 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284317 modifiers=80 code=11 char=ffff false false
+--------------- 313 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284350 modifiers=80 code=11 char=ffff false false
+--------------- 314 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284383 modifiers=80 code=11 char=ffff false false
+--------------- 315 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284416 modifiers=80 code=11 char=ffff false false
+--------------- 316 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284449 modifiers=80 code=11 char=ffff false false
+--------------- 317 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284482 modifiers=80 code=11 char=ffff false false
+--------------- 318 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284515 modifiers=80 code=11 char=ffff false false
+--------------- 319 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284548 modifiers=80 code=11 char=ffff false false
+--------------- 320 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284581 modifiers=80 code=11 char=ffff false false
+--------------- 321 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284614 modifiers=80 code=11 char=ffff false false
+--------------- 322 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284647 modifiers=80 code=11 char=ffff false false
+--------------- 323 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284680 modifiers=80 code=11 char=ffff false false
+--------------- 324 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284713 modifiers=80 code=11 char=ffff false false
+--------------- 325 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284746 modifiers=80 code=11 char=ffff false false
+--------------- 326 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284779 modifiers=80 code=11 char=ffff false false
+--------------- 327 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284812 modifiers=80 code=11 char=ffff false false
+--------------- 328 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284845 modifiers=80 code=11 char=ffff false false
+--------------- 329 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284878 modifiers=80 code=11 char=ffff false false
+--------------- 330 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284911 modifiers=80 code=11 char=ffff false false
+--------------- 331 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284944 modifiers=80 code=11 char=ffff false false
+--------------- 332 --------------
+  Sat Nov 02 15:41:24 EDT 2013
+ProcessKeyBinding 401 when=1383421284977 modifiers=80 code=11 char=ffff false false
+--------------- 333 --------------
+  Sat Nov 02 15:41:25 EDT 2013
+ProcessKeyBinding 401 when=1383421285010 modifiers=80 code=11 char=ffff false false
+--------------- 334 --------------
+  Sat Nov 02 15:41:25 EDT 2013
+ProcessKeyBinding 401 when=1383421285043 modifiers=80 code=11 char=ffff false false
+--------------- 335 --------------
+  Sat Nov 02 15:41:25 EDT 2013
+ProcessKeyBinding 401 when=1383421285076 modifiers=80 code=11 char=ffff false false
+--------------- 336 --------------
+  Sat Nov 02 15:41:25 EDT 2013
+ProcessKeyBinding 401 when=1383421285109 modifiers=80 code=11 char=ffff false false
+--------------- 337 --------------
+  Sat Nov 02 15:41:25 EDT 2013
+ProcessKeyBinding 401 when=1383421285142 modifiers=80 code=11 char=ffff false false
+--------------- 338 --------------
+  Sat Nov 02 15:41:25 EDT 2013
+ProcessKeyBinding 401 when=1383421285175 modifiers=80 code=11 char=ffff false false
+--------------- 339 --------------
+  Sat Nov 02 15:41:25 EDT 2013
+ProcessKeyBinding 401 when=1383421285208 modifiers=80 code=11 char=ffff false false
+--------------- 340 --------------
+  Sat Nov 02 15:41:25 EDT 2013
+ProcessKeyBinding 401 when=1383421285220 modifiers=80 code=5a char=1a false false
+--------------- 341 --------------
+  Sat Nov 02 15:41:25 EDT 2013
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@46].metal-2-metal-3'
+--------------- 342 --------------
+  Sat Nov 02 15:41:25 EDT 2013
+ProcessKeyBinding 400 when=1383421285220 modifiers=80 code=0 char=1a false false
+--------------- 343 --------------
+  Sat Nov 02 15:41:25 EDT 2013
+ProcessKeyBinding 402 when=1383421285412 modifiers=80 code=5a char=1a false false
+--------------- 344 --------------
+  Sat Nov 02 15:41:25 EDT 2013
+ProcessKeyBinding 402 when=1383421285492 modifiers=0 code=11 char=ffff false false
+--------------- 345 --------------
+  Sat Nov 02 15:41:29 EDT 2013
+ProcessKeyBinding 402 when=1383421289252 modifiers=0 code=28 char=ffff false false
+--------------- 346 --------------
+  Sat Nov 02 15:41:32 EDT 2013
+ProcessKeyBinding 401 when=1383421292100 modifiers=80 code=11 char=ffff false false
+--------------- 347 --------------
+  Sat Nov 02 15:41:32 EDT 2013
+ProcessKeyBinding 401 when=1383421292276 modifiers=80 code=5a char=1a false false
+--------------- 348 --------------
+  Sat Nov 02 15:41:32 EDT 2013
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@46].metal-2-metal-3'
+--------------- 349 --------------
+  Sat Nov 02 15:41:32 EDT 2013
+ProcessKeyBinding 400 when=1383421292276 modifiers=80 code=0 char=1a false false
+--------------- 350 --------------
+  Sat Nov 02 15:41:32 EDT 2013
+ProcessKeyBinding 402 when=1383421292397 modifiers=80 code=5a char=1a false false
+--------------- 351 --------------
+  Sat Nov 02 15:41:32 EDT 2013
+ProcessKeyBinding 402 when=1383421292436 modifiers=0 code=11 char=ffff false false
+--------------- 352 --------------
+  Sat Nov 02 15:41:36 EDT 2013
+ProcessKeyBinding 402 when=1383421296124 modifiers=0 code=28 char=ffff false false
+--------------- 353 --------------
+  Sat Nov 02 15:41:38 EDT 2013
+ProcessKeyBinding 402 when=1383421298100 modifiers=0 code=28 char=ffff false false
+--------------- 354 --------------
+  Sat Nov 02 15:41:39 EDT 2013
+ProcessKeyBinding 402 when=1383421299619 modifiers=0 code=28 char=ffff false false
+--------------- 355 --------------
+  Sat Nov 02 15:41:41 EDT 2013
+ProcessKeyBinding 402 when=1383421301252 modifiers=0 code=28 char=ffff false false
+--------------- 356 --------------
+  Sat Nov 02 15:41:42 EDT 2013
+ProcessKeyBinding 402 when=1383421302684 modifiers=0 code=28 char=ffff false false
+--------------- 357 --------------
+  Sat Nov 02 15:41:44 EDT 2013
+ProcessKeyBinding 402 when=1383421304164 modifiers=0 code=28 char=ffff false false
+--------------- 358 --------------
+  Sat Nov 02 15:41:46 EDT 2013
+ProcessKeyBinding 402 when=1383421306052 modifiers=0 code=28 char=ffff false false
+--------------- 359 --------------
+  Sat Nov 02 15:41:52 EDT 2013
+ProcessKeyBinding 401 when=1383421312260 modifiers=80 code=11 char=ffff false false
+--------------- 360 --------------
+  Sat Nov 02 15:41:52 EDT 2013
+ProcessKeyBinding 401 when=1383421312420 modifiers=80 code=53 char=13 false false
+--------------- 361 --------------
+  Sat Nov 02 15:41:52 EDT 2013
+Menu Activated: File | Save All Libraries
+--------------- 362 --------------
+  Sat Nov 02 15:41:52 EDT 2013
+ProcessKeyBinding 400 when=1383421312420 modifiers=80 code=0 char=13 false false
+--------------- 363 --------------
+  Sat Nov 02 15:41:52 EDT 2013
+ProcessKeyBinding 402 when=1383421312539 modifiers=80 code=53 char=13 false false
+--------------- 364 --------------
+  Sat Nov 02 15:41:52 EDT 2013
+ProcessKeyBinding 402 when=1383421312581 modifiers=0 code=11 char=ffff false false
+--------------- 365 --------------
+  Sat Nov 02 15:43:01 EDT 2013
+ProcessKeyBinding 401 when=1383421381349 modifiers=80 code=11 char=ffff false false
+--------------- 366 --------------
+  Sat Nov 02 15:43:01 EDT 2013
+ProcessKeyBinding 401 when=1383421381847 modifiers=80 code=11 char=ffff false false
+--------------- 367 --------------
+  Sat Nov 02 15:43:01 EDT 2013
+ProcessKeyBinding 401 when=1383421381880 modifiers=80 code=11 char=ffff false false
+--------------- 368 --------------
+  Sat Nov 02 15:43:01 EDT 2013
+ProcessKeyBinding 401 when=1383421381913 modifiers=80 code=11 char=ffff false false
+--------------- 369 --------------
+  Sat Nov 02 15:43:01 EDT 2013
+ProcessKeyBinding 401 when=1383421381946 modifiers=80 code=11 char=ffff false false
+--------------- 370 --------------
+  Sat Nov 02 15:43:01 EDT 2013
+ProcessKeyBinding 401 when=1383421381979 modifiers=80 code=11 char=ffff false false
+--------------- 371 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382012 modifiers=80 code=11 char=ffff false false
+--------------- 372 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382045 modifiers=80 code=11 char=ffff false false
+--------------- 373 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382078 modifiers=80 code=11 char=ffff false false
+--------------- 374 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382111 modifiers=480 code=11 char=ffff false false
+--------------- 375 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382144 modifiers=480 code=11 char=ffff false false
+--------------- 376 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382177 modifiers=80 code=11 char=ffff false false
+--------------- 377 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382210 modifiers=80 code=11 char=ffff false false
+--------------- 378 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382243 modifiers=80 code=11 char=ffff false false
+--------------- 379 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382276 modifiers=80 code=11 char=ffff false false
+--------------- 380 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382309 modifiers=80 code=11 char=ffff false false
+--------------- 381 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382342 modifiers=80 code=11 char=ffff false false
+--------------- 382 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382375 modifiers=80 code=11 char=ffff false false
+--------------- 383 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382408 modifiers=80 code=11 char=ffff false false
+--------------- 384 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382441 modifiers=80 code=11 char=ffff false false
+--------------- 385 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382474 modifiers=80 code=11 char=ffff false false
+--------------- 386 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382507 modifiers=80 code=11 char=ffff false false
+--------------- 387 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 402 when=1383421382539 modifiers=0 code=11 char=ffff false false
+--------------- 388 --------------
+  Sat Nov 02 15:43:02 EDT 2013
+ProcessKeyBinding 401 when=1383421382627 modifiers=80 code=11 char=ffff false false
+--------------- 389 --------------
+  Sat Nov 02 15:43:03 EDT 2013
+ProcessKeyBinding 401 when=1383421383127 modifiers=480 code=11 char=ffff false false
+--------------- 390 --------------
+  Sat Nov 02 15:43:03 EDT 2013
+ProcessKeyBinding 401 when=1383421383160 modifiers=80 code=11 char=ffff false false
+--------------- 391 --------------
+  Sat Nov 02 15:43:03 EDT 2013
+ProcessKeyBinding 401 when=1383421383193 modifiers=80 code=11 char=ffff false false
+--------------- 392 --------------
+  Sat Nov 02 15:43:03 EDT 2013
+ProcessKeyBinding 401 when=1383421383226 modifiers=80 code=11 char=ffff false false
+--------------- 393 --------------
+  Sat Nov 02 15:43:03 EDT 2013
+ProcessKeyBinding 401 when=1383421383259 modifiers=80 code=11 char=ffff false false
+--------------- 394 --------------
+  Sat Nov 02 15:43:03 EDT 2013
+ProcessKeyBinding 401 when=1383421383292 modifiers=80 code=11 char=ffff false false
+--------------- 395 --------------
+  Sat Nov 02 15:43:03 EDT 2013
+ProcessKeyBinding 402 when=1383421383299 modifiers=0 code=11 char=ffff false false
+--------------- 396 --------------
+  Sat Nov 02 15:43:04 EDT 2013
+ProcessKeyBinding 402 when=1383421384339 modifiers=0 code=26 char=ffff false false
+--------------- 397 --------------
+  Sat Nov 02 15:43:04 EDT 2013
+ProcessKeyBinding 402 when=1383421384723 modifiers=0 code=26 char=ffff false false
+--------------- 398 --------------
+  Sat Nov 02 15:43:05 EDT 2013
+ProcessKeyBinding 402 when=1383421385019 modifiers=0 code=26 char=ffff false false
+--------------- 399 --------------
+  Sat Nov 02 15:43:05 EDT 2013
+ProcessKeyBinding 402 when=1383421385243 modifiers=0 code=26 char=ffff false false
+--------------- 400 --------------
+  Sat Nov 02 15:43:05 EDT 2013
+ProcessKeyBinding 402 when=1383421385459 modifiers=0 code=26 char=ffff false false
+--------------- 401 --------------
+  Sat Nov 02 15:43:05 EDT 2013
+ProcessKeyBinding 402 when=1383421385660 modifiers=0 code=26 char=ffff false false
+--------------- 402 --------------
+  Sat Nov 02 15:43:05 EDT 2013
+ProcessKeyBinding 402 when=1383421385843 modifiers=0 code=26 char=ffff false false
+--------------- 403 --------------
+  Sat Nov 02 15:43:06 EDT 2013
+ProcessKeyBinding 402 when=1383421386051 modifiers=0 code=26 char=ffff false false
+--------------- 404 --------------
+  Sat Nov 02 15:43:06 EDT 2013
+ProcessKeyBinding 402 when=1383421386243 modifiers=0 code=26 char=ffff false false
+--------------- 405 --------------
+  Sat Nov 02 15:43:06 EDT 2013
+ProcessKeyBinding 402 when=1383421386467 modifiers=0 code=26 char=ffff false false
+--------------- 406 --------------
+  Sat Nov 02 15:43:06 EDT 2013
+ProcessKeyBinding 402 when=1383421386707 modifiers=0 code=26 char=ffff false false
+--------------- 407 --------------
+  Sat Nov 02 15:43:06 EDT 2013
+ProcessKeyBinding 402 when=1383421386923 modifiers=0 code=26 char=ffff false false
+--------------- 408 --------------
+  Sat Nov 02 15:43:07 EDT 2013
+ProcessKeyBinding 402 when=1383421387123 modifiers=0 code=26 char=ffff false false
+--------------- 409 --------------
+  Sat Nov 02 15:43:07 EDT 2013
+ProcessKeyBinding 402 when=1383421387339 modifiers=0 code=26 char=ffff false false
+--------------- 410 --------------
+  Sat Nov 02 15:43:07 EDT 2013
+ProcessKeyBinding 402 when=1383421387523 modifiers=0 code=26 char=ffff false false
+--------------- 411 --------------
+  Sat Nov 02 15:43:07 EDT 2013
+ProcessKeyBinding 402 when=1383421387756 modifiers=0 code=26 char=ffff false false
+--------------- 412 --------------
+  Sat Nov 02 15:43:07 EDT 2013
+ProcessKeyBinding 402 when=1383421387988 modifiers=0 code=26 char=ffff false false
+--------------- 413 --------------
+  Sat Nov 02 15:43:08 EDT 2013
+ProcessKeyBinding 402 when=1383421388236 modifiers=0 code=26 char=ffff false false
+--------------- 414 --------------
+  Sat Nov 02 15:43:08 EDT 2013
+ProcessKeyBinding 402 when=1383421388484 modifiers=0 code=26 char=ffff false false
+--------------- 415 --------------
+  Sat Nov 02 15:43:08 EDT 2013
+ProcessKeyBinding 402 when=1383421388708 modifiers=0 code=26 char=ffff false false
+--------------- 416 --------------
+  Sat Nov 02 15:43:08 EDT 2013
+ProcessKeyBinding 402 when=1383421388908 modifiers=0 code=26 char=ffff false false
+--------------- 417 --------------
+  Sat Nov 02 15:43:09 EDT 2013
+ProcessKeyBinding 402 when=1383421389116 modifiers=0 code=26 char=ffff false false
+--------------- 418 --------------
+  Sat Nov 02 15:43:09 EDT 2013
+ProcessKeyBinding 402 when=1383421389364 modifiers=0 code=26 char=ffff false false
+--------------- 419 --------------
+  Sat Nov 02 15:43:09 EDT 2013
+ProcessKeyBinding 402 when=1383421389596 modifiers=0 code=26 char=ffff false false
+--------------- 420 --------------
+  Sat Nov 02 15:43:09 EDT 2013
+ProcessKeyBinding 402 when=1383421389811 modifiers=0 code=26 char=ffff false false
+--------------- 421 --------------
+  Sat Nov 02 15:43:10 EDT 2013
+ProcessKeyBinding 402 when=1383421390067 modifiers=0 code=26 char=ffff false false
+--------------- 422 --------------
+  Sat Nov 02 15:43:10 EDT 2013
+ProcessKeyBinding 402 when=1383421390332 modifiers=0 code=26 char=ffff false false
+--------------- 423 --------------
+  Sat Nov 02 15:43:10 EDT 2013
+ProcessKeyBinding 402 when=1383421390588 modifiers=0 code=26 char=ffff false false
+--------------- 424 --------------
+  Sat Nov 02 15:43:10 EDT 2013
+ProcessKeyBinding 402 when=1383421390837 modifiers=0 code=26 char=ffff false false
+--------------- 425 --------------
+  Sat Nov 02 15:43:11 EDT 2013
+ProcessKeyBinding 402 when=1383421391084 modifiers=0 code=26 char=ffff false false
+--------------- 426 --------------
+  Sat Nov 02 15:43:11 EDT 2013
+ProcessKeyBinding 402 when=1383421391332 modifiers=0 code=26 char=ffff false false
+--------------- 427 --------------
+  Sat Nov 02 15:43:11 EDT 2013
+ProcessKeyBinding 402 when=1383421391579 modifiers=0 code=26 char=ffff false false
+--------------- 428 --------------
+  Sat Nov 02 15:43:12 EDT 2013
+ProcessKeyBinding 402 when=1383421392307 modifiers=0 code=26 char=ffff false false
+--------------- 429 --------------
+  Sat Nov 02 15:43:12 EDT 2013
+ProcessKeyBinding 402 when=1383421392660 modifiers=0 code=28 char=ffff false false
+--------------- 430 --------------
+  Sat Nov 02 15:43:13 EDT 2013
+ProcessKeyBinding 401 when=1383421393267 modifiers=0 code=74 char=ffff false false
+--------------- 431 --------------
+  Sat Nov 02 15:43:13 EDT 2013
 Menu Activated: Tool | DRC | Check Hierarchically
---------------- 29 --------------
-  Sat Nov 02 14:45:30 EDT 2013
-ProcessKeyBinding 402 when=1383417930275 modifiers=0 code=74 char=ffff false false
---------------- 30 --------------
-  Sat Nov 02 14:45:34 EDT 2013
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@63].metal-2-metal-3'
+--------------- 432 --------------
+  Sat Nov 02 15:43:13 EDT 2013
+ProcessKeyBinding 402 when=1383421393411 modifiers=0 code=74 char=ffff false false
+--------------- 433 --------------
+  Sat Nov 02 15:43:16 EDT 2013
+ProcessKeyBinding 401 when=1383421396363 modifiers=0 code=74 char=ffff false false
+--------------- 434 --------------
+  Sat Nov 02 15:43:16 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@63].metal-2-metal-3'
+--------------- 435 --------------
+  Sat Nov 02 15:43:16 EDT 2013
+ProcessKeyBinding 402 when=1383421396483 modifiers=0 code=74 char=ffff false false
+--------------- 436 --------------
+  Sat Nov 02 15:43:22 EDT 2013
+ProcessKeyBinding 401 when=1383421402106 modifiers=0 code=74 char=ffff false false
+--------------- 437 --------------
+  Sat Nov 02 15:43:22 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@63].metal-2-metal-3'
+--------------- 438 --------------
+  Sat Nov 02 15:43:22 EDT 2013
+ProcessKeyBinding 402 when=1383421402283 modifiers=0 code=74 char=ffff false false
+--------------- 439 --------------
+  Sat Nov 02 15:43:34 EDT 2013
+ProcessKeyBinding 402 when=1383421414763 modifiers=0 code=26 char=ffff false false
+--------------- 440 --------------
+  Sat Nov 02 15:43:35 EDT 2013
+ProcessKeyBinding 402 when=1383421415027 modifiers=0 code=26 char=ffff false false
+--------------- 441 --------------
+  Sat Nov 02 15:43:35 EDT 2013
+ProcessKeyBinding 402 when=1383421415267 modifiers=0 code=26 char=ffff false false
+--------------- 442 --------------
+  Sat Nov 02 15:43:35 EDT 2013
+ProcessKeyBinding 402 when=1383421415499 modifiers=0 code=26 char=ffff false false
+--------------- 443 --------------
+  Sat Nov 02 15:43:35 EDT 2013
+ProcessKeyBinding 402 when=1383421415795 modifiers=0 code=26 char=ffff false false
+--------------- 444 --------------
+  Sat Nov 02 15:43:36 EDT 2013
+ProcessKeyBinding 402 when=1383421416467 modifiers=0 code=26 char=ffff false false
+--------------- 445 --------------
+  Sat Nov 02 15:43:36 EDT 2013
+ProcessKeyBinding 402 when=1383421416715 modifiers=0 code=26 char=ffff false false
+--------------- 446 --------------
+  Sat Nov 02 15:43:36 EDT 2013
+ProcessKeyBinding 402 when=1383421416995 modifiers=0 code=26 char=ffff false false
+--------------- 447 --------------
+  Sat Nov 02 15:43:37 EDT 2013
+ProcessKeyBinding 402 when=1383421417307 modifiers=0 code=26 char=ffff false false
+--------------- 448 --------------
+  Sat Nov 02 15:43:37 EDT 2013
+ProcessKeyBinding 402 when=1383421417803 modifiers=0 code=26 char=ffff false false
+--------------- 449 --------------
+  Sat Nov 02 15:43:38 EDT 2013
+ProcessKeyBinding 402 when=1383421418283 modifiers=0 code=26 char=ffff false false
+--------------- 450 --------------
+  Sat Nov 02 15:43:38 EDT 2013
+ProcessKeyBinding 402 when=1383421418915 modifiers=0 code=28 char=ffff false false
+--------------- 451 --------------
+  Sat Nov 02 15:43:41 EDT 2013
+ProcessKeyBinding 402 when=1383421421363 modifiers=0 code=26 char=ffff false false
+--------------- 452 --------------
+  Sat Nov 02 15:43:41 EDT 2013
+ProcessKeyBinding 402 when=1383421421586 modifiers=0 code=26 char=ffff false false
+--------------- 453 --------------
+  Sat Nov 02 15:43:41 EDT 2013
+ProcessKeyBinding 402 when=1383421421786 modifiers=0 code=26 char=ffff false false
+--------------- 454 --------------
+  Sat Nov 02 15:43:42 EDT 2013
+ProcessKeyBinding 402 when=1383421422003 modifiers=0 code=26 char=ffff false false
+--------------- 455 --------------
+  Sat Nov 02 15:43:42 EDT 2013
+ProcessKeyBinding 402 when=1383421422243 modifiers=0 code=26 char=ffff false false
+--------------- 456 --------------
+  Sat Nov 02 15:43:42 EDT 2013
+ProcessKeyBinding 402 when=1383421422459 modifiers=0 code=26 char=ffff false false
+--------------- 457 --------------
+  Sat Nov 02 15:43:42 EDT 2013
+ProcessKeyBinding 402 when=1383421422643 modifiers=0 code=26 char=ffff false false
+--------------- 458 --------------
+  Sat Nov 02 15:43:43 EDT 2013
+ProcessKeyBinding 402 when=1383421423076 modifiers=0 code=28 char=ffff false false
+--------------- 459 --------------
+  Sat Nov 02 15:43:43 EDT 2013
+ProcessKeyBinding 402 when=1383421423339 modifiers=0 code=28 char=ffff false false
+--------------- 460 --------------
+  Sat Nov 02 15:43:43 EDT 2013
+ProcessKeyBinding 402 when=1383421423643 modifiers=0 code=28 char=ffff false false
+--------------- 461 --------------
+  Sat Nov 02 15:43:43 EDT 2013
+ProcessKeyBinding 402 when=1383421423867 modifiers=0 code=28 char=ffff false false
+--------------- 462 --------------
+  Sat Nov 02 15:44:02 EDT 2013
+ProcessKeyBinding 401 when=1383421442907 modifiers=0 code=74 char=ffff false false
+--------------- 463 --------------
+  Sat Nov 02 15:44:02 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+--------------- 464 --------------
+  Sat Nov 02 15:44:03 EDT 2013
+ProcessKeyBinding 402 when=1383421443053 modifiers=0 code=74 char=ffff false false
+--------------- 465 --------------
+  Sat Nov 02 15:44:05 EDT 2013
+ProcessKeyBinding 402 when=1383421445003 modifiers=0 code=26 char=ffff false false
+--------------- 466 --------------
+  Sat Nov 02 15:44:29 EDT 2013
+ProcessKeyBinding 401 when=1383421469051 modifiers=0 code=74 char=ffff false false
+--------------- 467 --------------
+  Sat Nov 02 15:44:29 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+--------------- 468 --------------
+  Sat Nov 02 15:44:29 EDT 2013
+ProcessKeyBinding 402 when=1383421469186 modifiers=0 code=74 char=ffff false false
+--------------- 469 --------------
+  Sat Nov 02 15:44:46 EDT 2013
+ProcessKeyBinding 401 when=1383421486443 modifiers=0 code=75 char=ffff false false
+--------------- 470 --------------
+  Sat Nov 02 15:44:46 EDT 2013
+Menu Activated: Edit | Array...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , Metal-2-Metal-3-Con['contact@87']
+--------------- 471 --------------
+  Sat Nov 02 15:45:00 EDT 2013
+ProcessKeyBinding 401 when=1383421500179 modifiers=80 code=11 char=ffff false false
+--------------- 472 --------------
+  Sat Nov 02 15:45:00 EDT 2013
+ProcessKeyBinding 401 when=1383421500339 modifiers=80 code=5a char=1a false false
+--------------- 473 --------------
+  Sat Nov 02 15:45:00 EDT 2013
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , Metal-2-Metal-3-Con['contact@87']
+--------------- 474 --------------
+  Sat Nov 02 15:45:00 EDT 2013
+ProcessKeyBinding 400 when=1383421500339 modifiers=80 code=0 char=1a false false
+--------------- 475 --------------
+  Sat Nov 02 15:45:00 EDT 2013
+ProcessKeyBinding 402 when=1383421500499 modifiers=80 code=5a char=1a false false
+--------------- 476 --------------
+  Sat Nov 02 15:45:00 EDT 2013
+ProcessKeyBinding 402 when=1383421500554 modifiers=0 code=11 char=ffff false false
+--------------- 477 --------------
+  Sat Nov 02 15:45:07 EDT 2013
+ProcessKeyBinding 402 when=1383421507698 modifiers=0 code=26 char=ffff false false
+--------------- 478 --------------
+  Sat Nov 02 15:45:09 EDT 2013
+ProcessKeyBinding 401 when=1383421509586 modifiers=0 code=75 char=ffff false false
+--------------- 479 --------------
+  Sat Nov 02 15:45:09 EDT 2013
+Menu Activated: Edit | Array...
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@87].metal-2-metal-3'
+--------------- 480 --------------
+  Sat Nov 02 15:45:20 EDT 2013
+ProcessKeyBinding 401 when=1383421520242 modifiers=80 code=11 char=ffff false false
+--------------- 481 --------------
+  Sat Nov 02 15:45:20 EDT 2013
+ProcessKeyBinding 401 when=1383421520442 modifiers=80 code=5a char=1a false false
+--------------- 482 --------------
+  Sat Nov 02 15:45:20 EDT 2013
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@79].metal-2-metal-3'
+--------------- 483 --------------
+  Sat Nov 02 15:45:20 EDT 2013
+ProcessKeyBinding 400 when=1383421520442 modifiers=80 code=0 char=1a false false
+--------------- 484 --------------
+  Sat Nov 02 15:45:20 EDT 2013
+ProcessKeyBinding 402 when=1383421520538 modifiers=80 code=5a char=1a false false
+--------------- 485 --------------
+  Sat Nov 02 15:45:20 EDT 2013
+ProcessKeyBinding 402 when=1383421520602 modifiers=0 code=11 char=ffff false false
+--------------- 486 --------------
+  Sat Nov 02 15:45:24 EDT 2013
+ProcessKeyBinding 401 when=1383421524538 modifiers=0 code=70 char=ffff false false
+--------------- 487 --------------
+  Sat Nov 02 15:45:24 EDT 2013
+Menu Activated: Tool | Routing | Mimic-Stitch Now
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@79].metal-2-metal-3'
+--------------- 488 --------------
+  Sat Nov 02 15:45:55 EDT 2013
+ProcessKeyBinding 402 when=1383421555298 modifiers=0 code=26 char=ffff false false
+--------------- 489 --------------
+  Sat Nov 02 15:45:55 EDT 2013
+ProcessKeyBinding 402 when=1383421555490 modifiers=0 code=26 char=ffff false false
+--------------- 490 --------------
+  Sat Nov 02 15:45:55 EDT 2013
+ProcessKeyBinding 402 when=1383421555706 modifiers=0 code=26 char=ffff false false
+--------------- 491 --------------
+  Sat Nov 02 15:45:55 EDT 2013
+ProcessKeyBinding 402 when=1383421555882 modifiers=0 code=26 char=ffff false false
+--------------- 492 --------------
+  Sat Nov 02 15:45:56 EDT 2013
+ProcessKeyBinding 402 when=1383421556058 modifiers=0 code=26 char=ffff false false
+--------------- 493 --------------
+  Sat Nov 02 15:45:56 EDT 2013
+ProcessKeyBinding 402 when=1383421556266 modifiers=0 code=26 char=ffff false false
+--------------- 494 --------------
+  Sat Nov 02 15:46:01 EDT 2013
+ProcessKeyBinding 402 when=1383421561706 modifiers=0 code=26 char=ffff false false
+--------------- 495 --------------
+  Sat Nov 02 15:46:02 EDT 2013
+ProcessKeyBinding 402 when=1383421562066 modifiers=0 code=26 char=ffff false false
+--------------- 496 --------------
+  Sat Nov 02 15:46:03 EDT 2013
+ProcessKeyBinding 402 when=1383421563371 modifiers=0 code=25 char=ffff false false
+--------------- 497 --------------
+  Sat Nov 02 15:46:05 EDT 2013
+ProcessKeyBinding 401 when=1383421565874 modifiers=80 code=11 char=ffff false false
+--------------- 498 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566374 modifiers=80 code=11 char=ffff false false
+--------------- 499 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566407 modifiers=80 code=11 char=ffff false false
+--------------- 500 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566440 modifiers=80 code=11 char=ffff false false
+--------------- 501 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566474 modifiers=80 code=11 char=ffff false false
+--------------- 502 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566506 modifiers=80 code=11 char=ffff false false
+--------------- 503 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566539 modifiers=80 code=11 char=ffff false false
+--------------- 504 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566572 modifiers=80 code=11 char=ffff false false
+--------------- 505 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566605 modifiers=80 code=11 char=ffff false false
+--------------- 506 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566638 modifiers=480 code=11 char=ffff false false
+--------------- 507 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566671 modifiers=480 code=11 char=ffff false false
+--------------- 508 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566704 modifiers=480 code=11 char=ffff false false
+--------------- 509 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566737 modifiers=80 code=11 char=ffff false false
+--------------- 510 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566770 modifiers=80 code=11 char=ffff false false
+--------------- 511 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566803 modifiers=80 code=11 char=ffff false false
+--------------- 512 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566836 modifiers=80 code=11 char=ffff false false
+--------------- 513 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566869 modifiers=80 code=11 char=ffff false false
+--------------- 514 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566902 modifiers=80 code=11 char=ffff false false
+--------------- 515 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566935 modifiers=80 code=11 char=ffff false false
+--------------- 516 --------------
+  Sat Nov 02 15:46:06 EDT 2013
+ProcessKeyBinding 401 when=1383421566968 modifiers=80 code=11 char=ffff false false
+--------------- 517 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567001 modifiers=80 code=11 char=ffff false false
+--------------- 518 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567034 modifiers=480 code=11 char=ffff false false
+--------------- 519 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567067 modifiers=480 code=11 char=ffff false false
+--------------- 520 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567100 modifiers=480 code=11 char=ffff false false
+--------------- 521 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567133 modifiers=80 code=11 char=ffff false false
+--------------- 522 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567166 modifiers=80 code=11 char=ffff false false
+--------------- 523 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567199 modifiers=80 code=11 char=ffff false false
+--------------- 524 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567232 modifiers=80 code=11 char=ffff false false
+--------------- 525 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567265 modifiers=80 code=11 char=ffff false false
+--------------- 526 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567298 modifiers=80 code=11 char=ffff false false
+--------------- 527 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567331 modifiers=80 code=11 char=ffff false false
+--------------- 528 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567364 modifiers=80 code=11 char=ffff false false
+--------------- 529 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567397 modifiers=80 code=11 char=ffff false false
+--------------- 530 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567430 modifiers=80 code=11 char=ffff false false
+--------------- 531 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567463 modifiers=80 code=11 char=ffff false false
+--------------- 532 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567496 modifiers=80 code=11 char=ffff false false
+--------------- 533 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567529 modifiers=80 code=11 char=ffff false false
+--------------- 534 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567562 modifiers=80 code=11 char=ffff false false
+--------------- 535 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567595 modifiers=80 code=11 char=ffff false false
+--------------- 536 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 401 when=1383421567628 modifiers=80 code=11 char=ffff false false
+--------------- 537 --------------
+  Sat Nov 02 15:46:07 EDT 2013
+ProcessKeyBinding 402 when=1383421567658 modifiers=0 code=11 char=ffff false false
+--------------- 538 --------------
+  Sat Nov 02 15:46:08 EDT 2013
+ProcessKeyBinding 402 when=1383421568610 modifiers=0 code=25 char=ffff false false
+--------------- 539 --------------
+  Sat Nov 02 15:46:09 EDT 2013
+ProcessKeyBinding 402 when=1383421569066 modifiers=0 code=25 char=ffff false false
+--------------- 540 --------------
+  Sat Nov 02 15:46:10 EDT 2013
+ProcessKeyBinding 401 when=1383421570994 modifiers=0 code=74 char=ffff false false
+--------------- 541 --------------
+  Sat Nov 02 15:46:10 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , Metal-2['net@267']
+--------------- 542 --------------
+  Sat Nov 02 15:46:11 EDT 2013
+ProcessKeyBinding 402 when=1383421571098 modifiers=0 code=74 char=ffff false false
+--------------- 543 --------------
+  Sat Nov 02 15:46:13 EDT 2013
+ProcessKeyBinding 401 when=1383421573218 modifiers=40 code=10 char=ffff false false
+--------------- 544 --------------
+  Sat Nov 02 15:46:13 EDT 2013
+ProcessKeyBinding 401 when=1383421573634 modifiers=40 code=2e char=3e(>) false false
+--------------- 545 --------------
+  Sat Nov 02 15:46:13 EDT 2013
+Menu Activated: Edit | Selection | Show Next Error
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , Metal-2['net@267']
+--------------- 546 --------------
+  Sat Nov 02 15:46:13 EDT 2013
+ProcessKeyBinding 400 when=1383421573634 modifiers=40 code=0 char=3e(>) false false
+--------------- 547 --------------
+  Sat Nov 02 15:46:13 EDT 2013
+ProcessKeyBinding 402 when=1383421573770 modifiers=40 code=2e char=3e(>) false false
+--------------- 548 --------------
+  Sat Nov 02 15:46:14 EDT 2013
+ProcessKeyBinding 401 when=1383421574306 modifiers=40 code=2e char=3e(>) false false
+--------------- 549 --------------
+  Sat Nov 02 15:46:14 EDT 2013
+Menu Activated: Edit | Selection | Show Next Error
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightLine in cell 'flopenr_1x_16{lay}': 
+    com.sun.electric.tool.user.HighlightLine in cell 'flopenr_1x_16{lay}': 
+    com.sun.electric.tool.user.HighlightLine in cell 'flopenr_1x_16{lay}': 
+    com.sun.electric.tool.user.HighlightLine in cell 'flopenr_1x_16{lay}': 
+    com.sun.electric.tool.user.HighlightLine in cell 'flopenr_1x_16{lay}': 
+    com.sun.electric.tool.user.HighlightLine in cell 'flopenr_1x_16{lay}': 
+    com.sun.electric.tool.user.HighlightLine in cell 'flopenr_1x_16{lay}': 
+    com.sun.electric.tool.user.HighlightLine in cell 'flopenr_1x_16{lay}': 
+--------------- 550 --------------
+  Sat Nov 02 15:46:14 EDT 2013
+ProcessKeyBinding 400 when=1383421574306 modifiers=40 code=0 char=3e(>) false false
+--------------- 551 --------------
+  Sat Nov 02 15:46:14 EDT 2013
+ProcessKeyBinding 402 when=1383421574482 modifiers=40 code=2e char=3e(>) false false
+--------------- 552 --------------
+  Sat Nov 02 15:46:14 EDT 2013
+ProcessKeyBinding 402 when=1383421574722 modifiers=0 code=10 char=ffff false false
+--------------- 553 --------------
+  Sat Nov 02 15:46:16 EDT 2013
+ProcessKeyBinding 402 when=1383421576786 modifiers=0 code=25 char=ffff false false
+--------------- 554 --------------
+  Sat Nov 02 15:46:18 EDT 2013
+ProcessKeyBinding 401 when=1383421578194 modifiers=0 code=74 char=ffff false false
+--------------- 555 --------------
+  Sat Nov 02 15:46:18 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@64].metal-2-metal-3'
+--------------- 556 --------------
+  Sat Nov 02 15:46:18 EDT 2013
+ProcessKeyBinding 402 when=1383421578314 modifiers=0 code=74 char=ffff false false
+--------------- 557 --------------
+  Sat Nov 02 15:46:26 EDT 2013
+ProcessKeyBinding 401 when=1383421586506 modifiers=0 code=74 char=ffff false false
+--------------- 558 --------------
+  Sat Nov 02 15:46:26 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+--------------- 559 --------------
+  Sat Nov 02 15:46:26 EDT 2013
+ProcessKeyBinding 402 when=1383421586626 modifiers=0 code=74 char=ffff false false
+--------------- 560 --------------
+  Sat Nov 02 15:46:46 EDT 2013
+ProcessKeyBinding 401 when=1383421606089 modifiers=0 code=74 char=ffff false false
+--------------- 561 --------------
+  Sat Nov 02 15:46:46 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@65].metal-2-metal-3'
+--------------- 562 --------------
+  Sat Nov 02 15:46:46 EDT 2013
+ProcessKeyBinding 402 when=1383421606225 modifiers=0 code=74 char=ffff false false
+--------------- 563 --------------
+  Sat Nov 02 15:47:21 EDT 2013
+ProcessKeyBinding 401 when=1383421641898 modifiers=0 code=74 char=ffff false false
+--------------- 564 --------------
+  Sat Nov 02 15:47:21 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@66].metal-2-metal-3'
+--------------- 565 --------------
+  Sat Nov 02 15:47:22 EDT 2013
+ProcessKeyBinding 402 when=1383421642033 modifiers=0 code=74 char=ffff false false
+--------------- 566 --------------
+  Sat Nov 02 15:47:26 EDT 2013
+ProcessKeyBinding 401 when=1383421646977 modifiers=40 code=10 char=ffff false false
+--------------- 567 --------------
+  Sat Nov 02 15:47:27 EDT 2013
+ProcessKeyBinding 401 when=1383421647477 modifiers=40 code=10 char=ffff false false
+--------------- 568 --------------
+  Sat Nov 02 15:47:27 EDT 2013
+ProcessKeyBinding 401 when=1383421647510 modifiers=40 code=10 char=ffff false false
+--------------- 569 --------------
+  Sat Nov 02 15:47:27 EDT 2013
+ProcessKeyBinding 401 when=1383421647513 modifiers=40 code=2e char=3e(>) false false
+--------------- 570 --------------
+  Sat Nov 02 15:47:27 EDT 2013
+Menu Activated: Edit | Selection | Show Next Error
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@66].metal-2-metal-3'
+--------------- 571 --------------
+  Sat Nov 02 15:47:27 EDT 2013
+ProcessKeyBinding 400 when=1383421647513 modifiers=40 code=0 char=3e(>) false false
+--------------- 572 --------------
+  Sat Nov 02 15:47:27 EDT 2013
+ProcessKeyBinding 402 when=1383421647674 modifiers=40 code=2e char=3e(>) false false
+--------------- 573 --------------
+  Sat Nov 02 15:47:27 EDT 2013
+ProcessKeyBinding 402 when=1383421647729 modifiers=0 code=10 char=ffff false false
+--------------- 574 --------------
+  Sat Nov 02 15:47:29 EDT 2013
+ProcessKeyBinding 402 when=1383421649249 modifiers=0 code=25 char=ffff false false
+--------------- 575 --------------
+  Sat Nov 02 15:47:30 EDT 2013
+ProcessKeyBinding 401 when=1383421650114 modifiers=0 code=74 char=ffff false false
+--------------- 576 --------------
+  Sat Nov 02 15:47:30 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@66].metal-2-metal-3'
+--------------- 577 --------------
+  Sat Nov 02 15:47:30 EDT 2013
+ProcessKeyBinding 402 when=1383421650234 modifiers=0 code=74 char=ffff false false
+--------------- 578 --------------
+  Sat Nov 02 15:47:32 EDT 2013
+ProcessKeyBinding 401 when=1383421652314 modifiers=40 code=10 char=ffff false false
+--------------- 579 --------------
+  Sat Nov 02 15:47:32 EDT 2013
+ProcessKeyBinding 401 when=1383421652813 modifiers=40 code=10 char=ffff false false
+--------------- 580 --------------
+  Sat Nov 02 15:47:32 EDT 2013
+ProcessKeyBinding 401 when=1383421652846 modifiers=40 code=10 char=ffff false false
+--------------- 581 --------------
+  Sat Nov 02 15:47:32 EDT 2013
+ProcessKeyBinding 401 when=1383421652879 modifiers=40 code=10 char=ffff false false
+--------------- 582 --------------
+  Sat Nov 02 15:47:32 EDT 2013
+ProcessKeyBinding 401 when=1383421652912 modifiers=40 code=10 char=ffff false false
+--------------- 583 --------------
+  Sat Nov 02 15:47:32 EDT 2013
+ProcessKeyBinding 401 when=1383421652945 modifiers=40 code=10 char=ffff false false
+--------------- 584 --------------
+  Sat Nov 02 15:47:32 EDT 2013
+ProcessKeyBinding 401 when=1383421652978 modifiers=40 code=10 char=ffff false false
+--------------- 585 --------------
+  Sat Nov 02 15:47:33 EDT 2013
+ProcessKeyBinding 401 when=1383421653011 modifiers=40 code=10 char=ffff false false
+--------------- 586 --------------
+  Sat Nov 02 15:47:33 EDT 2013
+ProcessKeyBinding 401 when=1383421653025 modifiers=40 code=2e char=3e(>) false false
+--------------- 587 --------------
+  Sat Nov 02 15:47:33 EDT 2013
+Menu Activated: Edit | Selection | Show Next Error
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@66].metal-2-metal-3'
+--------------- 588 --------------
+  Sat Nov 02 15:47:33 EDT 2013
+ProcessKeyBinding 400 when=1383421653025 modifiers=40 code=0 char=3e(>) false false
+--------------- 589 --------------
+  Sat Nov 02 15:47:33 EDT 2013
+ProcessKeyBinding 402 when=1383421653186 modifiers=40 code=2e char=3e(>) false false
+--------------- 590 --------------
+  Sat Nov 02 15:47:33 EDT 2013
+ProcessKeyBinding 402 when=1383421653450 modifiers=0 code=10 char=ffff false false
+--------------- 591 --------------
+  Sat Nov 02 15:47:35 EDT 2013
+ProcessKeyBinding 402 when=1383421655474 modifiers=0 code=26 char=ffff false false
+--------------- 592 --------------
+  Sat Nov 02 15:47:36 EDT 2013
+ProcessKeyBinding 401 when=1383421656330 modifiers=0 code=74 char=ffff false false
+--------------- 593 --------------
+  Sat Nov 02 15:47:36 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@66].metal-2-metal-3'
+--------------- 594 --------------
+  Sat Nov 02 15:47:36 EDT 2013
+ProcessKeyBinding 402 when=1383421656449 modifiers=0 code=74 char=ffff false false
+--------------- 595 --------------
+  Sat Nov 02 15:47:47 EDT 2013
+ProcessKeyBinding 401 when=1383421667834 modifiers=0 code=74 char=ffff false false
+--------------- 596 --------------
+  Sat Nov 02 15:47:47 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@67].metal-2-metal-3'
+--------------- 597 --------------
+  Sat Nov 02 15:47:47 EDT 2013
+ProcessKeyBinding 402 when=1383421667929 modifiers=0 code=74 char=ffff false false
+--------------- 598 --------------
+  Sat Nov 02 15:47:51 EDT 2013
+ProcessKeyBinding 402 when=1383421671890 modifiers=0 code=25 char=ffff false false
+--------------- 599 --------------
+  Sat Nov 02 15:47:52 EDT 2013
+ProcessKeyBinding 402 when=1383421672810 modifiers=0 code=26 char=ffff false false
+--------------- 600 --------------
+  Sat Nov 02 15:47:53 EDT 2013
+ProcessKeyBinding 401 when=1383421673673 modifiers=0 code=74 char=ffff false false
+--------------- 601 --------------
+  Sat Nov 02 15:47:53 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@67].metal-2-metal-3'
+--------------- 602 --------------
+  Sat Nov 02 15:47:53 EDT 2013
+ProcessKeyBinding 402 when=1383421673793 modifiers=0 code=74 char=ffff false false
+--------------- 603 --------------
+  Sat Nov 02 15:48:00 EDT 2013
+ProcessKeyBinding 401 when=1383421680393 modifiers=0 code=74 char=ffff false false
+--------------- 604 --------------
+  Sat Nov 02 15:48:00 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@68].metal-2-metal-3'
+--------------- 605 --------------
+  Sat Nov 02 15:48:00 EDT 2013
+ProcessKeyBinding 402 when=1383421680516 modifiers=0 code=74 char=ffff false false
+--------------- 606 --------------
+  Sat Nov 02 15:48:05 EDT 2013
+ProcessKeyBinding 401 when=1383421685769 modifiers=0 code=74 char=ffff false false
+--------------- 607 --------------
+  Sat Nov 02 15:48:05 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@69].metal-2-metal-3'
+--------------- 608 --------------
+  Sat Nov 02 15:48:05 EDT 2013
+ProcessKeyBinding 402 when=1383421685873 modifiers=0 code=74 char=ffff false false
+--------------- 609 --------------
+  Sat Nov 02 15:48:08 EDT 2013
+ProcessKeyBinding 402 when=1383421688977 modifiers=0 code=28 char=ffff false false
+--------------- 610 --------------
+  Sat Nov 02 15:48:11 EDT 2013
+ProcessKeyBinding 402 when=1383421691257 modifiers=0 code=28 char=ffff false false
+--------------- 611 --------------
+  Sat Nov 02 15:48:12 EDT 2013
+ProcessKeyBinding 401 when=1383421692265 modifiers=0 code=74 char=ffff false false
+--------------- 612 --------------
+  Sat Nov 02 15:48:12 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@69].metal-2-metal-3'
+--------------- 613 --------------
+  Sat Nov 02 15:48:12 EDT 2013
+ProcessKeyBinding 402 when=1383421692425 modifiers=0 code=74 char=ffff false false
+--------------- 614 --------------
+  Sat Nov 02 15:48:20 EDT 2013
+ProcessKeyBinding 401 when=1383421700793 modifiers=0 code=74 char=ffff false false
+--------------- 615 --------------
+  Sat Nov 02 15:48:20 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@70].metal-2-metal-3'
+--------------- 616 --------------
+  Sat Nov 02 15:48:20 EDT 2013
+ProcessKeyBinding 402 when=1383421700936 modifiers=0 code=74 char=ffff false false
+--------------- 617 --------------
+  Sat Nov 02 15:48:26 EDT 2013
+ProcessKeyBinding 401 when=1383421706553 modifiers=0 code=74 char=ffff false false
+--------------- 618 --------------
+  Sat Nov 02 15:48:26 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+--------------- 619 --------------
+  Sat Nov 02 15:48:26 EDT 2013
+ProcessKeyBinding 402 when=1383421706649 modifiers=0 code=74 char=ffff false false
+--------------- 620 --------------
+  Sat Nov 02 15:48:46 EDT 2013
+ProcessKeyBinding 401 when=1383421726713 modifiers=0 code=74 char=ffff false false
+--------------- 621 --------------
+  Sat Nov 02 15:48:46 EDT 2013
+Menu Activated: Tool | DRC | Check Hierarchically
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'flopenr_1x_16{lay}': , 'Metal-2-Metal-3-Con[contact@74].metal-2-metal-3'
+--------------- 622 --------------
+  Sat Nov 02 15:48:46 EDT 2013
+ProcessKeyBinding 402 when=1383421726889 modifiers=0 code=74 char=ffff false false
+--------------- 623 --------------
+  Sat Nov 02 15:48:48 EDT 2013
+ProcessKeyBinding 401 when=1383421728993 modifiers=80 code=11 char=ffff false false
+--------------- 624 --------------
+  Sat Nov 02 15:48:49 EDT 2013
+ProcessKeyBinding 401 when=1383421729153 modifiers=80 code=53 char=13 false false
+--------------- 625 --------------
+  Sat Nov 02 15:48:49 EDT 2013
+Menu Activated: File | Save All Libraries
+--------------- 626 --------------
+  Sat Nov 02 15:48:49 EDT 2013
+ProcessKeyBinding 400 when=1383421729153 modifiers=80 code=0 char=13 false false
+--------------- 627 --------------
+  Sat Nov 02 15:48:49 EDT 2013
+ProcessKeyBinding 402 when=1383421729314 modifiers=80 code=53 char=13 false false
+--------------- 628 --------------
+  Sat Nov 02 15:48:49 EDT 2013
+ProcessKeyBinding 402 when=1383421729329 modifiers=0 code=11 char=ffff false false
+--------------- 629 --------------
+  Sat Nov 02 15:48:52 EDT 2013
 Menu Activated: Tool | NCC | Schematic and Layout Views of Cell in Current Window
---------------- 31 --------------
-  Sat Nov 02 14:45:37 EDT 2013
+--------------- 630 --------------
+  Sat Nov 02 15:48:55 EDT 2013
 Menu Activated: Tool | ERC | Check Wells
+--------------- 631 --------------
+  Sat Nov 02 15:49:08 EDT 2013
+ProcessKeyBinding 401 when=1383421748864 modifiers=80 code=11 char=ffff false false
+--------------- 632 --------------
+  Sat Nov 02 15:49:09 EDT 2013
+ProcessKeyBinding 401 when=1383421749305 modifiers=80 code=30 char=30(0) false false
+--------------- 633 --------------
+  Sat Nov 02 15:49:09 EDT 2013
+Menu Activated: Window | Zoom Out
+--------------- 634 --------------
+  Sat Nov 02 15:49:09 EDT 2013
+ProcessKeyBinding 402 when=1383421749465 modifiers=80 code=30 char=30(0) false false
+--------------- 635 --------------
+  Sat Nov 02 15:49:09 EDT 2013
+ProcessKeyBinding 401 when=1383421749761 modifiers=80 code=30 char=30(0) false false
+--------------- 636 --------------
+  Sat Nov 02 15:49:09 EDT 2013
+Menu Activated: Window | Zoom Out
+--------------- 637 --------------
+  Sat Nov 02 15:49:09 EDT 2013
+ProcessKeyBinding 402 when=1383421749896 modifiers=80 code=30 char=30(0) false false
+--------------- 638 --------------
+  Sat Nov 02 15:49:09 EDT 2013
+ProcessKeyBinding 402 when=1383421749977 modifiers=0 code=11 char=ffff false false
+--------------- 639 --------------
+  Sat Nov 02 15:49:24 EDT 2013
+Menu Activated: File | Save Library
