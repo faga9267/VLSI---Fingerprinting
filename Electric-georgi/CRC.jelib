@@ -1628,7 +1628,7 @@ Ereset||D5G2;|pin@10||I
 X
 
 # Cell flopenr_1x_16;1{lay}
-Cflopenr_1x_16;1{lay}||mocmos|1383262615315|1383417386849||ATTR_NCC(D5G1;NTX144;)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1383417393581
+Cflopenr_1x_16;1{lay}||mocmos|1383262615315|1383417926774||ATTR_NCC(D5G1;NTX144;)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1383417393581
 Ngeneric:Facet-Center|art@0||0|0||||AV
 Imuddlib07:clkinvbufdual_4x;1{lay}|clkinvbu@0||56|880|||D5G4;
 Imuddlib07:clkinvbufdual_4x;1{lay}|clkinvbu@1||200|880|||D5G4;
@@ -1758,8 +1758,6 @@ NMetal-1-Pin|pin@35||301.5|370||||
 NMetal-1-Pin|pin@36||301.5|260||||
 NMetal-1-Pin|pin@37||301.5|150||||
 NMetal-1-Pin|pin@38||301.5|40||||
-NMetal-1-Pin|pin@39||301.5|-70||||
-NMetal-1-Pin|pin@40||301.5|-180||||
 NMetal-1-Pin|pin@41||304|700||||
 NMetal-1-Pin|pin@42||301|810||||
 NMetal-3-Pin|pin@43||300.5|794.5||||
