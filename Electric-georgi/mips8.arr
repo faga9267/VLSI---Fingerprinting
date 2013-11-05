@@ -14,7 +14,7 @@ cell chipfgpnt
 core mipsfgpnt
 
 ; generate schematic and layout views
-views ic lay sch
+views lay sch
 
 ; set the alignment of the pads (specifying input and output port names)
 align pad_corner      dvdd-1 dvdd
@@ -79,7 +79,7 @@ place pad_out dout=aluout[4] export pad=aluout[4]
 place pad_out dout=aluout[5] export pad=aluout[5]
 place pad_out dout=aluout[6] export pad=aluout[6]
 place pad_out dout=aluout[7] export pad=aluout[7]
-place pad_dgnd
+place pad_out dout=memtoreg export pad=memtoreg
 place pad_in din=reset export pad=reset
 place pad_dgnd export pad = GND
 place pad_dvdd export pad = VDD
