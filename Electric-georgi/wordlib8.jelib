@@ -42,7 +42,7 @@ Es[31:0]|s[7:0]|D5G2;X1;|pin@4||O
 X
 
 # Cell adder_8;1{lay}
-Cadder_8;1{lay}||mocmos|1173068175310|1383501119076||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]
+Cadder_8;1{lay}||mocmos|1173068175310|1380749970737||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1380750033021
 Ngeneric:Facet-Center|art@0||0|0||||AV
 Imuddlib07:fulladder;1{lay}|fulladde@0||2|0|||D5G4;
 Imuddlib07:fulladder;1{lay}|fulladde@1||2|110|||D5G4;
@@ -152,7 +152,7 @@ Ey[7:0]||D5G2;|pin@4||O
 X
 
 # Cell and2_1x_8;1{lay}
-Cand2_1x_8;1{lay}||mocmos|1379466792716|1383501119076||ATTR_NCC(D5G1;NTX-13;)S["exportsConnectedByParent gnd /gnd_[0-9]+/","exportsConnectedByParent vdd /vdd_[0-9]+/"]
+Cand2_1x_8;1{lay}||mocmos|1379466792716|1380749970737||ATTR_NCC(D5G1;NTX-13;)S["exportsConnectedByParent gnd /gnd_[0-9]+/","exportsConnectedByParent vdd /vdd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1380750033021
 Imuddlib07:and2_1x;1{lay}|and2_1x@0||0|0|||D5G4;
 Imuddlib07:and2_1x;1{lay}|and2_1x@1||0|110|||D5G4;
 Imuddlib07:and2_1x;1{lay}|and2_1x@2||0|220|||D5G4;
@@ -244,7 +244,7 @@ Eq[7:0]||D5G2;X2;|pin@8||O
 X
 
 # Cell flop_1x_8;1{lay}
-Cflop_1x_8;1{lay}||mocmos|1173313351125|1383501119076||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]
+Cflop_1x_8;1{lay}||mocmos|1173313351125|1380749970737||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1380750033021
 Ngeneric:Facet-Center|art@0||0|0||||AV
 Imuddlib07:clkinvbufdual_4x;1{lay}|clkinvbu@1||7|880|||D5G4;
 NMetal-1-Metal-2-Con|contact@14||89|870||||
@@ -393,7 +393,7 @@ Eq[31:0]|q[7:0]|D5G2;X2;|pin@8||O
 X
 
 # Cell flopen_1x_8;1{lay}
-Cflopen_1x_8;1{lay}||mocmos|1173313351125|1383501119076||ATTR_NCC(D5G1;NTX2;)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]
+Cflopen_1x_8;1{lay}||mocmos|1173313351125|1380749970737||ATTR_NCC(D5G1;NTX2;)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1380750033021
 Ngeneric:Facet-Center|art@0||0|0||||AV
 Imuddlib07:clkinvbufdual_4x;1{lay}|clkinvbu@1||40|880|||D5G4;
 NMetal-1-Metal-2-Con|contact@14||122|870||||
@@ -586,7 +586,7 @@ Ereset||D5G2;|pin@10||I
 X
 
 # Cell flopenr_1x_8;1{lay}
-Cflopenr_1x_8;1{lay}||mocmos|1173315174390|1383501119076||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]
+Cflopenr_1x_8;1{lay}||mocmos|1173315174390|1380749970737||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1380750033021
 Ngeneric:Facet-Center|art@0||0|0||||AV
 Imuddlib07:clkinvbufdual_4x;1{lay}|clkinvbu@0||56|880|||D5G4;
 NMetal-1-Metal-2-Con|contact@0||18|920||||
@@ -793,7 +793,7 @@ Ey[7:0]||D5G2;X5;|pin@0||U
 X
 
 # Cell inv_1x_8;1{lay}
-Cinv_1x_8;1{lay}||mocmos|1184108448312|1383501119076||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]
+Cinv_1x_8;1{lay}||mocmos|1184108448312|1380749970737||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1380750033021
 Ngeneric:Facet-Center|art@0||0|0||||AV
 Imuddlib07:inv_1x;1{lay}|inv_1x@0||0|0|||D5G4;
 Imuddlib07:inv_1x;1{lay}|inv_1x@1||0|110|||D5G4;
@@ -875,7 +875,7 @@ Ey[31:0]|y[7:0]|D5G2;|pin@6||O
 X
 
 # Cell mux2_1x_8;1{lay}
-Cmux2_1x_8;1{lay}||mocmos|1173068665982|1383501119076||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]
+Cmux2_1x_8;1{lay}||mocmos|1173068665982|1380749970737||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1380750033021
 Ngeneric:Facet-Center|art@0||0|0||||AV
 Imuddlib07:invbuf_4x;1{lay}|invbuf_4@0||0|880|||D5G4;
 Imuddlib07:mux2_dp_1x;1{lay}|mux2_dp_@0||0|0|||D5G4;
@@ -1003,7 +1003,7 @@ Ey[31:0]|y[7:0]|D5G2;|pin@10||O
 X
 
 # Cell mux3_1x_8;1{lay}
-Cmux3_1x_8;1{lay}||mocmos|1173835867453|1383501119076||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]
+Cmux3_1x_8;1{lay}||mocmos|1173835867453|1380749970737||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1380750033021
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NMetal-2-Metal-3-Con|contact@16||2|900||||
 NMetal-2-Metal-3-Con|contact@17||26|900||||
@@ -1203,7 +1203,7 @@ Ey[31:0]|y[7:0]|D5G2;X1;|pin@12||O
 X
 
 # Cell mux4_1x_8;1{lay}
-Cmux4_1x_8;1{lay}||mocmos|1173828473921|1383501119076||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]
+Cmux4_1x_8;1{lay}||mocmos|1173828473921|1380749970737||ATTR_NCC(D5G1;NT)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1380750033021
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NMetal-1-Metal-2-Con|contact@0||10|870||||
 NMetal-1-Metal-2-Con|contact@1||2|870||||
@@ -1392,7 +1392,7 @@ Ey[7:0]||D5G2;|pin@4||O
 X
 
 # Cell or2_1x_8;1{lay}
-Cor2_1x_8;1{lay}||mocmos|1379467652040|1383501119076||ATTR_NCC(D5G1;NTX-13;)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]
+Cor2_1x_8;1{lay}||mocmos|1379467652040|1380749970737||ATTR_NCC(D5G1;NTX-13;)S["exportsConnectedByParent vdd /vdd_[0-9]+/","exportsConnectedByParent gnd /gnd_[0-9]+/"]|DRC_last_good_drc_bit()I19|DRC_last_good_drc_date()G1380750033021
 Ngeneric:Facet-Center|art@0||0|0||||AV
 Imuddlib07:or2_1x;1{lay}|or2_1x@0||0|0|||D5G4;
 Imuddlib07:or2_1x;1{lay}|or2_1x@1||0|110|||D5G4;

@@ -1,692 +1,232 @@
-/* Verilog for cell 'crc16{lay}' from library 'CRC' */
-/* Created on Thu Oct 31, 2013 17:14:26 */
-/* Last revised on Thu Oct 31, 2013 23:41:37 */
-/* Written on Thu Oct 31, 2013 23:49:05 by Electric VLSI Design System, version 8.06 */
+/* Verilog for cell 'crc16{sch}' from library 'CRC' */
+/* Created on Fri Oct 25, 2013 22:12:27 */
+/* Last revised on Sat Oct 26, 2013 18:55:51 */
+/* Written on Sat Oct 26, 2013 18:56:35 by Electric VLSI Design System, version 8.06 */
 
-module muddlib07__xor2_1x(a, b, y, vdd, gnd);
+module muddlib07__xor2_1x(a, b, y);
   input a;
   input b;
   output y;
-  input vdd;
-  input gnd;
 
   supply1 vdd;
   supply0 gnd;
-  wire net_158, net_68, net_70, net_76, net_79, net_87, plno_2_well;
-  wire plnode_0_well;
+  wire ab, bb, net_3, net_4, net_7, net_8;
 
-  tranif1 nmos_0(gnd, net_79, a);
-  tranif1 nmos_1(y, net_76, net_158);
-  tranif1 nmos_2(net_76, gnd, net_87);
-  tranif1 nmos_3(net_79, y, b);
-  tranif1 nmos_4(gnd, net_158, b);
-  tranif1 nmos_5(net_87, gnd, a);
-  tranif0 pmos_0(vdd, net_68, net_87);
-  tranif0 pmos_1(net_68, y, b);
-  tranif0 pmos_2(y, net_70, net_158);
-  tranif0 pmos_4(net_70, vdd, a);
-  tranif0 pmos_5(net_87, vdd, a);
-  tranif0 pmos_6(vdd, net_158, b);
+  tranif1 nmos_0(gnd, net_3, a);
+  tranif1 nmos_1(gnd, net_4, ab);
+  tranif1 nmos_2(net_3, y, b);
+  tranif1 nmos_3(net_4, y, bb);
+  tranif1 nmos_4(gnd, bb, b);
+  tranif1 nmos_5(gnd, ab, a);
+  tranif0 pmos_0(y, net_7, b);
+  tranif0 pmos_1(net_7, vdd, ab);
+  tranif0 pmos_2(y, net_8, bb);
+  tranif0 pmos_3(net_8, vdd, a);
+  tranif0 pmos_4(bb, vdd, b);
+  tranif0 pmos_5(ab, vdd, a);
 endmodule   /* muddlib07__xor2_1x */
 
-module CRC__CRC_stage1(a, a_1, a_10, a_11, a_12, a_13, a_14, a_15, a_2, a_3, 
-      a_4, a_5, a_6, a_7, a_8, a_9, b, b_1, b_10, b_11, b_12, b_13, b_14, b_15, 
-      b_2, b_3, b_4, b_5, b_6, b_7, b_8, b_9, y, y_1, y_10, y_11, y_12, y_13, 
-      y_14, y_15, y_2, y_3, y_4, y_5, y_6, y_7, y_8, y_9, vdd, vdd_1, vdd_10, 
-      vdd_11, vdd_12, vdd_13, vdd_14, vdd_1_1, vdd_2, vdd_3, vdd_4, vdd_5, 
-      vdd_6, vdd_7, vdd_8, vdd_9, gnd, gnd_1, gnd_10, gnd_11, gnd_12, gnd_13, 
-      gnd_14, gnd_1_1, gnd_2, gnd_3, gnd_4, gnd_5, gnd_6, gnd_7, gnd_8, 
-      gnd_9);
-  input [0:0] a;
-  input [1:1] a_1;
-  input [10:10] a_10;
-  input [11:11] a_11;
-  input [12:12] a_12;
-  input [13:13] a_13;
-  input [14:14] a_14;
-  input [15:15] a_15;
-  input [2:2] a_2;
-  input [3:3] a_3;
-  input [4:4] a_4;
-  input [5:5] a_5;
-  input [6:6] a_6;
-  input [7:7] a_7;
-  input [8:8] a_8;
-  input [9:9] a_9;
-  input [0:0] b;
-  input [1:1] b_1;
-  input [10:10] b_10;
-  input [11:11] b_11;
-  input [12:12] b_12;
-  input [13:13] b_13;
-  input [14:14] b_14;
-  input [15:15] b_15;
-  input [2:2] b_2;
-  input [3:3] b_3;
-  input [4:4] b_4;
-  input [5:5] b_5;
-  input [6:6] b_6;
-  input [7:7] b_7;
-  input [8:8] b_8;
-  input [9:9] b_9;
-  output [0:0] y;
-  output [1:1] y_1;
-  output [10:10] y_10;
-  output [11:11] y_11;
-  output [12:12] y_12;
-  output [13:13] y_13;
-  output [14:14] y_14;
-  output [15:15] y_15;
-  output [2:2] y_2;
-  output [3:3] y_3;
-  output [4:4] y_4;
-  output [5:5] y_5;
-  output [6:6] y_6;
-  output [7:7] y_7;
-  output [8:8] y_8;
-  output [9:9] y_9;
-  input vdd;
-  input vdd_1;
-  input vdd_10;
-  input vdd_11;
-  input vdd_12;
-  input vdd_13;
-  input vdd_14;
-  input vdd_1_1;
-  input vdd_2;
-  input vdd_3;
-  input vdd_4;
-  input vdd_5;
-  input vdd_6;
-  input vdd_7;
-  input vdd_8;
-  input vdd_9;
-  input gnd;
-  input gnd_1;
-  input gnd_10;
-  input gnd_11;
-  input gnd_12;
-  input gnd_13;
-  input gnd_14;
-  input gnd_1_1;
-  input gnd_2;
-  input gnd_3;
-  input gnd_4;
-  input gnd_5;
-  input gnd_6;
-  input gnd_7;
-  input gnd_8;
-  input gnd_9;
+module CRC__CRC_stage1(a, b, y);
+  input [15:0] a;
+  input [15:0] b;
+  output [15:0] y;
 
   supply1 vdd;
   supply0 gnd;
-  muddlib07__xor2_1x xor2_1x_0_(.a(a[0]), .b(b[0]), .y(y[0]), .vdd(vdd_1), 
-      .gnd(gnd_1));
-  muddlib07__xor2_1x xor2_1x_1_(.a(a_1[1]), .b(b_1[1]), .y(y_1[1]), 
-      .vdd(vdd_1_1), .gnd(gnd_1_1));
-  muddlib07__xor2_1x xor2_1x_2_(.a(a_2[2]), .b(b_2[2]), .y(y_2[2]), 
-      .vdd(vdd_2), .gnd(gnd_2));
-  muddlib07__xor2_1x xor2_1x_3_(.a(a_3[3]), .b(b_3[3]), .y(y_3[3]), 
-      .vdd(vdd_3), .gnd(gnd_3));
-  muddlib07__xor2_1x xor2_1x_4_(.a(a_4[4]), .b(b_4[4]), .y(y_4[4]), 
-      .vdd(vdd_4), .gnd(gnd_4));
-  muddlib07__xor2_1x xor2_1x_5_(.a(a_5[5]), .b(b_5[5]), .y(y_5[5]), 
-      .vdd(vdd_5), .gnd(gnd_5));
-  muddlib07__xor2_1x xor2_1x_6_(.a(a_6[6]), .b(b_6[6]), .y(y_6[6]), 
-      .vdd(vdd_6), .gnd(gnd_6));
-  muddlib07__xor2_1x xor2_1x_7_(.a(a_7[7]), .b(b_7[7]), .y(y_7[7]), 
-      .vdd(vdd_7), .gnd(gnd_7));
-  muddlib07__xor2_1x xor2_1x_8_(.a(a_8[8]), .b(b_8[8]), .y(y_8[8]), 
-      .vdd(vdd_8), .gnd(gnd_8));
-  muddlib07__xor2_1x xor2_1x_9_(.a(a_9[9]), .b(b_9[9]), .y(y_9[9]), 
-      .vdd(vdd_9), .gnd(gnd_9));
-  muddlib07__xor2_1x xor2_1x_10_(.a(a_10[10]), .b(b_10[10]), .y(y_10[10]), 
-      .vdd(vdd_10), .gnd(gnd_10));
-  muddlib07__xor2_1x xor2_1x_11_(.a(a_11[11]), .b(b_11[11]), .y(y_11[11]), 
-      .vdd(vdd_11), .gnd(gnd_11));
-  muddlib07__xor2_1x xor2_1x_12_(.a(a_12[12]), .b(b_12[12]), .y(y_12[12]), 
-      .vdd(vdd_12), .gnd(gnd_12));
-  muddlib07__xor2_1x xor2_1x_13_(.a(a_13[13]), .b(b_13[13]), .y(y_13[13]), 
-      .vdd(vdd_13), .gnd(gnd_13));
-  muddlib07__xor2_1x xor2_1x_14_(.a(a_14[14]), .b(b_14[14]), .y(y_14[14]), 
-      .vdd(vdd_14), .gnd(gnd_14));
-  muddlib07__xor2_1x xor2_1x_15_(.a(a_15[15]), .b(b_15[15]), .y(y_15[15]), 
-      .vdd(vdd), .gnd(gnd));
+  muddlib07__xor2_1x xor2_1x_15_(.a(a[15]), .b(b[15]), .y(y[15]));
+  muddlib07__xor2_1x xor2_1x_14_(.a(a[14]), .b(b[14]), .y(y[14]));
+  muddlib07__xor2_1x xor2_1x_13_(.a(a[13]), .b(b[13]), .y(y[13]));
+  muddlib07__xor2_1x xor2_1x_12_(.a(a[12]), .b(b[12]), .y(y[12]));
+  muddlib07__xor2_1x xor2_1x_11_(.a(a[11]), .b(b[11]), .y(y[11]));
+  muddlib07__xor2_1x xor2_1x_10_(.a(a[10]), .b(b[10]), .y(y[10]));
+  muddlib07__xor2_1x xor2_1x_9_(.a(a[9]), .b(b[9]), .y(y[9]));
+  muddlib07__xor2_1x xor2_1x_8_(.a(a[8]), .b(b[8]), .y(y[8]));
+  muddlib07__xor2_1x xor2_1x_7_(.a(a[7]), .b(b[7]), .y(y[7]));
+  muddlib07__xor2_1x xor2_1x_6_(.a(a[6]), .b(b[6]), .y(y[6]));
+  muddlib07__xor2_1x xor2_1x_5_(.a(a[5]), .b(b[5]), .y(y[5]));
+  muddlib07__xor2_1x xor2_1x_4_(.a(a[4]), .b(b[4]), .y(y[4]));
+  muddlib07__xor2_1x xor2_1x_3_(.a(a[3]), .b(b[3]), .y(y[3]));
+  muddlib07__xor2_1x xor2_1x_2_(.a(a[2]), .b(b[2]), .y(y[2]));
+  muddlib07__xor2_1x xor2_1x_1_(.a(a[1]), .b(b[1]), .y(y[1]));
+  muddlib07__xor2_1x xor2_1x_0_(.a(a[0]), .b(b[0]), .y(y[0]));
 endmodule   /* CRC__CRC_stage1 */
 
-module CRC__CRC_stage2(a, a_1, a_10, a_2, a_3, a_4, a_5, a_6, a_7, a_8, a_9, b, 
-      b_1, b_10, b_2, b_3, b_4, b_5, b_6, b_7, b_8, b_9, y, y_1, y_10, y_2, 
-      y_3, y_4, y_5, y_6, y_7, y_8, y_9, vdd, vdd_1, vdd_1_1, vdd_2, vdd_3, 
-      vdd_4, vdd_5, vdd_6, vdd_7, vdd_8, vdd_9, gnd, gnd_1, gnd_1_1, gnd_2, 
-      gnd_3, gnd_4, gnd_5, gnd_6, gnd_7, gnd_8, gnd_9);
-  input [0:0] a;
-  input [1:1] a_1;
-  input [10:10] a_10;
-  input [2:2] a_2;
-  input [3:3] a_3;
-  input [4:4] a_4;
-  input [5:5] a_5;
-  input [6:6] a_6;
-  input [7:7] a_7;
-  input [8:8] a_8;
-  input [9:9] a_9;
-  input [0:0] b;
-  input [1:1] b_1;
-  input [10:10] b_10;
-  input [2:2] b_2;
-  input [3:3] b_3;
-  input [4:4] b_4;
-  input [5:5] b_5;
-  input [6:6] b_6;
-  input [7:7] b_7;
-  input [8:8] b_8;
-  input [9:9] b_9;
-  output [0:0] y;
-  output [1:1] y_1;
-  output [10:10] y_10;
-  output [2:2] y_2;
-  output [3:3] y_3;
-  output [4:4] y_4;
-  output [5:5] y_5;
-  output [6:6] y_6;
-  output [7:7] y_7;
-  output [8:8] y_8;
-  output [9:9] y_9;
-  input vdd;
-  input vdd_1;
-  input vdd_1_1;
-  input vdd_2;
-  input vdd_3;
-  input vdd_4;
-  input vdd_5;
-  input vdd_6;
-  input vdd_7;
-  input vdd_8;
-  input vdd_9;
-  input gnd;
-  input gnd_1;
-  input gnd_1_1;
-  input gnd_2;
-  input gnd_3;
-  input gnd_4;
-  input gnd_5;
-  input gnd_6;
-  input gnd_7;
-  input gnd_8;
-  input gnd_9;
+module CRC__CRC_stage2(a, b, y);
+  input [10:0] a;
+  input [10:0] b;
+  output [10:0] y;
 
   supply1 vdd;
   supply0 gnd;
-  muddlib07__xor2_1x xor2_1x_0_(.a(a[0]), .b(b[0]), .y(y[0]), .vdd(vdd), 
-      .gnd(gnd));
-  muddlib07__xor2_1x xor2_1x_1_(.a(a_1[1]), .b(b_1[1]), .y(y_1[1]), 
-      .vdd(vdd_1_1), .gnd(gnd_1_1));
-  muddlib07__xor2_1x xor2_1x_2_(.a(a_2[2]), .b(b_2[2]), .y(y_2[2]), 
-      .vdd(vdd_2), .gnd(gnd_2));
-  muddlib07__xor2_1x xor2_1x_3_(.a(a_3[3]), .b(b_3[3]), .y(y_3[3]), 
-      .vdd(vdd_3), .gnd(gnd_3));
-  muddlib07__xor2_1x xor2_1x_4_(.a(a_4[4]), .b(b_4[4]), .y(y_4[4]), 
-      .vdd(vdd_4), .gnd(gnd_4));
-  muddlib07__xor2_1x xor2_1x_5_(.a(a_5[5]), .b(b_5[5]), .y(y_5[5]), 
-      .vdd(vdd_5), .gnd(gnd_5));
-  muddlib07__xor2_1x xor2_1x_6_(.a(a_6[6]), .b(b_6[6]), .y(y_6[6]), 
-      .vdd(vdd_6), .gnd(gnd_6));
-  muddlib07__xor2_1x xor2_1x_7_(.a(a_7[7]), .b(b_7[7]), .y(y_7[7]), 
-      .vdd(vdd_7), .gnd(gnd_7));
-  muddlib07__xor2_1x xor2_1x_8_(.a(a_8[8]), .b(b_8[8]), .y(y_8[8]), 
-      .vdd(vdd_8), .gnd(gnd_8));
-  muddlib07__xor2_1x xor2_1x_9_(.a(a_9[9]), .b(b_9[9]), .y(y_9[9]), 
-      .vdd(vdd_9), .gnd(gnd_9));
-  muddlib07__xor2_1x xor2_1x_10_(.a(a_10[10]), .b(b_10[10]), .y(y_10[10]), 
-      .vdd(vdd_1), .gnd(gnd_1));
+  muddlib07__xor2_1x xor2_1x_10_(.a(a[10]), .b(b[10]), .y(y[10]));
+  muddlib07__xor2_1x xor2_1x_9_(.a(a[9]), .b(b[9]), .y(y[9]));
+  muddlib07__xor2_1x xor2_1x_8_(.a(a[8]), .b(b[8]), .y(y[8]));
+  muddlib07__xor2_1x xor2_1x_7_(.a(a[7]), .b(b[7]), .y(y[7]));
+  muddlib07__xor2_1x xor2_1x_6_(.a(a[6]), .b(b[6]), .y(y[6]));
+  muddlib07__xor2_1x xor2_1x_5_(.a(a[5]), .b(b[5]), .y(y[5]));
+  muddlib07__xor2_1x xor2_1x_4_(.a(a[4]), .b(b[4]), .y(y[4]));
+  muddlib07__xor2_1x xor2_1x_3_(.a(a[3]), .b(b[3]), .y(y[3]));
+  muddlib07__xor2_1x xor2_1x_2_(.a(a[2]), .b(b[2]), .y(y[2]));
+  muddlib07__xor2_1x xor2_1x_1_(.a(a[1]), .b(b[1]), .y(y[1]));
+  muddlib07__xor2_1x xor2_1x_0_(.a(a[0]), .b(b[0]), .y(y[0]));
 endmodule   /* CRC__CRC_stage2 */
 
-module CRC__CRC_stage3(a, a_1, a_2, a_3, b, b_1, b_2, b_3, y, y_1, y_2, y_3, 
-      vdd, vdd_1, vdd_1_1, vdd_2, gnd, gnd_1, gnd_1_1, gnd_2);
-  input [0:0] a;
-  input [1:1] a_1;
-  input [2:2] a_2;
-  input [3:3] a_3;
-  input [0:0] b;
-  input [1:1] b_1;
-  input [2:2] b_2;
-  input [3:3] b_3;
-  output [0:0] y;
-  output [1:1] y_1;
-  output [2:2] y_2;
-  output [3:3] y_3;
-  input vdd;
-  input vdd_1;
-  input vdd_1_1;
-  input vdd_2;
-  input gnd;
-  input gnd_1;
-  input gnd_1_1;
-  input gnd_2;
+module CRC__CRC_stage3(a, b, y);
+  input [3:0] a;
+  input [3:0] b;
+  output [3:0] y;
 
   supply1 vdd;
   supply0 gnd;
-  muddlib07__xor2_1x xor2_1x_0_(.a(a[0]), .b(b[0]), .y(y[0]), .vdd(vdd), 
-      .gnd(gnd_1));
-  muddlib07__xor2_1x xor2_1x_1_(.a(a_1[1]), .b(b_1[1]), .y(y_1[1]), 
-      .vdd(vdd_1_1), .gnd(gnd_1_1));
-  muddlib07__xor2_1x xor2_1x_2_(.a(a_2[2]), .b(b_2[2]), .y(y_2[2]), 
-      .vdd(vdd_2), .gnd(gnd_2));
-  muddlib07__xor2_1x xor2_1x_3_(.a(a_3[3]), .b(b_3[3]), .y(y_3[3]), 
-      .vdd(vdd_1), .gnd(gnd));
+  muddlib07__xor2_1x xor2_1x_3_(.a(a[3]), .b(b[3]), .y(y[3]));
+  muddlib07__xor2_1x xor2_1x_2_(.a(a[2]), .b(b[2]), .y(y[2]));
+  muddlib07__xor2_1x xor2_1x_1_(.a(a[1]), .b(b[1]), .y(y[1]));
+  muddlib07__xor2_1x xor2_1x_0_(.a(a[0]), .b(b[0]), .y(y[0]));
 endmodule   /* CRC__CRC_stage3 */
 
-module muddlib07__xor3_1x(a, b, c, y, vdd, gnd);
+module muddlib07__xor3_1x(a, b, c, y);
   input a;
   input b;
   input c;
   output y;
-  input vdd;
-  input gnd;
 
   supply1 vdd;
   supply0 gnd;
-  wire net_104, net_202, net_206, net_218, net_232, net_348, net_401, net_587;
-  wire net_602, net_612, net_636, net_642, plnode_0_well, plnode_2_well;
+  wire ab, bb, cb, n1, n2, n3, n4, p1, p2, p3, p4, yb;
 
-  tranif1 nmos_0(net_348, gnd, c);
-  tranif1 nmos_1(net_401, gnd, b);
-  tranif1 nmos_2(gnd, net_104, a);
-  tranif1 nmos_3(gnd, y, net_218);
-  tranif1 nmos_4(gnd, net_602, a);
-  tranif1 nmos_5(net_602, net_642, net_401);
-  tranif1 nmos_7(net_602, net_612, b);
-  tranif1 nmos_8(net_612, net_218, c);
-  tranif1 nmos_9(net_218, net_642, net_348);
-  tranif1 nmos_10(net_642, net_636, b);
-  tranif1 nmos_12(net_612, net_636, net_401);
-  tranif1 nmos_13(net_636, gnd, net_104);
-  tranif0 pmos_0(net_348, vdd, c);
-  tranif0 pmos_1(net_401, vdd, b);
-  tranif0 pmos_2(vdd, net_104, a);
-  tranif0 pmos_3(vdd, y, net_218);
-  tranif0 pmos_4(vdd, net_202, a);
-  tranif0 pmos_5(net_202, net_206, net_401);
-  tranif0 pmos_7(net_202, net_587, b);
-  tranif0 pmos_8(net_587, net_218, c);
-  tranif0 pmos_9(net_218, net_206, net_348);
-  tranif0 pmos_10(net_206, net_232, b);
-  tranif0 pmos_12(net_587, net_232, net_401);
-  tranif0 pmos_13(net_232, vdd, net_104);
+  tranif1 nmos_0(gnd, n1, a);
+  tranif1 nmos_1(n1, n4, bb);
+  tranif1 nmos_2(n4, yb, cb);
+  tranif1 nmos_3(gnd, n2, ab);
+  tranif1 nmos_4(n1, n3, b);
+  tranif1 nmos_5(n2, n3, bb);
+  tranif1 nmos_6(n2, n4, b);
+  tranif1 nmos_7(n3, yb, c);
+  tranif1 nmos_9(gnd, y, yb);
+  tranif1 nmos_10(gnd, cb, c);
+  tranif1 nmos_11(gnd, bb, b);
+  tranif1 nmos_12(gnd, ab, a);
+  tranif0 pmos_0(yb, p4, cb);
+  tranif0 pmos_1(yb, p3, c);
+  tranif0 pmos_2(p3, p2, bb);
+  tranif0 pmos_3(p4, p1, bb);
+  tranif0 pmos_4(p1, vdd, a);
+  tranif0 pmos_5(p2, vdd, ab);
+  tranif0 pmos_6(p4, p2, b);
+  tranif0 pmos_7(p3, p1, b);
+  tranif0 pmos_8(y, vdd, yb);
+  tranif0 pmos_9(cb, vdd, c);
+  tranif0 pmos_10(bb, vdd, b);
+  tranif0 pmos_11(ab, vdd, a);
 endmodule   /* muddlib07__xor3_1x */
 
-module CRC__xor_4(a1, a1_1, a1_2, a1_3, y, vdd, gnd);
-  input [0:0] a1;
-  input [1:1] a1_1;
-  input [2:2] a1_2;
-  input [3:3] a1_3;
+module CRC__xor_4(a1, y);
+  input [0:3] a1;
   output y;
-  input vdd;
-  input gnd;
 
   supply1 vdd;
   supply0 gnd;
-  wire net_11, net_15;
+  wire net_0, net_3;
 
-  muddlib07__xor2_1x xor2_1x_1(.a(a1[0]), .b(a1_1[1]), .y(net_15), .vdd(vdd), 
-      .gnd(gnd));
-  muddlib07__xor2_1x xor2_1x_2(.a(a1_2[2]), .b(a1_3[3]), .y(net_11), .vdd(vdd), 
-      .gnd(gnd));
-  muddlib07__xor2_1x xor2_1x_4(.a(net_15), .b(net_11), .y(y), .vdd(vdd), 
-      .gnd(gnd));
+  muddlib07__xor2_1x xor2_1x_0(.a(a1[0]), .b(a1[1]), .y(net_0));
+  muddlib07__xor2_1x xor2_1x_1(.a(a1[2]), .b(a1[3]), .y(net_3));
+  muddlib07__xor2_1x xor2_1x_2(.a(net_0), .b(net_3), .y(y));
 endmodule   /* CRC__xor_4 */
 
-module CRC__xor_5(a1, a1_1, a1_2, a1_3, a1_4, y, vdd, gnd);
-  input [0:0] a1;
-  input [1:1] a1_1;
-  input [2:2] a1_2;
-  input [3:3] a1_3;
-  input [4:4] a1_4;
+module CRC__xor_5(a1, y);
+  input [0:4] a1;
   output y;
-  input vdd;
-  input gnd;
 
   supply1 vdd;
   supply0 gnd;
-  wire net_4, net_7;
+  wire net_0, net_3;
 
-  muddlib07__xor2_1x xor2_1x_3(.a(a1[0]), .b(a1_1[1]), .y(net_4), .vdd(vdd), 
-      .gnd(gnd));
-  muddlib07__xor2_1x xor2_1x_5(.a(net_4), .b(net_7), .y(y), .vdd(vdd), 
-      .gnd(gnd));
-  muddlib07__xor3_1x xor3_1x_0(.a(a1_2[2]), .b(a1_3[3]), .c(a1_4[4]), 
-      .y(net_7), .vdd(vdd), .gnd(gnd));
+  muddlib07__xor2_1x xor2_1x_0(.a(a1[0]), .b(a1[1]), .y(net_3));
+  muddlib07__xor2_1x xor2_1x_1(.a(net_3), .b(net_0), .y(y));
+  muddlib07__xor3_1x xor3_1x_0(.a(a1[2]), .b(a1[3]), .c(a1[4]), .y(net_0));
 endmodule   /* CRC__xor_5 */
 
-module CRC__xor_6(a1, a1_1, a1_2, a1_3, a1_4, a1_5, y, vdd, gnd);
-  input [0:0] a1;
-  input [1:1] a1_1;
-  input [2:2] a1_2;
-  input [3:3] a1_3;
-  input [4:4] a1_4;
-  input [5:5] a1_5;
+module CRC__xor_6(a1, y);
+  input [0:5] a1;
   output y;
-  input vdd;
-  input gnd;
 
   supply1 vdd;
   supply0 gnd;
-  wire net_4, net_7;
+  wire net_0, net_3;
 
-  muddlib07__xor2_1x xor2_1x_0(.a(net_4), .b(net_7), .y(y), .vdd(vdd), 
-      .gnd(gnd));
-  muddlib07__xor3_1x xor3_1x_0(.a(a1[0]), .b(a1_1[1]), .c(a1_2[2]), .y(net_4), 
-      .vdd(vdd), .gnd(gnd));
-  muddlib07__xor3_1x xor3_1x_1(.a(a1_3[3]), .b(a1_4[4]), .c(a1_5[5]), 
-      .y(net_7), .vdd(vdd), .gnd(gnd));
+  muddlib07__xor2_1x xor2_1x_0(.a(net_3), .b(net_0), .y(y));
+  muddlib07__xor3_1x xor3_1x_0(.a(a1[3]), .b(a1[4]), .c(a1[5]), .y(net_0));
+  muddlib07__xor3_1x xor3_1x_1(.a(a1[0]), .b(a1[1]), .c(a1[2]), .y(net_3));
 endmodule   /* CRC__xor_6 */
 
-module CRC__CRC_stage_output(a0, a0_1, a0_2, a0_3, a0_4, a0_5, a1, a10, a10_1, 
-      a10_2, a10_3, a11, a11_1, a11_2, a11_3, a12, a12_1, a12_2, a12_3, a13, 
-      a13_1, a13_2, a13_3, a13_4, a14, a14_1, a14_2, a14_3, a15, a15_1, a15_2, 
-      a15_3, a15_4, a1_1, a1_2, a1_3, a1_4, a1_5, a2, a2_1, a2_2, a2_3, a3, 
-      a3_1, a3_2, a3_3, a3_4, a4, a4_1, a4_2, a4_3, a5, a5_1, a5_2, a5_3, a5_4, 
-      a6, a6_1, a6_2, a7, a7_1, a7_2, a7_3, a8, a8_1, a8_2, a8_3, a9, a9_1, 
-      a9_2, a9_3, y, y_1, y_10, y_11, y_12, y_13, y_14, y_15, y_2, y_3, y_4, 
-      y_5, y_6, y_7, y_8, y_9, vdd, vdd_1, vdd_10, vdd_11, vdd_12, vdd_13, 
-      vdd_14, vdd_1_1, vdd_2, vdd_3, vdd_4, vdd_5, vdd_6, vdd_7, vdd_8, vdd_9, 
-      gnd, gnd_1, gnd_10, gnd_11, gnd_12, gnd_13, gnd_14, gnd_1_1, gnd_2, 
-      gnd_3, gnd_4, gnd_5, gnd_6, gnd_7, gnd_8, gnd_9);
-  input [0:0] a0;
-  input [1:1] a0_1;
-  input [2:2] a0_2;
-  input [3:3] a0_3;
-  input [4:4] a0_4;
-  input [5:5] a0_5;
-  input [0:0] a1;
-  input [0:0] a10;
-  input [1:1] a10_1;
-  input [2:2] a10_2;
-  input [3:3] a10_3;
-  input [0:0] a11;
-  input [1:1] a11_1;
-  input [2:2] a11_2;
-  input [3:3] a11_3;
-  input [0:0] a12;
-  input [1:1] a12_1;
-  input [2:2] a12_2;
-  input [3:3] a12_3;
-  input [0:0] a13;
-  input [1:1] a13_1;
-  input [2:2] a13_2;
-  input [3:3] a13_3;
-  input [4:4] a13_4;
-  input [0:0] a14;
-  input [1:1] a14_1;
-  input [2:2] a14_2;
-  input [3:3] a14_3;
-  input [0:0] a15;
-  input [1:1] a15_1;
-  input [2:2] a15_2;
-  input [3:3] a15_3;
-  input [4:4] a15_4;
-  input [1:1] a1_1;
-  input [2:2] a1_2;
-  input [3:3] a1_3;
-  input [4:4] a1_4;
-  input [5:5] a1_5;
-  input [0:0] a2;
-  input [1:1] a2_1;
-  input [2:2] a2_2;
-  input [3:3] a2_3;
-  input [0:0] a3;
-  input [1:1] a3_1;
-  input [2:2] a3_2;
-  input [3:3] a3_3;
-  input [4:4] a3_4;
-  input [0:0] a4;
-  input [1:1] a4_1;
-  input [2:2] a4_2;
-  input [3:3] a4_3;
-  input [0:0] a5;
-  input [1:1] a5_1;
-  input [2:2] a5_2;
-  input [3:3] a5_3;
-  input [4:4] a5_4;
-  input [0:0] a6;
-  input [1:1] a6_1;
-  input [2:2] a6_2;
-  input [0:0] a7;
-  input [1:1] a7_1;
-  input [2:2] a7_2;
-  input [3:3] a7_3;
-  input [0:0] a8;
-  input [1:1] a8_1;
-  input [2:2] a8_2;
-  input [3:3] a8_3;
-  input [0:0] a9;
-  input [1:1] a9_1;
-  input [2:2] a9_2;
-  input [3:3] a9_3;
-  output [0:0] y;
-  output [1:1] y_1;
-  output [10:10] y_10;
-  output [11:11] y_11;
-  output [12:12] y_12;
-  output [13:13] y_13;
-  output [14:14] y_14;
-  output [15:15] y_15;
-  output [2:2] y_2;
-  output [3:3] y_3;
-  output [4:4] y_4;
-  output [5:5] y_5;
-  output [6:6] y_6;
-  output [7:7] y_7;
-  output [8:8] y_8;
-  output [9:9] y_9;
-  input vdd;
-  input vdd_1;
-  input vdd_10;
-  input vdd_11;
-  input vdd_12;
-  input vdd_13;
-  input vdd_14;
-  input vdd_1_1;
-  input vdd_2;
-  input vdd_3;
-  input vdd_4;
-  input vdd_5;
-  input vdd_6;
-  input vdd_7;
-  input vdd_8;
-  input vdd_9;
-  input gnd;
-  input gnd_1;
-  input gnd_10;
-  input gnd_11;
-  input gnd_12;
-  input gnd_13;
-  input gnd_14;
-  input gnd_1_1;
-  input gnd_2;
-  input gnd_3;
-  input gnd_4;
-  input gnd_5;
-  input gnd_6;
-  input gnd_7;
-  input gnd_8;
-  input gnd_9;
+module CRC__CRC_stage_output(a0, a1, a10, a11, a12, a13, a14, a15, a2, a3, a4, 
+      a5, a6, a7, a8, a9, y);
+  input [0:5] a0;
+  input [0:5] a1;
+  input [0:3] a10;
+  input [0:3] a11;
+  input [0:3] a12;
+  input [0:4] a13;
+  input [0:3] a14;
+  input [0:4] a15;
+  input [0:3] a2;
+  input [0:4] a3;
+  input [0:3] a4;
+  input [0:4] a5;
+  input [0:2] a6;
+  input [0:3] a7;
+  input [0:3] a8;
+  input [0:3] a9;
+  output [15:0] y;
 
   supply1 vdd;
   supply0 gnd;
-  muddlib07__xor3_1x xor3_1x_0(.a(a6[0]), .b(a6_1[1]), .c(a6_2[2]), .y(y_6[6]), 
-      .vdd(vdd_1), .gnd(gnd_1));
-  CRC__xor_4 xor_4_1(.a1(a4[0:0]), .a1_1(a4_1[1:1]), .a1_2(a4_2[2:2]), 
-      .a1_3(a4_3[3:3]), .y(y_4[4]), .vdd(vdd_1_1), .gnd(gnd_1_1));
-  CRC__xor_4 xor_4_2(.a1(a7[0:0]), .a1_1(a7_1[1:1]), .a1_2(a7_2[2:2]), 
-      .a1_3(a7_3[3:3]), .y(y_7[7]), .vdd(vdd_2), .gnd(gnd_2));
-  CRC__xor_4 xor_4_3(.a1(a8[0:0]), .a1_1(a8_1[1:1]), .a1_2(a8_2[2:2]), 
-      .a1_3(a8_3[3:3]), .y(y_8[8]), .vdd(vdd_3), .gnd(gnd_3));
-  CRC__xor_4 xor_4_4(.a1(a9[0:0]), .a1_1(a9_1[1:1]), .a1_2(a9_2[2:2]), 
-      .a1_3(a9_3[3:3]), .y(y_9[9]), .vdd(vdd_4), .gnd(gnd_4));
-  CRC__xor_4 xor_4_5(.a1(a10[0:0]), .a1_1(a10_1[1:1]), .a1_2(a10_2[2:2]), 
-      .a1_3(a10_3[3:3]), .y(y_10[10]), .vdd(vdd_5), .gnd(gnd_5));
-  CRC__xor_4 xor_4_6(.a1(a11[0:0]), .a1_1(a11_1[1:1]), .a1_2(a11_2[2:2]), 
-      .a1_3(a11_3[3:3]), .y(y_11[11]), .vdd(vdd_6), .gnd(gnd_6));
-  CRC__xor_4 xor_4_7(.a1(a12[0:0]), .a1_1(a12_1[1:1]), .a1_2(a12_2[2:2]), 
-      .a1_3(a12_3[3:3]), .y(y_12[12]), .vdd(vdd_7), .gnd(gnd_7));
-  CRC__xor_4 xor_4_8(.a1(a14[0:0]), .a1_1(a14_1[1:1]), .a1_2(a14_2[2:2]), 
-      .a1_3(a14_3[3:3]), .y(y_14[14]), .vdd(vdd_8), .gnd(gnd_8));
-  CRC__xor_4 xor_4_0_(.a1(a2[0:0]), .a1_1(a2_1[1:1]), .a1_2(a2_2[2:2]), 
-      .a1_3(a2_3[3:3]), .y(y_2[2]), .vdd(vdd_9), .gnd(gnd_9));
-  CRC__xor_5 xor_5_0(.a1(a3[0:0]), .a1_1(a3_1[1:1]), .a1_2(a3_2[2:2]), 
-      .a1_3(a3_3[3:3]), .a1_4(a3_4[4:4]), .y(y_3[3]), .vdd(vdd_10), 
-      .gnd(gnd_10));
-  CRC__xor_5 xor_5_1(.a1(a5[0:0]), .a1_1(a5_1[1:1]), .a1_2(a5_2[2:2]), 
-      .a1_3(a5_3[3:3]), .a1_4(a5_4[4:4]), .y(y_5[5]), .vdd(vdd_11), 
-      .gnd(gnd_11));
-  CRC__xor_5 xor_5_2(.a1(a13[0:0]), .a1_1(a13_1[1:1]), .a1_2(a13_2[2:2]), 
-      .a1_3(a13_3[3:3]), .a1_4(a13_4[4:4]), .y(y_13[13]), .vdd(vdd_12), 
-      .gnd(gnd_12));
-  CRC__xor_5 xor_5_3(.a1(a15[0:0]), .a1_1(a15_1[1:1]), .a1_2(a15_2[2:2]), 
-      .a1_3(a15_3[3:3]), .a1_4(a15_4[4:4]), .y(y_15[15]), .vdd(vdd_13), 
-      .gnd(gnd_13));
-  CRC__xor_6 xor_6_0_(.a1(a0[0:0]), .a1_1(a0_1[1:1]), .a1_2(a0_2[2:2]), 
-      .a1_3(a0_3[3:3]), .a1_4(a0_4[4:4]), .a1_5(a0_5[5:5]), .y(y[0]), 
-      .vdd(vdd_14), .gnd(gnd_14));
-  CRC__xor_6 xor_6_1_(.a1(a1[0:0]), .a1_1(a1_1[1:1]), .a1_2(a1_2[2:2]), 
-      .a1_3(a1_3[3:3]), .a1_4(a1_4[4:4]), .a1_5(a1_5[5:5]), .y(y_1[1]), 
-      .vdd(vdd), .gnd(gnd));
+  wire [5:14] a13_1;
+
+  muddlib07__xor3_1x xor3_1x_9(.a(a6[0]), .b(a6[1]), .c(a6[2]), .y(y[6]));
+  CRC__xor_4 xor_4_0_(.a1(a2[0:3]), .y(y[2]));
+  CRC__xor_4 xor_4_1_(.a1(a4[0:3]), .y(y[4]));
+  CRC__xor_4 xor_4_2_(.a1(a7[0:3]), .y(y[7]));
+  CRC__xor_4 xor_4_3_(.a1(a8[0:3]), .y(y[8]));
+  CRC__xor_4 xor_4_4_(.a1(a9[0:3]), .y(y[9]));
+  CRC__xor_4 xor_4_5_(.a1(a10[0:3]), .y(y[10]));
+  CRC__xor_4 xor_4_6_(.a1(a11[0:3]), .y(y[11]));
+  CRC__xor_4 xor_4_7_(.a1(a12[0:3]), .y(y[12]));
+  CRC__xor_4 xor_4_8_(.a1(a14[0:3]), .y(y[14]));
+  CRC__xor_5 xor_5_0_(.a1(a3[0:4]), .y(y[3]));
+  CRC__xor_5 xor_5_1_(.a1(a5[0:4]), .y(y[5]));
+  CRC__xor_5 xor_5_2_(.a1(a13[0:4]), .y(y[13]));
+  CRC__xor_5 xor_5_3_(.a1(a15[0:4]), .y(y[15]));
+  CRC__xor_6 xor_6_0_(.a1(a0[0:5]), .y(y[0]));
+  CRC__xor_6 xor_6_1_(.a1(a1[0:5]), .y(y[1]));
 endmodule   /* CRC__CRC_stage_output */
 
-module crc16(CRC_old, CRC_old_1, CRC_old_10, CRC_old_11, CRC_old_12, 
-      CRC_old_13, CRC_old_14, CRC_old_15, CRC_old_2, CRC_old_3, CRC_old_4, 
-      CRC_old_5, CRC_old_6, CRC_old_7, CRC_old_8, CRC_old_9, Data, Data_1, 
-      Data_10, Data_11, Data_12, Data_13, Data_14, Data_15, Data_2, Data_3, 
-      Data_4, Data_5, Data_6, Data_7, Data_8, Data_9, CRC_new, CRC_new_1, 
-      CRC_new_10, CRC_new_11, CRC_new_12, CRC_new_13, CRC_new_14, CRC_new_15, 
-      CRC_new_2, CRC_new_3, CRC_new_4, CRC_new_5, CRC_new_6, CRC_new_7, 
-      CRC_new_8, CRC_new_9, gnd, vdd);
-  input [0:0] CRC_old;
-  input [1:1] CRC_old_1;
-  input [10:10] CRC_old_10;
-  input [11:11] CRC_old_11;
-  input [12:12] CRC_old_12;
-  input [13:13] CRC_old_13;
-  input [14:14] CRC_old_14;
-  input [15:15] CRC_old_15;
-  input [2:2] CRC_old_2;
-  input [3:3] CRC_old_3;
-  input [4:4] CRC_old_4;
-  input [5:5] CRC_old_5;
-  input [6:6] CRC_old_6;
-  input [7:7] CRC_old_7;
-  input [8:8] CRC_old_8;
-  input [9:9] CRC_old_9;
-  input [0:0] Data;
-  input [1:1] Data_1;
-  input [10:10] Data_10;
-  input [11:11] Data_11;
-  input [12:12] Data_12;
-  input [13:13] Data_13;
-  input [14:14] Data_14;
-  input [15:15] Data_15;
-  input [2:2] Data_2;
-  input [3:3] Data_3;
-  input [4:4] Data_4;
-  input [5:5] Data_5;
-  input [6:6] Data_6;
-  input [7:7] Data_7;
-  input [8:8] Data_8;
-  input [9:9] Data_9;
-  output [0:0] CRC_new;
-  output [1:1] CRC_new_1;
-  output [10:10] CRC_new_10;
-  output [11:11] CRC_new_11;
-  output [12:12] CRC_new_12;
-  output [13:13] CRC_new_13;
-  output [14:14] CRC_new_14;
-  output [15:15] CRC_new_15;
-  output [2:2] CRC_new_2;
-  output [3:3] CRC_new_3;
-  output [4:4] CRC_new_4;
-  output [5:5] CRC_new_5;
-  output [6:6] CRC_new_6;
-  output [7:7] CRC_new_7;
-  output [8:8] CRC_new_8;
-  output [9:9] CRC_new_9;
-  input gnd;
-  input vdd;
+module crc16(CRC_old, Data, CRC_new);
+  input [15:0] CRC_old;
+  input [15:0] Data;
+  output [15:0] CRC_new;
 
   supply1 vdd;
   supply0 gnd;
   wire [15:0] T;
-  wire [10:0] T2;
-  wire [3:0] T3;
+  wire [0:10] T2;
+  wire [0:3] T3;
 
-  CRC__CRC_stage1 CRC_stag_0(.a(Data[0:0]), .a_1(Data_1[1:1]), 
-      .a_10(Data_10[10:10]), .a_11(Data_11[11:11]), .a_12(Data_12[12:12]), 
-      .a_13(Data_13[13:13]), .a_14(Data_14[14:14]), .a_15(Data_15[15:15]), 
-      .a_2(Data_2[2:2]), .a_3(Data_3[3:3]), .a_4(Data_4[4:4]), 
-      .a_5(Data_5[5:5]), .a_6(Data_6[6:6]), .a_7(Data_7[7:7]), 
-      .a_8(Data_8[8:8]), .a_9(Data_9[9:9]), .b(CRC_old[0:0]), 
-      .b_1(CRC_old_1[1:1]), .b_10(CRC_old_10[10:10]), .b_11(CRC_old_11[11:11]), 
-      .b_12(CRC_old_12[12:12]), .b_13(CRC_old_13[13:13]), 
-      .b_14(CRC_old_14[14:14]), .b_15(CRC_old_15[15:15]), .b_2(CRC_old_2[2:2]), 
-      .b_3(CRC_old_3[3:3]), .b_4(CRC_old_4[4:4]), .b_5(CRC_old_5[5:5]), 
-      .b_6(CRC_old_6[6:6]), .b_7(CRC_old_7[7:7]), .b_8(CRC_old_8[8:8]), 
-      .b_9(CRC_old_9[9:9]), .y(T[0:0]), .y_1(T[1:1]), .y_10(T[10:10]), 
-      .y_11(T[11:11]), .y_12(T[12:12]), .y_13(T[13:13]), .y_14(T[14:14]), 
-      .y_15(T[15:15]), .y_2(T[2:2]), .y_3(T[3:3]), .y_4(T[4:4]), .y_5(T[5:5]), 
-      .y_6(T[6:6]), .y_7(T[7:7]), .y_8(T[8:8]), .y_9(T[9:9]), .vdd(vdd), 
-      .vdd_1(vdd), .vdd_10(vdd), .vdd_11(vdd), .vdd_12(vdd), .vdd_13(vdd), 
-      .vdd_14(vdd), .vdd_1_1(vdd), .vdd_2(vdd), .vdd_3(vdd), .vdd_4(vdd), 
-      .vdd_5(vdd), .vdd_6(vdd), .vdd_7(vdd), .vdd_8(vdd), .vdd_9(vdd), 
-      .gnd(gnd), .gnd_1(gnd), .gnd_10(gnd), .gnd_11(gnd), .gnd_12(gnd), 
-      .gnd_13(gnd), .gnd_14(gnd), .gnd_1_1(gnd), .gnd_2(gnd), .gnd_3(gnd), 
-      .gnd_4(gnd), .gnd_5(gnd), .gnd_6(gnd), .gnd_7(gnd), .gnd_8(gnd), 
-      .gnd_9(gnd));
-  CRC__CRC_stage2 CRC_stag_1(.a(T[3:3]), .a_1(T[7:7]), .a_10(T[11:11]), 
-      .a_2(T[13:13]), .a_3(T[6:6]), .a_4(T[2:2]), .a_5(T[4:4]), .a_6(T[0:0]), 
-      .a_7(T[1:1]), .a_8(T[8:8]), .a_9(T[12:12]), .b(T[12:12]), .b_1(T[10:10]), 
-      .b_10(T[6:6]), .b_2(T[14:14]), .b_3(T[12:12]), .b_4(T[3:3]), 
-      .b_5(T[10:10]), .b_6(T[5:5]), .b_7(T[7:7]), .b_8(T[9:9]), .b_9(T[15:15]), 
-      .y(T2[10:10]), .y_1(T2[9:9]), .y_10(T2[0:0]), .y_2(T2[8:8]), 
-      .y_3(T2[7:7]), .y_4(T2[6:6]), .y_5(T2[5:5]), .y_6(T2[4:4]), 
-      .y_7(T2[3:3]), .y_8(T2[2:2]), .y_9(T2[1:1]), .vdd(vdd), .vdd_1(vdd), 
-      .vdd_1_1(vdd), .vdd_2(vdd), .vdd_3(vdd), .vdd_4(vdd), .vdd_5(vdd), 
-      .vdd_6(vdd), .vdd_7(vdd), .vdd_8(vdd), .vdd_9(vdd), .gnd(gnd), 
-      .gnd_1(gnd), .gnd_1_1(gnd), .gnd_2(gnd), .gnd_3(gnd), .gnd_4(gnd), 
-      .gnd_5(gnd), .gnd_6(gnd), .gnd_7(gnd), .gnd_8(gnd), .gnd_9(gnd));
-  CRC__CRC_stage3 CRC_stag_2(.a(T2[5:5]), .a_1(T2[2:2]), .a_2(T2[4:4]), 
-      .a_3(T2[3:3]), .b(T2[1:1]), .b_1(T2[8:8]), .b_2(T2[0:0]), .b_3(T2[6:6]), 
-      .y(T3[3:3]), .y_1(T3[2:2]), .y_2(T3[1:1]), .y_3(T3[0:0]), .vdd(vdd), 
-      .vdd_1(vdd), .vdd_1_1(vdd), .vdd_2(vdd), .gnd(gnd), .gnd_1(gnd), 
-      .gnd_1_1(gnd), .gnd_2(gnd));
-  CRC__CRC_stage_output CRC_stag_3(.a0(T2[6:6]), .a0_1(T[6:6]), .a0_2(T[0:0]), 
-      .a0_3(T2[2:2]), .a0_4(T2[9:9]), .a0_5(T[13:13]), .a1(T2[0:0]), 
-      .a10(T3[1:1]), .a10_1(T2[10:10]), .a10_2(T3[2:2]), .a10_3(T2[9:9]), 
-      .a11(T3[2:2]), .a11_1(T2[0:0]), .a11_2(T3[3:3]), .a11_3(T2[3:3]), 
-      .a12(T3[1:1]), .a12_1(T[3:3]), .a12_2(T2[1:1]), .a12_3(T[14:14]), 
-      .a13(T3[3:3]), .a13_1(T[0:0]), .a13_2(T2[2:2]), .a13_3(T2[6:6]), 
-      .a13_4(T[1:1]), .a14(T3[1:1]), .a14_1(T[4:4]), .a14_2(T2[3:3]), 
-      .a14_3(T[8:8]), .a15(T2[3:3]), .a15_1(T2[7:7]), .a15_2(T2[2:2]), 
-      .a15_3(T[2:2]), .a15_4(T[5:5]), .a1_1(T[0:0]), .a1_2(T[1:1]), 
-      .a1_3(T2[8:8]), .a1_4(T[2:2]), .a1_5(T[4:4]), .a2(T3[0:0]), 
-      .a2_1(T[5:5]), .a2_2(T2[1:1]), .a2_3(T[14:14]), .a3(T2[5:5]), 
-      .a3_1(T[0:0]), .a3_2(T[7:7]), .a3_3(T[9:9]), .a3_4(T[15:15]), 
-      .a4(T3[0:0]), .a4_1(T[9:9]), .a4_2(T3[1:1]), .a4_3(T[13:13]), 
-      .a5(T3[0:0]), .a5_1(T[8:8]), .a5_2(T2[5:5]), .a5_3(T2[7:7]), 
-      .a5_4(T[14:14]), .a6(T3[1:1]), .a6_1(T2[5:5]), .a6_2(T[15:15]), 
-      .a7(T2[3:3]), .a7_1(T[5:5]), .a7_2(T2[0:0]), .a7_3(T[12:12]), 
-      .a8(T2[10:10]), .a8_1(T[0:0]), .a8_2(T[9:9]), .a8_3(T[10:10]), 
-      .a9(T2[5:5]), .a9_1(T[1:1]), .a9_2(T[11:11]), .a9_3(T[13:13]), 
-      .y(CRC_new[0:0]), .y_1(CRC_new_1[1:1]), .y_10(CRC_new_10[10:10]), 
-      .y_11(CRC_new_11[11:11]), .y_12(CRC_new_12[12:12]), 
-      .y_13(CRC_new_13[13:13]), .y_14(CRC_new_14[14:14]), 
-      .y_15(CRC_new_15[15:15]), .y_2(CRC_new_2[2:2]), .y_3(CRC_new_3[3:3]), 
-      .y_4(CRC_new_4[4:4]), .y_5(CRC_new_5[5:5]), .y_6(CRC_new_6[6:6]), 
-      .y_7(CRC_new_7[7:7]), .y_8(CRC_new_8[8:8]), .y_9(CRC_new_9[9:9]), 
-      .vdd(vdd), .vdd_1(vdd), .vdd_10(vdd), .vdd_11(vdd), .vdd_12(vdd), 
-      .vdd_13(vdd), .vdd_14(vdd), .vdd_1_1(vdd), .vdd_2(vdd), .vdd_3(vdd), 
-      .vdd_4(vdd), .vdd_5(vdd), .vdd_6(vdd), .vdd_7(vdd), .vdd_8(vdd), 
-      .vdd_9(vdd), .gnd(gnd), .gnd_1(gnd), .gnd_10(gnd), .gnd_11(gnd), 
-      .gnd_12(gnd), .gnd_13(gnd), .gnd_14(gnd), .gnd_1_1(gnd), .gnd_2(gnd), 
-      .gnd_3(gnd), .gnd_4(gnd), .gnd_5(gnd), .gnd_6(gnd), .gnd_7(gnd), 
-      .gnd_8(gnd), .gnd_9(gnd));
+  CRC__CRC_stage1 CRC_stag_0(.a(Data[15:0]), .b(CRC_old[15:0]), .y(T[15:0]));
+  CRC__CRC_stage2 CRC_stag_1(.a({T[11], T[12], T[8], T[1], T[0], T[4], T[2], 
+      T[6], T[13], T[7], T[3]}), .b({T[6], T[15], T[9], T[7], T[5], T[10], 
+      T[3], T[12], T[14], T[10], T[12]}), .y({T2[0], T2[1], T2[2], T2[3], 
+      T2[4], T2[5], T2[6], T2[7], T2[8], T2[9], T2[10]}));
+  CRC__CRC_stage3 CRC_stag_2(.a({T2[3], T2[4], T2[2], T2[5]}), .b({T2[6], 
+      T2[0], T2[8], T2[1]}), .y({T3[0], T3[1], T3[2], T3[3]}));
+  CRC__CRC_stage_output CRC_stag_3(.a0({T2[6], T[6], T[0], T2[2], T2[9], 
+      T[13]}), .a1({T2[0], T[0], T[1], T2[8], T[2], T[4]}), .a10({T3[1], 
+      T2[10], T3[2], T2[9]}), .a11({T3[2], T2[0], T3[3], T2[3]}), .a12({T3[1], 
+      T[3], T2[1], T[14]}), .a13({T3[3], T[0], T2[2], T2[6], T[1]}), 
+      .a14({T3[1], T[4], T2[3], T[8]}), .a15({T2[3], T2[7], T2[2], T[2], 
+      T[5]}), .a2({T3[0], T[5], T2[1], T[14]}), .a3({T2[5], T[0], T[7], T[9], 
+      T[15]}), .a4({T3[0], T[9], T3[1], T[13]}), .a5({T3[0], T[8], T2[5], 
+      T2[7], T[14]}), .a6({T3[1], T2[5], T[15]}), .a7({T2[3], T[5], T2[0], 
+      T[12]}), .a8({T2[10], T[0], T[9], T[10]}), .a9({T2[5], T[1], T[11], 
+      T[13]}), .y(CRC_new[15:0]));
 endmodule   /* crc16 */
