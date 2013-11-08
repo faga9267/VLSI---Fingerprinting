@@ -1902,15 +1902,13 @@ Evdd_48||D5G2;|flopenr_@0|vdd_48|P/A
 X
 
 # Cell fgpnt;1{sch}
-Cfgpnt;1{sch}||schematic|1383494088470|1383494510141|
+Cfgpnt;1{sch}||schematic|1383494088470|1383936208390|
 Ngeneric:Facet-Center|art@0||0|0||||AV
 Icrc16;1{ic}|crc16@0||10|15|||D5G4;
 Ifgpnt;1{ic}|fgpnt@0||39|22|||D5G4;
 Iflopenr_1x_16;1{ic}|flopenr_@0||10|3|||D5G4;
 NBus_Pin|pin@3||2|16||||
 NBus_Pin|pin@4||-13|14||||
-NWire_Pin|pin@5||1|3||||
-NWire_Pin|pin@6||1|3||||
 NBus_Pin|pin@8||17|15||||
 NBus_Pin|pin@9||17|9||||
 NBus_Pin|pin@10||2|9||||
@@ -1922,10 +1920,9 @@ NBus_Pin|pin@15||24|3||||
 NWire_Pin|pin@16||1|1||||
 NWire_Pin|pin@17||1|-1||||
 NWire_Pin|pin@18||1|5||||
+NWire_Pin|pin@19||0.5|3||||
 Abus|net@5|||IJ0|crc16@0|CRC[15:0]|5|16|pin@3||2|16
 Abus|net@6|||IJ0|crc16@0|Data[15:0]|5|14|pin@4||-13|14
-Awire|net@7|||0|flopenr_@0|ph1|5|3|pin@5||1|3
-Awire|net@11|||2700|pin@6||1|3|pin@5||1|3
 Abus|net@12|||IJ1800|crc16@0|CRCnew[15:0]|15|15|pin@8||17|15
 Abus|net@13|||IJ900|pin@8||17|15|pin@9||17|9
 Abus|net@14|||IJ0|pin@9||17|9|pin@10||2|9
@@ -1939,10 +1936,11 @@ Abus|net@22|||IJ1800|pin@14||19|3|pin@15||24|3
 Awire|net@23|||0|flopenr_@0|ph2|5|1|pin@16||1|1
 Awire|net@24|||0|flopenr_@0|reset|5|-1|pin@17||1|-1
 Awire|net@25|||0|flopenr_@0|en|5|5|pin@18||1|5
+Awire|net@26|||0|flopenr_@0|ph1|5|3|pin@19||0.5|3
 ECRC[15:0]||D5G2;|pin@15||O
 EData[15:0]||D5G2;|pin@4||I
 Eenable||D5G2;|pin@18||I
-Eph1||D5G2;|pin@5||I
+Eph1||D5G2;|pin@19||I
 Eph2||D5G2;|pin@16||I
 Ereset||D5G2;|pin@17||I
 X
@@ -3042,9 +3040,8 @@ Evdd_48||D5G2;|flopenr_@19|vdd|P/A
 X
 
 # Cell flopenr_1x_16;1{sch}
-Cflopenr_1x_16;1{sch}||mocmos|1383259577958|1383589631813|
+Cflopenr_1x_16;1{sch}||mocmos|1383259577958|1383936149143|
 Ngeneric:Facet-Center|art@0||0|0||||AV
-Nschematic:Bus_Pin|d[15:0]|D5G1;|-38.5|-6.5||||
 Iwordlib8:flopenr_1x_8;1{ic}|flopenr_@0||-25|0.5|||D5G4;
 Iwordlib8:flopenr_1x_8;1{ic}|flopenr_@1||-24|-20.5|||D5G4;
 Iflopenr_1x_16;1{ic}|flopenr_@4||6|18|||D5G4;
@@ -3070,13 +3067,14 @@ Nschematic:Bus_Pin|pin@22||-37|0.5||||
 Nschematic:Bus_Pin|pin@24||-14.5|0.5||||
 Nschematic:Bus_Pin|pin@25||-36|-20.5||||
 Nschematic:Bus_Pin|pin@26||-13.5|-20.5||||
+Nschematic:Bus_Pin|pin@27||-38.5|-6.5||||
 Nschematic:Bus_Pin|q[15:0]|D5G1;|-9.5|-6||||
 Aschematic:bus|d[14,12,10,8,6,4,2,0]|D5G1;||IJ0|flopenr_@1|d[31:0]|-29|-20.5|pin@25||-36|-20.5
 Aschematic:bus|d[15,13,11,9,7,5,3,1]|D5G1;||IJ0|flopenr_@0|d[31:0]|-30|0.5|pin@22||-37|0.5
+Aschematic:bus|d[15:0]|D5G1;||IJ1800|pin@1||-44|-6.5|pin@27||-38.5|-6.5
 Aschematic:wire|en|D5G1;||1800|pin@13||-46|-16.5|pin@14||-40.5|-16.5
 Aschematic:wire|en|D5G1;||900|flopenr_@1|en|-26|-27.5|pin@15||-26|-29
 Aschematic:wire|en|D5G1;||900|flopenr_@0|en|-27|-6.5|pin@16||-27|-8
-Aschematic:bus|net@0|||IJ1800|pin@1||-44|-6.5|d[15:0]||-38.5|-6.5
 Aschematic:bus|net@1|||IJ1800|q[15:0]||-9.5|-6|pin@4||-0.5|-6
 Aschematic:wire|ph1|D5G1;||1800|pin@5||-45|-11|pin@6||-38.5|-11
 Aschematic:wire|ph1|D5G1;||2700|flopenr_@1|ph1|-22|-13.5|pin@8||-22|-11
