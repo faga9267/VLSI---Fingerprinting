@@ -65,10 +65,12 @@ while ($enable_counts < $reset_at - 2 - $#data_ins) {
     }
     else {
         $memwrite = 0;
+        #next;
     }
     
     if ($memwrite) {
         $data = '0000000000000000';
+
     }
     else {
         $data = '';
@@ -88,11 +90,14 @@ foreach (@data_ins) {
     $global_enables++;
 }
 $enable_counts = 0;
+# enable should be 0 when reset is high
+printf ("000000000000000000000000000%s\n",'0000000000000000');
+    
 #print $global_enables . "\n";
 #exit;    
 
 for(my $j = 0; $j < 7; $j++) {
-    while ($enable_counts < $reset_at ) {
+    while ($enable_counts < $reset_at - 1 ) {
 
         if (rand(10) > 6) {
             $memwrite = 1;
@@ -101,6 +106,7 @@ for(my $j = 0; $j < 7; $j++) {
         }
         else {
             $memwrite = 0;
+            #next;
         }
         
         $data = '';
@@ -115,10 +121,14 @@ for(my $j = 0; $j < 7; $j++) {
     $index++;
     
     if ($index > 6) {
-         printf ("010000000000000000000000000%s\n",'0000000000000000');
+         printf ("000000000000000000000000000%s\n",'0000000000000000');
          printf ("000000000000000000000000000%s\n",$expected_checksum);
          $global_enables++;
     }
+    else {
+        # enable should be 0 when reset is high
+        printf ("000000000000000000000000000%s\n",'0000000000000000');
+    }
 }
 
-print $global_enables . "\n";
+#print $global_enables . "\n";

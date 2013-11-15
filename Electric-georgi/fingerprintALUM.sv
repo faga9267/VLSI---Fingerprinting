@@ -15,7 +15,7 @@ module testbench();
     logic [15:0] y,crc;
     
  //   logic t,y;
-    logic [7:0] data2;
+    logic [7:0] data2,counter;
     
   //  module fingerprintALUM(ph1, ph2, data1, data2, fiforeset, memtoreg, memwrite, 
   //    q);
@@ -29,7 +29,7 @@ module testbench();
     fiforeset,
     memtoreg,
     memwrite,
-    crc, data, enable, reset, y);
+    y);
     
     // read test vector file and initialize test
     initial begin
@@ -89,22 +89,10 @@ endmodule
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Verilog for cell 'fingerprintALUM{sch}' from library 'fingerprint' */
 /* Created on Fri Nov 08, 2013 13:09:59 */
-/* Last revised on Thu Nov 14, 2013 22:16:32 */
-/* Written on Thu Nov 14, 2013 22:16:45 by Electric VLSI Design System, version 8.06 */
+/* Last revised on Fri Nov 15, 2013 00:29:05 */
+/* Written on Fri Nov 15, 2013 00:29:27 by Electric VLSI Design System, version 8.06 */
 
 module muddlib07__and2_1x(a, b, y);
   input a;
@@ -823,7 +811,7 @@ module mipsxinchi__ourmux(ctrl1, ctrl2, data1, data2, out);
 endmodule   /* mipsxinchi__ourmux */
 
 module fingerprintALUM(ph1, ph2, data1, data2, fiforeset, memtoreg, memwrite, 
-      crc, data, enable, reset, y);
+      y);
   input ph1;
   input ph2;
   input [15:0] data1;
@@ -831,26 +819,24 @@ module fingerprintALUM(ph1, ph2, data1, data2, fiforeset, memtoreg, memwrite,
   input fiforeset;
   input memtoreg;
   input memwrite;
-  output [15:0] crc;
-  output [15:0] data;
-  output enable;
-  output reset;
   output [15:0] y;
 
   supply1 vdd;
   supply0 gnd;
-  wire net_108, net_84;
+  wire enable, net_108, net_84, reset;
+  wire [15:0] net_62;
+  wire [15:0] net_63;
 
   mojing__counter counter_0(.E(enable), .ph1(ph1), .ph2(ph2), .reset(net_108), 
       .q(net_84));
-  CRC__fgpnt fgpnt_0(.ph1(ph1), .ph2(ph2), .Data(data[15:0]), .enable(enable), 
-      .reset(reset), .CRC(crc[15:0]));
+  CRC__fgpnt fgpnt_0(.ph1(ph1), .ph2(ph2), .Data(net_62[15:0]), 
+      .enable(enable), .reset(reset), .CRC(net_63[15:0]));
   muddlib07__inv_1x inv_1x_0(.a(reset), .y(net_108));
   muddlib07__mux2_c_1x mux2_c_1_0(.d0(net_84), .d1(fiforeset), .s(fiforeset), 
       .y(reset));
-  kaushik__my_fifo_8_16b my_fifo__0(.ph1(ph1), .ph2(ph2), .d(crc[15:0]), 
+  kaushik__my_fifo_8_16b my_fifo__0(.ph1(ph1), .ph2(ph2), .d(net_63[15:0]), 
       .en(reset), .reset(fiforeset), .q(y[15:0]));
   muddlib07__or2_1x or2_1x_0(.a(memwrite), .b(memtoreg), .y(enable));
   mipsxinchi__ourmux ourmux_0(.ctrl1(memwrite), .ctrl2(memtoreg), 
-      .data1(data1[15:0]), .data2(data2[7:0]), .out(data[15:0]));
+      .data1(data1[15:0]), .data2(data2[7:0]), .out(net_62[15:0]));
 endmodule   /* fingerprintALUM */

@@ -21,7 +21,7 @@ Tbicmos|ScaleFORbicmos()D300.0
 Tmocmos|MoCMOSAlternateActivePolyRules()BT|ScaleFORmocmos()D300.0|mocmosNumberOfMetalLayers()I3|mocmosSecondPolysilicon()BF
 
 # Cell fingerprintALUM;1{sch}
-CfingerprintALUM;1{sch}||schematic|1383934199628|1384485392583|
+CfingerprintALUM;1{sch}||schematic|1383934199628|1384493345760|
 Ngeneric:Facet-Center|art@0||0|0||||AV
 Imojing:counter;1{ic}|counter@0||-48|-16|||D5G4;
 ICRC:fgpnt;1{ic}|fgpnt@0||-50|21.5|||D5G4;
@@ -56,6 +56,7 @@ NWire_Pin|pin@75||-56.5|-4||||
 NWire_Pin|pin@76||-56|-22||||
 NWire_Pin|pin@77||-35|-1||||
 NWire_Pin|pin@78||-57|17.5||||
+Awire|enable|D5G1;||1800|or2_1x@0|y|-86|-10|pin@6||-61|-10
 Awire|fiforeset|D5G1;||2700|mux2_c_1@0|s|-26.5|3|pin@64||-26.5|6
 Awire|fiforeset|D5G1;||0|mux2_c_1@0|d1|-30|-5|pin@73||-33|-5
 Awire|net@3|||0|ourmux@0|downctrl|-83.5|11|pin@1||-88|11
@@ -72,16 +73,15 @@ Abus|net@76|||IJ0|ourmux@0|Down_data[7:0]|-83.5|16|pin@58||-91|16
 Awire|net@77|||0|pin@2||-84|13|pin@59||-93.5|13
 Awire|net@78|||0|pin@1||-88|11|pin@60||-92.5|11
 Abus|net@79|||IJ0|ourmux@0|Up_data[15:0]|-83.5|18|pin@61||-88|18
-Awire|net@80|||0|counter@0|E|-53|-10|pin@6||-61|-10
 Awire|net@84|||1800|counter@0|q|-43|-15|pin@62||-35|-15
 Awire|net@87|||2700|pin@6||-61|-10|pin@46||-61|23.5
-Awire|net@90|||1800|or2_1x@0|y|-86|-10|pin@6||-61|-10
 Awire|net@106|||900|pin@28||-56.5|0|pin@75||-56.5|-4
 Awire|net@107|||1800|pin@75||-56.5|-4|inv_1x@0|a|-56|-4
 Awire|net@108|||900|inv_1x@0|y|-56|-15|pin@76||-56|-22
 Awire|net@109|||1800|pin@76||-56|-22|counter@0|reset|-53|-22
 Awire|net@110|||2700|pin@62||-35|-15|pin@77||-35|-1
 Awire|net@111|||1800|pin@77||-35|-1|mux2_c_1@0|d0|-30|-1
+Awire|net@118|||1800|pin@6||-61|-10|counter@0|E|-53|-10
 Awire|ph1|D5G1;||0|counter@0|ph1|-53|-14|pin@68||-55|-14
 Awire|ph1|D5G1;||0|my_fifo_@0|ph1|-24.5|17.5|pin@70||-30|17.5
 Awire|ph2|D5G1;||0|counter@0|ph2|-53|-18|pin@69||-55|-18
@@ -90,17 +90,13 @@ Awire|reset|D5G1;||0|my_fifo_@0|en|-24.5|19.5|pin@51||-43|19.5
 Awire|reset|D5G1;||0|pin@52||-43|0|pin@28||-56.5|0
 Awire|reset|D5G1;||1800|mux2_c_1@0|y|-22|-3|pin@67||-18|-3
 Awire|reset|D5G1;||0|fgpnt@0|reset|-55|17.5|pin@78||-57|17.5
-Ecrc[15:0]||D5G2;|fgpnt@0|CRC[15:0]|O
 Edata1[15:0]||D5G2;X-10;Y0.5;|ourmux@0|Up_data[15:0]|I
 Edata2[7:0]||D5G2;|pin@58||I
-Edata|data[15:0]|D5G2;|pin@48||O
-Eenable||D5G2;|pin@46||O
 Efiforeset||D5G2;|pin@57||I
 Ememtoreg||D5G2;|pin@60||I
 Ememwrite||D5G2;|pin@59||I
 Eph1||D5G2;|fgpnt@0|ph1|C
 Eph2||D5G2;|fgpnt@0|ph2|C
-Ereset||D5G2;|pin@52||O
 Ey[15:0]||D5G2;|my_fifo_@0|q[15:0]|O
 X
 
