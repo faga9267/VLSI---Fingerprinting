@@ -21,7 +21,7 @@ Tbicmos|ScaleFORbicmos()D300.0
 Tmocmos|MoCMOSAlternateActivePolyRules()BT|ScaleFORmocmos()D300.0|mocmosNumberOfMetalLayers()I3|mocmosSecondPolysilicon()BF
 
 # Cell fingerprintALUM;1{sch}
-CfingerprintALUM;1{sch}||schematic|1383934199628|1384493345760|
+CfingerprintALUM;1{sch}||schematic|1383934199628|1384558830526|
 Ngeneric:Facet-Center|art@0||0|0||||AV
 Imojing:counter;1{ic}|counter@0||-48|-16|||D5G4;
 ICRC:fgpnt;1{ic}|fgpnt@0||-50|21.5|||D5G4;
@@ -33,7 +33,7 @@ Imipsxinchi:ourmux;1{ic}|ourmux@0||-78.5|15|||D5G4;
 NWire_Pin|pin@1||-88|11||||
 NWire_Pin|pin@2||-84|13||||
 NWire_Pin|pin@6||-61|-10||||
-NWire_Pin|pin@28||-56.5|0||||
+NWire_Pin|pin@28||-55.5|0||||
 NWire_Pin|pin@46||-61|23.5||||
 NBus_Pin|pin@48||-72|25.5||||
 NBus_Pin|pin@49||-72|15||||
@@ -52,7 +52,7 @@ NWire_Pin|pin@69||-55|-18||||
 NWire_Pin|pin@70||-30|17.5||||
 NWire_Pin|pin@71||-30|15.5||||
 NWire_Pin|pin@73||-33|-5||||
-NWire_Pin|pin@75||-56.5|-4||||
+NWire_Pin|pin@75||-55.5|-4||||
 NWire_Pin|pin@76||-56|-22||||
 NWire_Pin|pin@77||-35|-1||||
 NWire_Pin|pin@78||-57|17.5||||
@@ -75,8 +75,8 @@ Awire|net@78|||0|pin@1||-88|11|pin@60||-92.5|11
 Abus|net@79|||IJ0|ourmux@0|Up_data[15:0]|-83.5|18|pin@61||-88|18
 Awire|net@84|||1800|counter@0|q|-43|-15|pin@62||-35|-15
 Awire|net@87|||2700|pin@6||-61|-10|pin@46||-61|23.5
-Awire|net@106|||900|pin@28||-56.5|0|pin@75||-56.5|-4
-Awire|net@107|||1800|pin@75||-56.5|-4|inv_1x@0|a|-56|-4
+Awire|net@106|||900|pin@28||-55.5|0|pin@75||-55.5|-4
+Awire|net@107|||0|pin@75||-55.5|-4|inv_1x@0|a|-56|-4
 Awire|net@108|||900|inv_1x@0|y|-56|-15|pin@76||-56|-22
 Awire|net@109|||1800|pin@76||-56|-22|counter@0|reset|-53|-22
 Awire|net@110|||2700|pin@62||-35|-15|pin@77||-35|-1
@@ -87,7 +87,7 @@ Awire|ph1|D5G1;||0|my_fifo_@0|ph1|-24.5|17.5|pin@70||-30|17.5
 Awire|ph2|D5G1;||0|counter@0|ph2|-53|-18|pin@69||-55|-18
 Awire|ph2|D5G1;||0|my_fifo_@0|ph2|-24.5|15.5|pin@71||-30|15.5
 Awire|reset|D5G1;||0|my_fifo_@0|en|-24.5|19.5|pin@51||-43|19.5
-Awire|reset|D5G1;||0|pin@52||-43|0|pin@28||-56.5|0
+Awire|reset|D5G1;||0|pin@52||-43|0|pin@28||-55.5|0
 Awire|reset|D5G1;||1800|mux2_c_1@0|y|-22|-3|pin@67||-18|-3
 Awire|reset|D5G1;||0|fgpnt@0|reset|-55|17.5|pin@78||-57|17.5
 Edata1[15:0]||D5G2;X-10;Y0.5;|ourmux@0|Up_data[15:0]|I

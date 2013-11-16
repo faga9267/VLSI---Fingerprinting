@@ -1888,9 +1888,9 @@ Ewritedata[7]||A14;D5|pad_out@2|pad|O
 X
 
 # Cell counter;1{ic}
-Ccounter;1{ic}||artwork|1383869856968|1384132526291|E
+Ccounter;1{ic}||artwork|1383869856968|1384558425252|E
 Ngeneric:Facet-Center|art@0||0|0||||AV
-NOpened-Thicker-Polygon|art@1||0|0|6|18|||SCHEM_function(D5G2;)Scounter|trace()V[-3/-9,-3/9,3/9,3/-9,-3/-9]
+NOpened-Thicker-Polygon|art@1||0|0|6|18|||trace()V[-3/-9,-3/9,3/9,3/-9,-3/-9]
 Nschematic:Bus_Pin|pin@0||-5|6||||
 Nschematic:Wire_Pin|pin@1||-3|6||||
 Nschematic:Bus_Pin|pin@20||-5|2||||
@@ -1901,6 +1901,7 @@ Nschematic:Bus_Pin|pin@24||-5|-6||||
 Nschematic:Wire_Pin|pin@25||-3|-6||||
 Nschematic:Bus_Pin|pin@26||5|1||||
 Nschematic:Wire_Pin|pin@27||3|1||||
+Ngeneric:Invisible-Pin|pin@36||0|0|||||ART_message(D5G1;)Scounter
 Aschematic:wire|net@0|||0|pin@1||-3|6|pin@0||-5|6
 Aschematic:wire|net@10|||0|pin@21||-3|2|pin@20||-5|2
 Aschematic:wire|net@11|||0|pin@23||-3|-2|pin@22||-5|-2
@@ -2714,7 +2715,7 @@ Evdd||D5G2;|xor2_1x@7|vdd|P
 X
 
 # Cell counter;1{sch}
-Ccounter;1{sch}||schematic|1383759580187|1384132482388|
+Ccounter;1{sch}||schematic|1383759580187|1384558312965|
 Imuddlib07:and2_1x;1{ic}|and2_1x@0||-46.5|12|RRR||D5G4;
 Imuddlib07:and2_1x;1{ic}|and2_1x@3||-45.5|-2|RRR||D5G4;
 Imuddlib07:and2_1x;1{ic}|and2_1x@4||-44.5|-16.5|RRR||D5G4;
@@ -2723,6 +2724,7 @@ Imuddlib07:and2_1x;1{ic}|and2_1x@6||-42.5|-55|RRR||D5G4;
 Imuddlib07:and2_1x;1{ic}|and2_1x@7||-41.5|-73|RRR||D5G4;
 Imuddlib07:and2_1x;1{ic}|and2_1x@8||-40.5|-91.5|RRR||D5G4;
 Imuddlib07:and2_1x;1{ic}|and2_1x@9||50|-40.5|||D5G4;
+Imuddlib07:and2_1x;1{ic}|and2_1x@10||-37|23|||D5G4;
 Imuddlib07:and4_1x;1{ic}|and4_1x@0||36.5|-31.5|||D5G4;
 Imuddlib07:and4_1x;1{ic}|and4_1x@1||35|-46.5|||D5G4;
 Ngeneric:Facet-Center|art@0||0|0||||AV
@@ -2735,10 +2737,9 @@ Imuddlib07:flopr_c_1x;1{ic}|flopr_c_@4||-7.5|-49.5|||D5G4;
 Imuddlib07:flopr_c_1x;1{ic}|flopr_c_@5||-7.5|-66|||D5G4;
 Imuddlib07:flopr_c_1x;1{ic}|flopr_c_@6||-7.5|-83.5|||D5G4;
 Imuddlib07:flopr_c_1x;1{ic}|flopr_c_@7||-7.5|-101.5|||D5G4;
+Imuddlib07:or2_1x;1{ic}|or2_1x@0||20|-5|R||D5G4;
 NWire_Pin|pin@11||10.5|18.5||||
 NWire_Pin|pin@12||11|2||||
-NWire_Pin|pin@15||2.5|27.5||||
-NWire_Pin|pin@16||2.5|18.5||||
 NWire_Pin|pin@18||2.5|11.5||||
 NWire_Pin|pin@19||2.5|2||||
 NWire_Pin|pin@24||-45.5|27.5||||
@@ -2753,10 +2754,9 @@ NWire_Pin|pin@44||4.5|-12||||
 NWire_Pin|pin@45||11.5|-12||||
 NWire_Pin|pin@46||-9.5|-10.5||||
 NWire_Pin|pin@51||5|-28||||
-NWire_Pin|pin@53||21|12.5||||
-NWire_Pin|pin@54||21|-34||||
-NWire_Pin|pin@55||21|-18||||
-NWire_Pin|pin@56||21|-4||||
+NWire_Pin|pin@54||18|-34||||
+NWire_Pin|pin@55||18|-18||||
+NWire_Pin|pin@56||18|-4||||
 NWire_Pin|pin@59||-6.5|29.5||||
 NWire_Pin|pin@62||-3.5|30||||
 NWire_Pin|pin@63||26.5|-4||||
@@ -2793,8 +2793,7 @@ NWire_Pin|pin@110||-40.5|-98.5||||
 NWire_Pin|pin@112||18|-103.5||||
 NWire_Pin|pin@113||18|-85.5||||
 NWire_Pin|pin@114||18|-68||||
-NWire_Pin|pin@115||21|-68||||
-NWire_Pin|pin@116||21|-51.5||||
+NWire_Pin|pin@116||18|-51.5||||
 NWire_Pin|pin@119||-34.5|1||||
 NWire_Pin|pin@120||-34.5|5.5||||
 NWire_Pin|pin@121||-46.5|5.5||||
@@ -2827,6 +2826,15 @@ NWire_Pin|pin@148||28.5|-47.5||||
 NWire_Pin|pin@150||59.5|-40.5||||
 NWire_Pin|pin@152||41|-39.5||||
 NWire_Pin|pin@153||42.5|-41.5||||
+NWire_Pin|pin@155||22|-2||||
+NWire_Pin|pin@158||20|12.5||||
+NWire_Pin|pin@165||2|27.5||||
+NWire_Pin|pin@167||2|18.5||||
+NWire_Pin|pin@168||-31|19||||
+NWire_Pin|pin@169||-29.5|19||||
+NWire_Pin|pin@174||-31|23||||
+NWire_Pin|pin@175||-45.5|24||||
+NWire_Pin|pin@176||-43|22||||
 Imuddlib07:xor2_1x;1{ic}|xor2_1x@0||-24.5|18.5|||D5G4;
 Imuddlib07:xor2_1x;1{ic}|xor2_1x@1||-23.5|2|||D5G4;
 Imuddlib07:xor2_1x;1{ic}|xor2_1x@2||-24|-10.5|||D5G4;
@@ -2835,8 +2843,9 @@ Imuddlib07:xor2_1x;1{ic}|xor2_1x@4||-23|-45.5|||D5G4;
 Imuddlib07:xor2_1x;1{ic}|xor2_1x@6||-22.5|-62|||D5G4;
 Imuddlib07:xor2_1x;1{ic}|xor2_1x@7||-19.5|-79.5|||D5G4;
 Imuddlib07:xor2_1x;1{ic}|xor2_1x@8||-18.5|-97.5|||D5G4;
-Awire|d[0]|D5G1;||1800|pin@16||2.5|18.5|pin@11||10.5|18.5
+Awire|E|D5G1;||900|or2_1x@0|b|22|0.5|pin@155||22|-2
 Awire|d[0]|D5G1;||0|and4_1x@0|d|31.5|-32.5|pin@144||29|-32.5
+Awire|d[0]|D5G1;||0|pin@11||10.5|18.5|pin@167||2|18.5
 Awire|d[1]|D5G1;||1800|pin@19||2.5|2|pin@12||11|2
 Awire|d[1]|D5G1;||0|and4_1x@0|c|31.5|-31.5|pin@143||29|-31.5
 Awire|d[2]|D5G1;||1800|pin@44||4.5|-12|pin@45||11.5|-12
@@ -2852,15 +2861,11 @@ Awire|d[6]|D5G1;||0|and4_1x@1|a|30|-43.5|pin@145||28|-43.5
 Awire|d[7]|D5G1;||1800|pin@106||4|-97.5|pin@97||9|-97.5
 Awire|d[7]|D5G1;||0|and4_1x@1|b|30|-44.5|pin@146||27|-44.5
 Awire|net@19|||1800|xor2_1x@0|y|-19.5|18.5|flopr_c_@0|d|-9.5|18.5
-Awire|net@25|||1800|flopr_c_@0|q|0.5|18.5|pin@16||2.5|18.5
-Awire|net@26|||900|pin@15||2.5|27.5|pin@16||2.5|18.5
 Awire|net@29|||1800|flopr_c_@1|q|0.5|2|pin@19||2.5|2
 Awire|net@30|||900|pin@18||2.5|11.5|pin@19||2.5|2
-Awire|net@37|||2700|and2_1x@0|a|-45.5|17|pin@24||-45.5|27.5
 Awire|net@40|||2700|and2_1x@0|b|-47.5|17|pin@27||-47.5|17.5
-Awire|net@45|||0|pin@15||2.5|27.5|pin@24||-45.5|27.5
+Awire|net@45|||0|pin@165||2|27.5|pin@24||-45.5|27.5
 Awire|net@47|||900|pin@29||-45.5|19.5|and2_1x@0|a|-45.5|17
-Awire|net@49|||0|xor2_1x@0|a|-29.5|19.5|pin@29||-45.5|19.5
 Awire|net@50|||900|pin@29||-45.5|19.5|and2_1x@0|a|-45.5|17
 Awire|net@52|||1800|pin@27||-47.5|17.5|xor2_1x@0|b|-29.5|17.5
 Awire|net@53|||1800|and2_1x@3|a|-44.5|3|pin@30||-39.5|3
@@ -2875,18 +2880,16 @@ Awire|net@83|||1800|xor2_1x@2|y|-19|-10.5|pin@46||-9.5|-10.5
 Awire|net@84|||900|pin@46||-9.5|-10.5|flopr_c_@2|d|-9.5|-12
 Awire|net@90|||900|pin@68||5|-20|pin@51||5|-28
 Awire|net@91|||0|pin@51||5|-28|flopr_c_@3|q|0.5|-28
-Awire|net@94|||1800|flopr_c_@0|resetb|-3|12.5|pin@53||21|12.5
-Awire|net@95|||900|pin@56||21|-4|pin@55||21|-18
-Awire|net@96|||0|pin@54||21|-34|flopr_c_@3|resetb|-3|-34
-Awire|net@97|||900|pin@55||21|-18|pin@54||21|-34
-Awire|net@98|||1800|flopr_c_@2|resetb|-3|-18|pin@55||21|-18
-Awire|net@99|||900|pin@53||21|12.5|pin@56||21|-4
-Awire|net@100|||1800|flopr_c_@1|resetb|-3|-4|pin@56||21|-4
+Awire|net@95|||900|pin@56||18|-4|pin@55||18|-18
+Awire|net@96|||0|pin@54||18|-34|flopr_c_@3|resetb|-3|-34
+Awire|net@97|||900|pin@55||18|-18|pin@54||18|-34
+Awire|net@98|||1800|flopr_c_@2|resetb|-3|-18|pin@55||18|-18
+Awire|net@100|||1800|flopr_c_@1|resetb|-3|-4|pin@56||18|-4
 Awire|net@103|||2700|flopr_c_@2|ph2|-6.5|-6|flopr_c_@1|ph2|-6.5|8
 Awire|net@106|||2700|flopr_c_@0|ph2|-6.5|24.5|pin@59||-6.5|29.5
 Awire|net@109|||2700|flopr_c_@2|ph1|-3.5|-6|flopr_c_@1|ph1|-3.5|8
 Awire|net@112|||2700|flopr_c_@0|ph1|-3.5|24.5|pin@62||-3.5|30
-Awire|net@113|||1800|pin@56||21|-4|pin@63||26.5|-4
+Awire|net@113|||1800|pin@56||18|-4|pin@63||26.5|-4
 Awire|net@115|||1800|xor2_1x@1|y|-18.5|2|flopr_c_@1|d|-9.5|2
 Awire|net@120|||2700|pin@27||-47.5|17.5|pin@66||-47.5|24
 Awire|net@121|||0|pin@70||-36.5|-29|pin@67||-42.5|-29
@@ -2930,10 +2933,8 @@ Awire|net@208|||1800|flopr_c_@6|resetb|-3|-85.5|pin@113||18|-85.5
 Awire|net@209|||2700|pin@112||18|-103.5|pin@113||18|-85.5
 Awire|net@210|||1800|flopr_c_@5|resetb|-3|-68|pin@114||18|-68
 Awire|net@211|||900|pin@114||18|-68|pin@113||18|-85.5
-Awire|net@212|||1800|pin@114||18|-68|pin@115||21|-68
-Awire|net@213|||2700|pin@116||21|-51.5|pin@54||21|-34
-Awire|net@214|||2700|pin@115||21|-68|pin@116||21|-51.5
-Awire|net@215|||1800|flopr_c_@4|resetb|-3|-51.5|pin@116||21|-51.5
+Awire|net@213|||2700|pin@116||18|-51.5|pin@54||18|-34
+Awire|net@215|||1800|flopr_c_@4|resetb|-3|-51.5|pin@116||18|-51.5
 Awire|net@216|||2700|flopr_c_@7|ph2|-6.5|-91.5|flopr_c_@6|ph2|-6.5|-73.5
 Awire|net@217|||2700|flopr_c_@7|ph1|-3.5|-91.5|flopr_c_@6|ph1|-3.5|-73.5
 Awire|net@218|||2700|flopr_c_@6|ph1|-3.5|-73.5|flopr_c_@5|ph1|-3.5|-56
@@ -2988,6 +2989,20 @@ Awire|net@284|||1800|pin@152||41|-39.5|and2_1x@9|a|45|-39.5
 Awire|net@285|||900|and4_1x@0|y|42.5|-30.5|pin@153||42.5|-41.5
 Awire|net@286|||1800|pin@153||42.5|-41.5|and2_1x@9|b|45|-41.5
 Awire|net@287|||2700|and4_1x@1|y|41|-45.5|pin@152||41|-39.5
+Awire|net@288|||900|or2_1x@0|a|18|0.5|pin@56||18|-4
+Awire|net@293|||2700|pin@114||18|-68|pin@116||18|-51.5
+Awire|net@296|||900|pin@158||20|12.5|or2_1x@0|y|20|10
+Awire|net@309|||0|pin@167||2|18.5|flopr_c_@0|q|0.5|18.5
+Awire|net@310|||900|pin@165||2|27.5|pin@167||2|18.5
+Awire|net@312|||1800|pin@168||-31|19|pin@169||-29.5|19
+Awire|net@313|||2700|pin@169||-29.5|19|xor2_1x@0|a|-29.5|19.5
+Awire|net@318|||2700|pin@168||-31|19|pin@174||-31|23
+Awire|net@319|||1800|and2_1x@10|y|-32|23|pin@174||-31|23
+Awire|net@320|||2700|and2_1x@0|a|-45.5|17|pin@175||-45.5|24
+Awire|net@321|||2700|pin@175||-45.5|24|pin@24||-45.5|27.5
+Awire|net@322|||0|and2_1x@10|a|-42|24|pin@175||-45.5|24
+Awire|resbitone|D5G1;||1800|flopr_c_@0|resetb|-3|12.5|pin@158||20|12.5
+Awire|reset|D5G1;||0|and2_1x@10|b|-42|22|pin@176||-43|22
 EE||D5G2;|pin@66||I
 Eph1||D5G2;|pin@62||I
 Eph2||D5G2;|pin@59||I

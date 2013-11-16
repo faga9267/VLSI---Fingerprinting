@@ -6,7 +6,7 @@
 //--------------------------------------------------------
 
 module testbench();
-    logic clk, enable, reset, memwrite, memtoreg, fiforeset;
+    logic clk, enable, reset, memwrite, memtoreg, fiforeset, firstbitbeforeclock, resbitone, muxout;
     logic [42:0] vectors[10000:0], currentvec;
     logic [100:0] vectornum, errors;
     
@@ -89,10 +89,13 @@ endmodule
 
 
 
+
+
+
 /* Verilog for cell 'fingerprintALUM{sch}' from library 'fingerprint' */
 /* Created on Fri Nov 08, 2013 13:09:59 */
-/* Last revised on Fri Nov 15, 2013 00:29:05 */
-/* Written on Fri Nov 15, 2013 00:29:27 by Electric VLSI Design System, version 8.06 */
+/* Last revised on Fri Nov 15, 2013 18:34:29 */
+/* Written on Fri Nov 15, 2013 18:34:48 by Electric VLSI Design System, version 8.06 */
 
 module muddlib07__and2_1x(a, b, y);
   input a;
@@ -179,6 +182,23 @@ module muddlib07__flopr_c_1x(ph1, ph2, d, resetb, q);
   tranif0 pmos_25(ph2buf, vdd, ph2b);
 endmodule   /* muddlib07__flopr_c_1x */
 
+module muddlib07__or2_1x(a, b, y);
+  input a;
+  input b;
+  output y;
+
+  supply1 vdd;
+  supply0 gnd;
+  wire net_58, net_71;
+
+  tranif1 nmos_8(gnd, net_58, b);
+  tranif1 nmos_10(gnd, y, net_58);
+  tranif1 nmos_11(gnd, net_58, a);
+  tranif0 pmos_2(net_58, net_71, b);
+  tranif0 pmos_3(net_71, vdd, a);
+  tranif0 pmos_4(y, vdd, net_58);
+endmodule   /* muddlib07__or2_1x */
+
 module muddlib07__xor2_1x(a, b, y);
   input a;
   input b;
@@ -213,7 +233,7 @@ module mojing__counter(E, ph1, ph2, reset, q);
   supply0 gnd;
   wire net_115, net_127, net_154, net_157, net_158, net_159, net_19, net_203;
   wire net_227, net_233, net_241, net_247, net_253, net_260, net_284, net_285;
-  wire net_83;
+  wire net_312, net_83, resbitone;
   wire [7:0] d;
 
   muddlib07__and2_1x and2_1x_0(.a(d[0]), .b(E), .y(net_227));
@@ -224,12 +244,13 @@ module mojing__counter(E, ph1, ph2, reset, q);
   muddlib07__and2_1x and2_1x_7(.a(d[5]), .b(net_247), .y(net_253));
   muddlib07__and2_1x and2_1x_8(.a(d[6]), .b(net_253), .y(net_203));
   muddlib07__and2_1x and2_1x_9(.a(net_284), .b(net_285), .y(q));
+  muddlib07__and2_1x and2_1x_10(.a(d[0]), .b(reset), .y(net_312));
   muddlib07__and4_1x and4_1x_0(.a(d[3]), .b(d[2]), .c(d[1]), .d(d[0]), 
       .y(net_285));
   muddlib07__and4_1x and4_1x_1(.a(d[6]), .b(d[7]), .c(d[5]), .d(d[4]), 
       .y(net_284));
   muddlib07__flopr_c_1x flopr_c__0(.ph1(ph1), .ph2(ph2), .d(net_19), 
-      .resetb(reset), .q(d[0]));
+      .resetb(resbitone), .q(d[0]));
   muddlib07__flopr_c_1x flopr_c__1(.ph1(ph1), .ph2(ph2), .d(net_115), 
       .resetb(reset), .q(d[1]));
   muddlib07__flopr_c_1x flopr_c__2(.ph1(ph1), .ph2(ph2), .d(net_83), 
@@ -244,7 +265,8 @@ module mojing__counter(E, ph1, ph2, reset, q);
       .resetb(reset), .q(d[6]));
   muddlib07__flopr_c_1x flopr_c__7(.ph1(ph1), .ph2(ph2), .d(net_159), 
       .resetb(reset), .q(d[7]));
-  muddlib07__xor2_1x xor2_1x_0(.a(d[0]), .b(E), .y(net_19));
+  muddlib07__or2_1x or2_1x_0(.a(reset), .b(E), .y(resbitone));
+  muddlib07__xor2_1x xor2_1x_0(.a(net_312), .b(E), .y(net_19));
   muddlib07__xor2_1x xor2_1x_1(.a(d[1]), .b(net_227), .y(net_115));
   muddlib07__xor2_1x xor2_1x_2(.a(d[2]), .b(net_233), .y(net_83));
   muddlib07__xor2_1x xor2_1x_3(.a(d[3]), .b(net_241), .y(net_127));
@@ -617,24 +639,6 @@ module CRC__flopenr_1x_16(ph1, ph2, d, en, reset, q);
       q[12], q[10], q[8], q[6], q[4], q[2], q[0]}));
 endmodule   /* CRC__flopenr_1x_16 */
 
-module CRC__fgpnt(ph1, ph2, Data, enable, reset, CRC);
-  input ph1;
-  input ph2;
-  input [15:0] Data;
-  input enable;
-  input reset;
-  output [15:0] CRC;
-
-  supply1 vdd;
-  supply0 gnd;
-  wire [15:0] net_16;
-
-  CRC__crc16 crc16_0(.CRC_old(CRC[15:0]), .Data(Data[15:0]), 
-      .CRC_new(net_16[15:0]));
-  CRC__flopenr_1x_16 flopenr__0(.ph1(ph1), .ph2(ph2), .d(net_16[15:0]), 
-      .en(enable), .reset(reset), .q(CRC[15:0]));
-endmodule   /* CRC__fgpnt */
-
 module muddlib07__inv_1x(a, y);
   input a;
   output y;
@@ -644,6 +648,87 @@ module muddlib07__inv_1x(a, y);
   tranif1 nmos_0(gnd, y, a);
   tranif0 pmos_0(y, vdd, a);
 endmodule   /* muddlib07__inv_1x */
+
+module muddlib07__nor2_1x(a, b, y);
+  input a;
+  input b;
+  output y;
+
+  supply1 vdd;
+  supply0 gnd;
+  wire net_9;
+
+  tranif1 nmos_0(gnd, y, a);
+  tranif1 nmos_1(gnd, y, b);
+  tranif0 pmos_0(y, net_9, b);
+  tranif0 pmos_1(net_9, vdd, a);
+endmodule   /* muddlib07__nor2_1x */
+
+module CRC__not_nor(a, b, y);
+  input [15:0] a;
+  input b;
+  output [15:0] y;
+
+  supply1 vdd;
+  supply0 gnd;
+  wire [15:0] net_1;
+
+  muddlib07__inv_1x inv_1x_15_(.a(a[15]), .y(net_1[15]));
+  muddlib07__inv_1x inv_1x_14_(.a(a[14]), .y(net_1[14]));
+  muddlib07__inv_1x inv_1x_13_(.a(a[13]), .y(net_1[13]));
+  muddlib07__inv_1x inv_1x_12_(.a(a[12]), .y(net_1[12]));
+  muddlib07__inv_1x inv_1x_11_(.a(a[11]), .y(net_1[11]));
+  muddlib07__inv_1x inv_1x_10_(.a(a[10]), .y(net_1[10]));
+  muddlib07__inv_1x inv_1x_9_(.a(a[9]), .y(net_1[9]));
+  muddlib07__inv_1x inv_1x_8_(.a(a[8]), .y(net_1[8]));
+  muddlib07__inv_1x inv_1x_7_(.a(a[7]), .y(net_1[7]));
+  muddlib07__inv_1x inv_1x_6_(.a(a[6]), .y(net_1[6]));
+  muddlib07__inv_1x inv_1x_5_(.a(a[5]), .y(net_1[5]));
+  muddlib07__inv_1x inv_1x_4_(.a(a[4]), .y(net_1[4]));
+  muddlib07__inv_1x inv_1x_3_(.a(a[3]), .y(net_1[3]));
+  muddlib07__inv_1x inv_1x_2_(.a(a[2]), .y(net_1[2]));
+  muddlib07__inv_1x inv_1x_1_(.a(a[1]), .y(net_1[1]));
+  muddlib07__inv_1x inv_1x_0_(.a(a[0]), .y(net_1[0]));
+  muddlib07__nor2_1x nor2_1x_15_(.a(net_1[15]), .b(b), .y(y[15]));
+  muddlib07__nor2_1x nor2_1x_14_(.a(net_1[14]), .b(b), .y(y[14]));
+  muddlib07__nor2_1x nor2_1x_13_(.a(net_1[13]), .b(b), .y(y[13]));
+  muddlib07__nor2_1x nor2_1x_12_(.a(net_1[12]), .b(b), .y(y[12]));
+  muddlib07__nor2_1x nor2_1x_11_(.a(net_1[11]), .b(b), .y(y[11]));
+  muddlib07__nor2_1x nor2_1x_10_(.a(net_1[10]), .b(b), .y(y[10]));
+  muddlib07__nor2_1x nor2_1x_9_(.a(net_1[9]), .b(b), .y(y[9]));
+  muddlib07__nor2_1x nor2_1x_8_(.a(net_1[8]), .b(b), .y(y[8]));
+  muddlib07__nor2_1x nor2_1x_7_(.a(net_1[7]), .b(b), .y(y[7]));
+  muddlib07__nor2_1x nor2_1x_6_(.a(net_1[6]), .b(b), .y(y[6]));
+  muddlib07__nor2_1x nor2_1x_5_(.a(net_1[5]), .b(b), .y(y[5]));
+  muddlib07__nor2_1x nor2_1x_4_(.a(net_1[4]), .b(b), .y(y[4]));
+  muddlib07__nor2_1x nor2_1x_3_(.a(net_1[3]), .b(b), .y(y[3]));
+  muddlib07__nor2_1x nor2_1x_2_(.a(net_1[2]), .b(b), .y(y[2]));
+  muddlib07__nor2_1x nor2_1x_1_(.a(net_1[1]), .b(b), .y(y[1]));
+  muddlib07__nor2_1x nor2_1x_0_(.a(net_1[0]), .b(b), .y(y[0]));
+endmodule   /* CRC__not_nor */
+
+module CRC__fgpnt(Data, enable, ph1, ph2, reset, CRC);
+  input [15:0] Data;
+  input enable;
+  input ph1;
+  input ph2;
+  input reset;
+  output [15:0] CRC;
+
+  supply1 vdd;
+  supply0 gnd;
+  wire net_36, net_39;
+  wire [15:0] net_16;
+  wire [15:0] net_34;
+
+  CRC__crc16 crc16_0(.CRC_old(net_34[15:0]), .Data(Data[15:0]), 
+      .CRC_new(net_16[15:0]));
+  CRC__flopenr_1x_16 flopenr__0(.ph1(ph1), .ph2(ph2), .d(net_16[15:0]), 
+      .en(enable), .reset(net_39), .q(CRC[15:0]));
+  muddlib07__inv_1x inv_1x_0(.a(reset), .y(net_36));
+  muddlib07__nor2_1x nor2_1x_0(.a(net_36), .b(enable), .y(net_39));
+  CRC__not_nor not_nor_0(.a(CRC[15:0]), .b(reset), .y(net_34[15:0]));
+endmodule   /* CRC__fgpnt */
 
 module muddlib07__mux2_c_1x(d0, d1, s, y);
   input d0;
@@ -722,23 +807,6 @@ module kaushik__my_fifo_8_16b(ph1, ph2, d, en, reset, q);
   kaushik__flopenr_1x_16 flopenr__7(.ph1(ph1), .ph2(ph2), .d(d[15:0]), .en(en), 
       .reset(reset), .q(net_1[15:0]));
 endmodule   /* kaushik__my_fifo_8_16b */
-
-module muddlib07__or2_1x(a, b, y);
-  input a;
-  input b;
-  output y;
-
-  supply1 vdd;
-  supply0 gnd;
-  wire net_58, net_71;
-
-  tranif1 nmos_8(gnd, net_58, b);
-  tranif1 nmos_10(gnd, y, net_58);
-  tranif1 nmos_11(gnd, net_58, a);
-  tranif0 pmos_2(net_58, net_71, b);
-  tranif0 pmos_3(net_71, vdd, a);
-  tranif0 pmos_4(y, vdd, net_58);
-endmodule   /* muddlib07__or2_1x */
 
 module muddlib07__nand2_1x(a, b, y);
   input a;
@@ -829,8 +897,8 @@ module fingerprintALUM(ph1, ph2, data1, data2, fiforeset, memtoreg, memwrite,
 
   mojing__counter counter_0(.E(enable), .ph1(ph1), .ph2(ph2), .reset(net_108), 
       .q(net_84));
-  CRC__fgpnt fgpnt_0(.ph1(ph1), .ph2(ph2), .Data(net_62[15:0]), 
-      .enable(enable), .reset(reset), .CRC(net_63[15:0]));
+  CRC__fgpnt fgpnt_0(.Data(net_62[15:0]), .enable(enable), .ph1(ph1), 
+      .ph2(ph2), .reset(reset), .CRC(net_63[15:0]));
   muddlib07__inv_1x inv_1x_0(.a(reset), .y(net_108));
   muddlib07__mux2_c_1x mux2_c_1_0(.d0(net_84), .d1(fiforeset), .s(fiforeset), 
       .y(reset));
