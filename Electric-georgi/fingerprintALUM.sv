@@ -91,11 +91,10 @@ endmodule
 
 
 
-
 /* Verilog for cell 'fingerprintALUM{sch}' from library 'fingerprint' */
 /* Created on Fri Nov 08, 2013 13:09:59 */
-/* Last revised on Fri Nov 15, 2013 18:34:29 */
-/* Written on Fri Nov 15, 2013 18:34:48 by Electric VLSI Design System, version 8.06 */
+/* Last revised on Fri Nov 15, 2013 18:40:30 */
+/* Written on Fri Nov 15, 2013 22:11:45 by Electric VLSI Design System, version 8.06 */
 
 module muddlib07__and2_1x(a, b, y);
   input a;
@@ -579,64 +578,70 @@ module muddlib07__invbuf_4x(s, s_out, sb_out);
   muddlib07__inv_4x inv_4x_4(.a(sb_out), .y(s_out));
 endmodule   /* muddlib07__invbuf_4x */
 
-module wordlib8__flopenr_1x_8(d, en, ph1, ph2, reset, q);
-  input [7:0] d;
-  input en;
-  input ph1;
-  input ph2;
-  input reset;
-  output [7:0] q;
-
-  supply1 vdd;
-  supply0 gnd;
-  wire net_10, net_11, net_12, net_13, net_16, net_2, net_6;
-
-  muddlib07__clkinvbufdual_4x clkinvbu_0(.ph1(ph1), .ph2(ph2), .ph1b(net_13), 
-      .ph1buf(net_12), .ph2b(net_11), .ph2buf(net_10));
-  muddlib07__flopenr_dp_1x flopenr_8_7_(.ph1(net_12), .ph1b(net_13), 
-      .ph2(net_10), .ph2b(net_11), .d(d[7]), .en(net_16), .enb(net_2), 
-      .resetb(net_6), .q(q[7]));
-  muddlib07__flopenr_dp_1x flopenr_8_6_(.ph1(net_12), .ph1b(net_13), 
-      .ph2(net_10), .ph2b(net_11), .d(d[6]), .en(net_16), .enb(net_2), 
-      .resetb(net_6), .q(q[6]));
-  muddlib07__flopenr_dp_1x flopenr_8_5_(.ph1(net_12), .ph1b(net_13), 
-      .ph2(net_10), .ph2b(net_11), .d(d[5]), .en(net_16), .enb(net_2), 
-      .resetb(net_6), .q(q[5]));
-  muddlib07__flopenr_dp_1x flopenr_8_4_(.ph1(net_12), .ph1b(net_13), 
-      .ph2(net_10), .ph2b(net_11), .d(d[4]), .en(net_16), .enb(net_2), 
-      .resetb(net_6), .q(q[4]));
-  muddlib07__flopenr_dp_1x flopenr_8_3_(.ph1(net_12), .ph1b(net_13), 
-      .ph2(net_10), .ph2b(net_11), .d(d[3]), .en(net_16), .enb(net_2), 
-      .resetb(net_6), .q(q[3]));
-  muddlib07__flopenr_dp_1x flopenr_8_2_(.ph1(net_12), .ph1b(net_13), 
-      .ph2(net_10), .ph2b(net_11), .d(d[2]), .en(net_16), .enb(net_2), 
-      .resetb(net_6), .q(q[2]));
-  muddlib07__flopenr_dp_1x flopenr_8_1_(.ph1(net_12), .ph1b(net_13), 
-      .ph2(net_10), .ph2b(net_11), .d(d[1]), .en(net_16), .enb(net_2), 
-      .resetb(net_6), .q(q[1]));
-  muddlib07__flopenr_dp_1x flopenr_8_0_(.ph1(net_12), .ph1b(net_13), 
-      .ph2(net_10), .ph2b(net_11), .d(d[0]), .en(net_16), .enb(net_2), 
-      .resetb(net_6), .q(q[0]));
-  muddlib07__inv_4x inv_4x_0(.a(reset), .y(net_6));
-  muddlib07__invbuf_4x invbuf_4_0(.s(en), .s_out(net_16), .sb_out(net_2));
-endmodule   /* wordlib8__flopenr_1x_8 */
-
-module CRC__flopenr_1x_16(ph1, ph2, d, en, reset, q);
-  input ph1;
-  input ph2;
+module CRC__flopenr_1x_16(d, en, ph1, ph2, reset, q);
   input [15:0] d;
   input en;
+  input ph1;
+  input ph2;
   input reset;
   output [15:0] q;
 
   supply1 vdd;
   supply0 gnd;
-  wordlib8__flopenr_1x_8 flopenr__0(.d({d[15], d[13], d[11], d[9], d[7], d[5], 
-      d[3], d[1]}), .en(en), .ph1(ph1), .ph2(ph2), .reset(reset), .q({q[15], 
-      q[13], q[11], q[9], q[7], q[5], q[3], q[1]}));
-  wordlib8__flopenr_1x_8 flopenr__1(.d({d[14], d[12], d[10], d[8], d[6], d[4], 
-      d[2], d[0]}), .en(en), .ph1(ph1), .ph2(ph2), .reset(reset), .q({q[14], 
-      q[12], q[10], q[8], q[6], q[4], q[2], q[0]}));
+  wire net_10, net_11, net_15, net_16, net_17, net_18, net_21;
+
+  muddlib07__clkinvbufdual_4x clkinvbu_0(.ph1(ph1), .ph2(ph2), .ph1b(net_18), 
+      .ph1buf(net_17), .ph2b(net_16), .ph2buf(net_15));
+  muddlib07__flopenr_dp_1x flopenr_8_15_(.ph1(net_17), .ph1b(net_18), 
+      .ph2(net_15), .ph2b(net_16), .d(d[15]), .en(net_21), .enb(net_10), 
+      .resetb(net_11), .q(q[15]));
+  muddlib07__flopenr_dp_1x flopenr_8_14_(.ph1(net_17), .ph1b(net_18), 
+      .ph2(net_15), .ph2b(net_16), .d(d[14]), .en(net_21), .enb(net_10), 
+      .resetb(net_11), .q(q[14]));
+  muddlib07__flopenr_dp_1x flopenr_8_13_(.ph1(net_17), .ph1b(net_18), 
+      .ph2(net_15), .ph2b(net_16), .d(d[13]), .en(net_21), .enb(net_10), 
+      .resetb(net_11), .q(q[13]));
+  muddlib07__flopenr_dp_1x flopenr_8_12_(.ph1(net_17), .ph1b(net_18), 
+      .ph2(net_15), .ph2b(net_16), .d(d[12]), .en(net_21), .enb(net_10), 
+      .resetb(net_11), .q(q[12]));
+  muddlib07__flopenr_dp_1x flopenr_8_11_(.ph1(net_17), .ph1b(net_18), 
+      .ph2(net_15), .ph2b(net_16), .d(d[11]), .en(net_21), .enb(net_10), 
+      .resetb(net_11), .q(q[11]));
+  muddlib07__flopenr_dp_1x flopenr_8_10_(.ph1(net_17), .ph1b(net_18), 
+      .ph2(net_15), .ph2b(net_16), .d(d[10]), .en(net_21), .enb(net_10), 
+      .resetb(net_11), .q(q[10]));
+  muddlib07__flopenr_dp_1x flopenr_8_9_(.ph1(net_17), .ph1b(net_18), 
+      .ph2(net_15), .ph2b(net_16), .d(d[9]), .en(net_21), .enb(net_10), 
+      .resetb(net_11), .q(q[9]));
+  muddlib07__flopenr_dp_1x flopenr_8_8_(.ph1(net_17), .ph1b(net_18), 
+      .ph2(net_15), .ph2b(net_16), .d(d[8]), .en(net_21), .enb(net_10), 
+      .resetb(net_11), .q(q[8]));
+  muddlib07__flopenr_dp_1x flopenr_8_7_(.ph1(net_17), .ph1b(net_18), 
+      .ph2(net_15), .ph2b(net_16), .d(d[7]), .en(net_21), .enb(net_10), 
+      .resetb(net_11), .q(q[7]));
+  muddlib07__flopenr_dp_1x flopenr_8_6_(.ph1(net_17), .ph1b(net_18), 
+      .ph2(net_15), .ph2b(net_16), .d(d[6]), .en(net_21), .enb(net_10), 
+      .resetb(net_11), .q(q[6]));
+  muddlib07__flopenr_dp_1x flopenr_8_5_(.ph1(net_17), .ph1b(net_18), 
+      .ph2(net_15), .ph2b(net_16), .d(d[5]), .en(net_21), .enb(net_10), 
+      .resetb(net_11), .q(q[5]));
+  muddlib07__flopenr_dp_1x flopenr_8_4_(.ph1(net_17), .ph1b(net_18), 
+      .ph2(net_15), .ph2b(net_16), .d(d[4]), .en(net_21), .enb(net_10), 
+      .resetb(net_11), .q(q[4]));
+  muddlib07__flopenr_dp_1x flopenr_8_3_(.ph1(net_17), .ph1b(net_18), 
+      .ph2(net_15), .ph2b(net_16), .d(d[3]), .en(net_21), .enb(net_10), 
+      .resetb(net_11), .q(q[3]));
+  muddlib07__flopenr_dp_1x flopenr_8_2_(.ph1(net_17), .ph1b(net_18), 
+      .ph2(net_15), .ph2b(net_16), .d(d[2]), .en(net_21), .enb(net_10), 
+      .resetb(net_11), .q(q[2]));
+  muddlib07__flopenr_dp_1x flopenr_8_1_(.ph1(net_17), .ph1b(net_18), 
+      .ph2(net_15), .ph2b(net_16), .d(d[1]), .en(net_21), .enb(net_10), 
+      .resetb(net_11), .q(q[1]));
+  muddlib07__flopenr_dp_1x flopenr_8_0_(.ph1(net_17), .ph1b(net_18), 
+      .ph2(net_15), .ph2b(net_16), .d(d[0]), .en(net_21), .enb(net_10), 
+      .resetb(net_11), .q(q[0]));
+  muddlib07__inv_4x inv_4x_0(.a(reset), .y(net_11));
+  muddlib07__invbuf_4x invbuf_4_0(.s(en), .s_out(net_21), .sb_out(net_10));
 endmodule   /* CRC__flopenr_1x_16 */
 
 module muddlib07__inv_1x(a, y);
@@ -718,13 +723,15 @@ module CRC__fgpnt(Data, enable, ph1, ph2, reset, CRC);
   supply1 vdd;
   supply0 gnd;
   wire net_36, net_39;
+  wire [31:16] flopenr__0_d;
+  wire [31:16] flopenr__0_q;
   wire [15:0] net_16;
   wire [15:0] net_34;
 
   CRC__crc16 crc16_0(.CRC_old(net_34[15:0]), .Data(Data[15:0]), 
       .CRC_new(net_16[15:0]));
-  CRC__flopenr_1x_16 flopenr__0(.ph1(ph1), .ph2(ph2), .d(net_16[15:0]), 
-      .en(enable), .reset(net_39), .q(CRC[15:0]));
+  CRC__flopenr_1x_16 flopenr__0(.d(net_16[15:0]), .en(enable), .ph1(ph1), 
+      .ph2(ph2), .reset(net_39), .q(CRC[15:0]));
   muddlib07__inv_1x inv_1x_0(.a(reset), .y(net_36));
   muddlib07__nor2_1x nor2_1x_0(.a(net_36), .b(enable), .y(net_39));
   CRC__not_nor not_nor_0(.a(CRC[15:0]), .b(reset), .y(net_34[15:0]));
@@ -753,6 +760,48 @@ module muddlib07__mux2_c_1x(d0, d1, s, y);
   tranif0 pmos_4(y, vdd, net_5);
   tranif0 pmos_5(sb, vdd, s);
 endmodule   /* muddlib07__mux2_c_1x */
+
+module wordlib8__flopenr_1x_8(d, en, ph1, ph2, reset, q);
+  input [7:0] d;
+  input en;
+  input ph1;
+  input ph2;
+  input reset;
+  output [7:0] q;
+
+  supply1 vdd;
+  supply0 gnd;
+  wire net_10, net_11, net_12, net_13, net_16, net_2, net_6;
+
+  muddlib07__clkinvbufdual_4x clkinvbu_0(.ph1(ph1), .ph2(ph2), .ph1b(net_13), 
+      .ph1buf(net_12), .ph2b(net_11), .ph2buf(net_10));
+  muddlib07__flopenr_dp_1x flopenr_8_7_(.ph1(net_12), .ph1b(net_13), 
+      .ph2(net_10), .ph2b(net_11), .d(d[7]), .en(net_16), .enb(net_2), 
+      .resetb(net_6), .q(q[7]));
+  muddlib07__flopenr_dp_1x flopenr_8_6_(.ph1(net_12), .ph1b(net_13), 
+      .ph2(net_10), .ph2b(net_11), .d(d[6]), .en(net_16), .enb(net_2), 
+      .resetb(net_6), .q(q[6]));
+  muddlib07__flopenr_dp_1x flopenr_8_5_(.ph1(net_12), .ph1b(net_13), 
+      .ph2(net_10), .ph2b(net_11), .d(d[5]), .en(net_16), .enb(net_2), 
+      .resetb(net_6), .q(q[5]));
+  muddlib07__flopenr_dp_1x flopenr_8_4_(.ph1(net_12), .ph1b(net_13), 
+      .ph2(net_10), .ph2b(net_11), .d(d[4]), .en(net_16), .enb(net_2), 
+      .resetb(net_6), .q(q[4]));
+  muddlib07__flopenr_dp_1x flopenr_8_3_(.ph1(net_12), .ph1b(net_13), 
+      .ph2(net_10), .ph2b(net_11), .d(d[3]), .en(net_16), .enb(net_2), 
+      .resetb(net_6), .q(q[3]));
+  muddlib07__flopenr_dp_1x flopenr_8_2_(.ph1(net_12), .ph1b(net_13), 
+      .ph2(net_10), .ph2b(net_11), .d(d[2]), .en(net_16), .enb(net_2), 
+      .resetb(net_6), .q(q[2]));
+  muddlib07__flopenr_dp_1x flopenr_8_1_(.ph1(net_12), .ph1b(net_13), 
+      .ph2(net_10), .ph2b(net_11), .d(d[1]), .en(net_16), .enb(net_2), 
+      .resetb(net_6), .q(q[1]));
+  muddlib07__flopenr_dp_1x flopenr_8_0_(.ph1(net_12), .ph1b(net_13), 
+      .ph2(net_10), .ph2b(net_11), .d(d[0]), .en(net_16), .enb(net_2), 
+      .resetb(net_6), .q(q[0]));
+  muddlib07__inv_4x inv_4x_0(.a(reset), .y(net_6));
+  muddlib07__invbuf_4x invbuf_4_0(.s(en), .s_out(net_16), .sb_out(net_2));
+endmodule   /* wordlib8__flopenr_1x_8 */
 
 module kaushik__flopenr_1x_16(ph1, ph2, d, en, reset, q);
   input ph1;
