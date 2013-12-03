@@ -12,7 +12,6 @@ pdfkeywords={Computer Society, IEEEtran, journal, LaTeX, paper,
 
 
 
-
 \begin{document}
 
 \title{VLSI Design of CRC-Based Fingerprinting on MIPS8 Architecture}
@@ -33,7 +32,7 @@ pdfkeywords={Computer Society, IEEEtran, journal, LaTeX, paper,
 Traditional error mitigation techniques such as Error Correcting Code (ECC) and Dual Modular
 Redundancy (DMR)  in Lockstep provide error detection at great cost of power, area and performance. In this
 paper, we present the implementation and verification of an Execution Fingerprinting Unit using
-CRC16 operating on a MIPS8 architecture. Our design provide a 255 times decrease in comparison overhead
+CRC16 operating on a MIPS8 architecture. Our design provides a 255 times decrease in comparison overhead
 compared to DMR Lockstep and 300MHz max operating frequency unpipelined.
 \end{abstract}}
 
@@ -56,22 +55,25 @@ the comparison passes. However large amount of computational ressource is wasted
 as not to mention the overwhelming complexcity of clock synchronization due to lockstep.
 
 \section{Background}
-Fingerprinting first uses TMR, which allows processors to execute out of sync, thus breaking the lockstep. This will create much more freedom in terms of schedulabilty and allowing us to apply a second technique called RD which allows our processor to also execute non critical tasks. Both techniques comes from papers that prof Meyer has published and I invite you all to have a look. 
-So back to fingerprinting, as the processor are out of sync, in order to compare the execution data, we need to save it somewhere. However, directly saving this data would take a look of space, hence we compress it into a single word called fingerprint. The compression algorithm can be chosen by the designer and will have different impact in terms of error coverage and detection. 
+Fingerprinting first uses TMR, which allows processors to execute out of sync, thus breaking the lockstep. This will create much more freedom in terms of schedulabilty, letting us apply a second technique called RD which allows the processor to also execute non critical tasks. Both techniques come from papers that prof Meyer has published and I invite you all to have a look. 
+So back to fingerprinting, as the processors are out of sync, in order to compare the execution data, we need to save it somewhere. However, directly saving this data would take a look of space, hence we compress it into a single word called fingerprint. The compression algorithm can be chosen by the designer and will have different impact in terms of error coverage and detection. 
 
 \section{Implementation }
 \subsection{Execution Information Extraction}
-The data that we decided to fingerprint is memory write address and  data as well as register data updates. We have to add additional export to the original chip which turn out to be a perfectly using all the pins. So we were able to maintain the original MIPS8 packaging, therefore eliminating the cost of a new package, and we made use of the 9 remaining pins that were available. 8 of them are for the 8 bit register data and a control signal that tells us if a register was written. 
+The data that we decided to fingerprint is memory write address and  data as well as register data updates. We had to add additional exports to the original chip, which turned out to be a perfectl fit using all the pins. Thus we were able to maintain the original MIPS8 packaging, eliminating the cost of a new package,making use of the 9 remaining pins that were available. Eight of them are for the 8 bit register data and one is a control signal that tells us if a register was written. 
 
 
 \subsection{Compressing the Data: The CRC Fingerprint}
 
 The Cyclic Redundancy Check algorithm can be used to compress data for later verification. CRC is a good choice for fingerprinting, because it is a simple and widely used algorithm that was designed with error detection in mind. Although CRC is more ideal for transmission channel error detection, as it can guarantee resilience to burst errors to within a given number of corrupt bits, it can still offer strong error detection for randomly distributed error when compared to other techniques such as Fletcher's Checksum.
-A 16-bit wide CRC was chosen, as it offers much stronger error detection characteristics than a lower bit alternative, but is not too large to be considered overkill for a MIPS-8 core. The 0x1755b polynomial was used, as it was selected by Koopman (reference here?) as a good choice for larger block sizes. A set of logical equations for each output bit were found (reference to A Practical Parallel CRC Generation Method here) and implemented using combinational logic. The produced combinational circuit was linked to a register to store the CRC result after each iteration, as its value is required for the next calculation. 
+A 16-bit wide CRC was chosen, as it offers much stronger error detection characteristics than a lower bit alternative, but is not too large to be considered overkill for a MIPS-8 core. The 0x1755b polynomial was used, since it is a good choice for larger block sizes\cite{Koopman}. A set of logical equations for each output bit were found\cite{Parcrc} and implemented using combinational logic. The produced combinational circuit was linked to a register to store the CRC result after each iteration, as its value is required for the next calculation. 
 \subsection{Storing the Fingerprint: Shift Register vs SRAM}
 Subsection text here.
 \subsection{The Final Design}
-Subsection text here.
+The fingerprinting system as a whole includes a multiplexer, a counter, and additional glue logic to integrate the CRC circuit into a fully functional design. The MIPS core serves as the external controller for the fingerprinting system, issuing the appropriate signals whenever new data is ready to be fingerprinted. A multiplexer performs the selection of data to be fingerprinted based on the CPUs signals. A counter is used to count each time new data comes in and it determines the data compression ratio of the fingerprint. When the desired amount of data has been fingerprinted, the counter signals the output buffer block to store the new fingerprint, and it also signals the CRC block to start computation for a new block. The CRC block needs to be able to handle data coming in at the same time as the counter's control signal, so additional logic was required to handle such a scenario. 
+
+% might be nice to add a block diagram of the circuit here%
+
 \section{Experimental Setup}
 \subsection{Schematic Verification}
 Benchmarks were written in system verilog and simulated using ModelSim for functional verification. Each major circuit component was first simulated on the schematic level before implementing the layout. This not only aids in finding and fixing bugs, but also simplifies the component integration process. Random test vectors were generated to verify timing sequence and operation of complex circuits.
@@ -81,12 +83,10 @@ For the final circuit, the modified mips core was hooked up to the fingerprintin
 \subsection{Timing Analysis}
 \section{Results}
 \subsection{Area Overhead and Scaling}
-
 \subsection{Operating Frequency}
 
 \section{Conclusion}
 The conclusion goes here.
-
 
 
 
@@ -96,8 +96,15 @@ The conclusion goes here.
 \bibitem{IEEEhowto:kopka}
 H.~Kopka and P.~W. Daly, \emph{A Guide to {\LaTeX}}, 3rd~ed.\hskip 1em plus
   0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+ 
+\bibitem{Koopman}
+P. ~Koopman and T.~Chakravarty, \emph{Cyclic Redundancy Code ({CRC}) Polynomial Selection For Embedded Networks}, Proceedings of the 2004 International Conference on Dependable Systems and Networks, 2004.
+
+\bibitem{Parcrc}
+E. ~Stavinov, \emph{A Practical Parallel {CRC} Generation Method}, Feature Article, pp. 38-45, Jan. 2010. 
 
 \end{thebibliography}
+
 
 
 
