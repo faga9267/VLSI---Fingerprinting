@@ -1,10 +1,10 @@
 pdf: dvi
-	dvips -o bare_adv.ps -Ppdf -G0 -t paper bare_adv.dvi
-	ps2pdf -dMaxSubsetPct=100 -dSubsetFonts=true -dEmbedAllFonts=true bare_adv.ps bare_adv.pdf
+	dvips -o group1_report.ps -Ppdf -G0 -t paper group1_report.dvi
+	ps2pdf -dMaxSubsetPct=100 -dSubsetFonts=true -dEmbedAllFonts=true group1_report.ps group1_report.pdf
 
 dvi:
-	latex bare_adv
-	latex bare_adv
+	latex group1_report
+	latex group1_report
 # uncomment if you cite things
 #	bibtex wigreport
 #	latex wigreport

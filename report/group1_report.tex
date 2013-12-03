@@ -1,0 +1,115 @@
+\documentclass[12pt,journal,compsoc]{IEEEtran}
+\providecommand{\PSforPDF}[1]{#1}
+\newcommand\MYhyperrefoptions{bookmarks=true,bookmarksnumbered=true,
+pdfpagemode={UseOutlines},plainpages=false,pdfpagelabels=true,
+colorlinks=true,linkcolor={black},citecolor={black},pagecolor={black},
+urlcolor={black},
+pdftitle={Bare Demo of IEEEtran.cls for Computer Society Journals},%<!CHANGE!
+pdfsubject={Typesetting},%<!CHANGE!
+pdfauthor={Michael D. Shell},%<!CHANGE!
+pdfkeywords={Computer Society, IEEEtran, journal, LaTeX, paper,
+             template}}%<^!CHANGE!
+
+
+
+
+\begin{document}
+
+\title{VLSI Design of CRC-Based Fingerprinting on MIPS8 Architecture}
+
+\author{Georgi Kostadinov, Xinchi Chen, Kaushik Boga, Mojing Liu
+\\Department of Electrical and Computer Engineering 
+\\McGill University}
+
+
+
+% for Computer Society papers, we must declare the abstract and index terms
+% PRIOR to the title within the \IEEEcompsoctitleabstractindextext IEEEtran
+% command as these need to go into the title area created by \maketitle.
+
+\IEEEcompsoctitleabstractindextext{%
+\begin{abstract}
+%\boldmath
+Traditional error mitigation techniques such as Error Correcting Code (ECC) and Dual Modular
+Redundancy (DMR)  in Lockstep provide error detection at great cost of power, area and performance. In this
+paper, we present the implementation and verification of an Execution Fingerprinting Unit using
+CRC16 operating on a MIPS8 architecture. Our design provide a 255 times decrease in comparison overhead
+compared to DMR Lockstep and 300MHz max operating frequency unpipelined.
+\end{abstract}}
+
+
+% make the title area
+\maketitle
+
+
+
+
+
+
+\section{Introduction}
+\IEEEPARstart{T}{raditional} 
+ error mitigation techniques such as Error Correcting Code (ECC) provide limited
+error coverage rate at the cost of performance and area overhead. Another solution widely
+used in industry,  Dual Modular Redundancy (DMR) in Lockstep, consists of two
+redundant cores executing the same application in lockstep and validating the results only if
+the comparison passes. However large amount of computational ressource is wasted for comparison
+as not to mention the overwhelming complexcity of clock synchronization due to lockstep.
+
+\section{Background}
+Fingerprinting first uses TMR, which allows processors to execute out of sync, thus breaking the lockstep. This will create much more freedom in terms of schedulabilty and allowing us to apply a second technique called RD which allows our processor to also execute non critical tasks. Both techniques comes from papers that prof Meyer has published and I invite you all to have a look. 
+So back to fingerprinting, as the processor are out of sync, in order to compare the execution data, we need to save it somewhere. However, directly saving this data would take a look of space, hence we compress it into a single word called fingerprint. The compression algorithm can be chosen by the designer and will have different impact in terms of error coverage and detection. 
+
+\section{Implementation }
+\subsection{Execution Information Extraction}
+The data that we decided to fingerprint is memory write address and  data as well as register data updates. We have to add additional export to the original chip which turn out to be a perfectly using all the pins. So we were able to maintain the original MIPS8 packaging, therefore eliminating the cost of a new package, and we made use of the 9 remaining pins that were available. 8 of them are for the 8 bit register data and a control signal that tells us if a register was written. 
+
+
+\subsection{Compressing the Data: The CRC Fingerprint}
+
+The Cyclic Redundancy Check algorithm can be used to compress data for later verification. CRC is a good choice for fingerprinting, because it is a simple and widely used algorithm that was designed with error detection in mind. Although CRC is more ideal for transmission channel error detection, as it can guarantee resilience to burst errors to within a given number of corrupt bits, it can still offer strong error detection for randomly distributed error when compared to other techniques such as Fletcher's Checksum.
+A 16-bit wide CRC was chosen, as it offers much stronger error detection characteristics than a lower bit alternative, but is not too large to be considered overkill for a MIPS-8 core. The 0x1755b polynomial was used, as it was selected by Koopman (reference here?) as a good choice for larger block sizes. A set of logical equations for each output bit were found (reference to A Practical Parallel CRC Generation Method here) and implemented using combinational logic. The produced combinational circuit was linked to a register to store the CRC result after each iteration, as its value is required for the next calculation. 
+\subsection{Storing the Fingerprint: Shift Register vs SRAM}
+Subsection text here.
+\subsection{The Final Design}
+Subsection text here.
+\section{Experimental Setup}
+\subsection{Schematic Verification}
+Benchmarks were written in system verilog and simulated using ModelSim for functional verification. Each major circuit component was first simulated on the schematic level before implementing the layout. This not only aids in finding and fixing bugs, but also simplifies the component integration process. Random test vectors were generated to verify timing sequence and operation of complex circuits.
+For the final circuit, the modified mips core was hooked up to the fingerprinting circuit for functional simulation. A benchmark was written in MIPS assembly to run on the mips core, and the produced waveform was studied to ensure proper circuit operation. 
+
+\subsection{Layout Verification}
+\subsection{Timing Analysis}
+\section{Results}
+\subsection{Area Overhead and Scaling}
+
+\subsection{Operating Frequency}
+
+\section{Conclusion}
+The conclusion goes here.
+
+
+
+
+
+\begin{thebibliography}{1}
+
+\bibitem{IEEEhowto:kopka}
+H.~Kopka and P.~W. Daly, \emph{A Guide to {\LaTeX}}, 3rd~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+
+\end{thebibliography}
+
+
+
+
+%\vfill
+
+% Can be used to pull up biographies so that the bottom of the last one
+% is flush with the other column.
+%\enlargethispage{-5in}
+
+
+
+% that's all folks
+\end{document}
+
