@@ -1,14 +1,19 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2013.3.6)  2 DEC 2013 23:29
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.12.3)  3 DEC 2013 17:36
 entering extended mode
-**group1_report
-(./group1_report.tex
-LaTeX2e <2003/12/01>
-Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, b
-ahasa, basque, bulgarian, catalan, croatian, czech, danish, dutch, esperanto, e
-stonian, finnish, greek, icelandic, irish, italian, latin, magyar, norsk, polis
-h, portuges, romanian, russian, serbian, slovak, slovene, spanish, swedish, tur
-kish, ukrainian, nohyphenation, loaded.
-(./IEEEtran.cls
+**group1_report.tex
+(F:\Dropbox\VLSI---Fingerprinting\report\group1_report.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(F:\Dropbox\VLSI---Fingerprinting\report\IEEEtran.cls
 Document Class: IEEEtran 2012/11/21 V1.8c by Harald Hanche-Olsen and Anders Chr
 istensen
 -- Based on V1.7a by Michael Shell
@@ -22,11 +27,11 @@ istensen
 -- Using IEEE Computer Society mode.
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 373.
 
-(/usr/share/texmf/tex/latex/psnfss/ot1ppl.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 -- Using 8.5in x 11in (letter) paper.
--- Using DVI output.
+-- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen104
 -- This is a 12 point document.
 \CLASSINFOnormalsizebaselineskip=\dimen105
@@ -91,69 +96,86 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <24> not available
 \@IEEEtmpitemindent=\dimen116
 \c@IEEEbiography=\count90
 \@IEEEtranrubishbin=\box26
-) (./group1_report.aux)
-\openout1 = `group1_report.aux'.
+) (F:\Dropbox\VLSI---Fingerprinting\report\group1_report.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 41.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 34.
- (/usr/share/texmf/tex/latex/psnfss/ot1phv.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 34.
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 34.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 41.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14> on input line 34.
+(Font)              <14> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.79996> on input line 34.
+(Font)              <9.79996> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 34.
-LaTeX Font Info:    Try loading font information for U+pzd on input line 34.
+(Font)              <7> on input line 41.
+LaTeX Font Info:    Try loading font information for U+pzd on input line 41.
 
-(/usr/share/texmf/tex/latex/psnfss/upzd.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 41.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 48.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <14> not available
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 41.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 43.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 43.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 43.
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 48.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 49.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 62.
+ [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 53.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 88.
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
+ [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 67.
+(Font)              <9> on input line 103.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 67.
- [1
+(Font)              <6> on input line 103.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 103.
+ [3
 
-
-
-] (./group1_report.aux) ) 
+]
+(F:\Dropbox\VLSI---Fingerprinting\report\group1_report.aux) ) 
 Here is how much of TeX's memory you used:
- 998 strings out of 94501
- 17009 string characters out of 1176790
- 61853 words of memory out of 1000000
- 4226 multiletter control sequences out of 10000+50000
- 30031 words of font info for 78 fonts, out of 500000 for 2000
- 580 hyphenation exceptions out of 1000
- 28i,5n,19p,223b,253s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 1007 strings out of 493921
+ 17445 string characters out of 3144873
+ 69673 words of memory out of 3000000
+ 4347 multiletter control sequences out of 15000+200000
+ 41960 words of font info for 87 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 28i,5n,19p,919b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/urw/helvetic/uhvro8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/pa
+latino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/u
+plri8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr.pfb
+>
+Output written on group1_report.pdf (3 pages, 77577 bytes).
+PDF statistics:
+ 37 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on group1_report.dvi (1 page, 1900 bytes).
