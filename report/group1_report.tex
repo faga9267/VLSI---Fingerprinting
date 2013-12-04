@@ -1,5 +1,10 @@
+
+
+
 \documentclass[10pt,journal,compsoc]{IEEEtran}
 \providecommand{\PSforPDF}[1]{#1}
+\usepackage[english]{babel}
+\usepackage{graphicx}
 
 
 \begin{document}
@@ -18,7 +23,7 @@ Traditional error mitigation techniques such as Error Correcting Code (ECC) and 
 Redundancy (DMR)  in Lockstep provide error detection at great cost of power, area and performance. In this
 paper, we present the implementation and verification of an Execution Fingerprinting Unit using
 CRC16 operating on a MIPS8 architecture. Our design provides a 255 times decrease in comparison overhead
-compared to DMR Lockstep and 300MHz max operating frequency unpipelined.
+compared to DMR Lockstep and 125MHz max operating frequency unpipelined.
 \end{abstract}}
 
 \maketitle
@@ -63,28 +68,51 @@ This implementation needed 1374 transistors laid on a 45 lamda pitch and did not
 
 
 \subsection{The Final Design}
-The fingerprinting system as a whole includes a multiplexer, a counter, and additional glue logic to integrate the CRC circuit into a fully functional design. The MIPS core serves as the external controller for the fingerprinting system, issuing the appropriate signals whenever new data is ready to be fingerprinted. A multiplexer performs the selection of data to be fingerprinted based on the CPUs signals. A counter is used to count each time new data comes in and it determines the data compression ratio of the fingerprint. When the desired amount of data has been fingerprinted, the counter signals the output buffer block to store the new fingerprint, and it also signals the CRC block to start computation for a new block. The CRC block needs to be able to handle data coming in at the same time as the counter's control signal, so additional logic was required to handle such a scenario. 
+As shown in Fig. 1, the fingerprinting system as a whole includes a multiplexer, a counter, and additional glue logic to integrate the CRC circuit into a fully functional design. The MIPS core serves as the external controller for the fingerprinting system, issuing the appropriate signals whenever new data is ready to be fingerprinted. A multiplexer performs the selection of data to be fingerprinted based on the CPUs signals. A counter is used to count each time new data comes in and it determines the data compression ratio of the fingerprint. When the desired amount of data has been fingerprinted, the counter signals the output buffer block to store the new fingerprint, and it also signals the CRC block to start computation for a new block. The CRC block needs to be able to handle data coming in at the same time as the counter's control signal, so additional logic was required to handle such a scenario. Figure 2 shows the layout of our circuit using SRAM. 
 
-Wiring proved to be a challenge when implementing the layout. If the design was to be repeated, more attention would be placed on wire planning and pitch matching than on logic minimization, as a decrease in functional blocks or transistor count may not necessarily lead to improvements in area, and pitch matching can allow for menial tasks such as wire routing to be left to automation tools rather than the designer. Long and complex wires also decrease the modularity of a design, introduce additional parasitic resistances and capacitances, and make the system more vulnerable to noise, so it is generally a good idea to try and minimize them.
+\begin{figure}[h!]
+  \centering
+
+      \includegraphics[width=0.5\textwidth]{schematic}
+  \caption{Schematic of the fingerprinting circuit with ALU and Memory fingerprinting using a shift register}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+
+      \includegraphics[width=0.5\textwidth]{layout1}
+  \caption{Layout of the fingerprinting circuit with ALU and Memory fingerprinting using SRAM}
+\end{figure}
 
 % might be nice to add a block diagram of the circuit here%
 
-\section{Experimental Setup}
+\section{Experimental Setup and Verification}
+The schematic and layout implementation of fingerprinting was done under Electric. However Electric is not able to verify functionality therefore Electric and IRSIM were used. This was achievable through exporting the schematic and layout information in Verilog deck.
+
 \subsection{Schematic Verification}
 Benchmarks were written in system verilog and simulated using ModelSim for functional verification. Each major circuit component was first simulated on the schematic level before implementing the layout. This not only aids in finding and fixing bugs, but also simplifies the component integration process. Random test vectors were generated to verify timing sequence and operation of complex circuits.
+
 For the final circuit, the modified mips core was hooked up to the fingerprinting circuit for functional simulation. A benchmark was written in MIPS assembly to run on the mips core, and the produced waveform was studied to ensure proper circuit operation. 
 
 \subsection{Layout Verification}
+Our implemented circuit passes the DRC, ERC and NCC tests provided by Electric. Therefore all results obtained for the schematic of our circuit is valid for our layout design.
+
+
 \subsection{Timing Analysis}
+\subsubsection {\qquad  IRSIM}
+Irsim, which is a“switch-level”digital circuit simulator, is used to perform a timing analysis for the fingerprint design. IRSIMl would generate a timing simulation based on the extracted capacitance and lumped resistance from the transistors in the circuit.
+    
+The Irsim simulation requires a Irsim deck, a prm file and a testbench file for simulation. The irsim deck, which contains all the connection information of the transistors in the schematic(or layout) design, can be automatically generated from Electric. A prm file, available from the Irsim Built-in lib, consists of all the resistance and capacitance value of transistors based on the technology involovd. The testbench can be written based on Irsim test-language-grammer.
+    
+The components of the fingerprinting design, including the multiplexer, the CRC circuit and the counter, are simulated individually for their path delay. This path delay can be found by observing the time difference between a rising clock edge and its next output value transition. Also, an average delay value from a set of distinct clocking edges is calculated to counter the value variance from different time intervals.
 
 \subsubsection {\qquad  SRAM timing}
-A 6T SRAM cell functions due to the 6 specially sized transistors that enable read and write stability. Since Modelsim is a functional/logic simulator which doesn’t consider transistor sizes, fifo cannot be tested in Modelsim with the rest of the circuit. Ideally, an SRAM cell model must be built which mimics the SRAM behaviour using logic. Since this would be time consuming, the entire circuit was instead tested with the earlier shift register implementation for functional verification. The fifo was validated in a timing analyser tool (IRSIM) which uses the linear delay model to approximate switching delay. 
+A 6T SRAM cell functions due to the 6 specially sized transistors that enable read and write stability. Since Modelsim is a functional/logic simulator which doesn’t consider transistor sizes, fifo cannot be tested in Modelsim with the rest of the circuit. Ideally, an SRAM cell model must be built which mimics the SRAM behaviour using logic. Since this would be time consuming, the entire circuit was instead tested with the earlier shift register implementation for functional verification. The fifo was also validatedl (IRSIM) which uses the linear delay model to approximate switching delay. 
 
 The functionality was validated by observing internal signals in the FIFO block to verify each component behaved as intended with the right set of inputs. Once verified individually, two sets of tests were performed. The first test checked whether the FIFO can write 8 fingerprints in a row sequentially and read them out sequentially after some arbitrary time. The other test alternates write followed by a subsequent read. This test is more realistic considering fingerprints are generated one every few hundred/ thousand clock cycles. Once validated, the SRAM was connected to the entire circuit and a timing simulation was performed to evaluate the delay.
- This exercise exposed the limitations of Modelsim for testing and allowed the team to appreciate the importance of timing analysis for VLSI designs.
-
 
 \section{Results}
+
+
 \subsection{Area Overhead and Scaling}
 
 
@@ -98,36 +126,24 @@ The functionality was validated by observing internal signals in the FIFO block 
   \end{tabular}
 \end{center}
 
-The SRAM based design needs 3 times fewer transistors compared to the FF based design, consequently needing 3 times less area. The area could have been smaller if the row decoder was built using a 45 lamda pitch, if the 3-bit counters were built using latches rather than the generic FFs and if the white space could have been eliminated by using a less modular design. The SRAM block and consequently the read and write drivers could have been tighter if there was an additional layer to route vdd and gnd wires.	
+The SRAM based design needs 3 times fewer transistors compared to the FF based design, consequently needing 3 times less area as shown in Figure 2. The area could have been smaller if the row decoder was built using a 45 lamda pitch, if the 3-bit counters were built using latches rather than the generic FFs and if the white space could have been eliminated by using a less modular design. The SRAM block and consequently the read and write drivers could have been tighter if there was an additional layer to route vdd and gnd wires.	
+
+\begin{figure}[h!]
+  \centering
+
+      \includegraphics[width=0.5\textwidth]{layout}
+  \caption{Layout comparison of FF design (left) and SRAM based (right)}
+\end{figure}
 
 % a note about how SRAM area compares to register area (even though it was mentioned already %
 The fingerprinting circuit can be tuned for various modes of operation, and some decisions have an impact on area and cost. The counter determines the compression ratio, so increasing the counter's modulus will decrease the area required to store the fingerprints for the same amount of CPU execution information. Another important factor is the choice of execution data to fingerprint. At a minimum, the fingerprinting circuit needs to verify memory writes and adresses for data corruptions. However, if aditional data, such as ALU operations, are also fingerprinted, the amount of execution data will increase, and so will the area required to store all fingerprints. The impact of fingerprinting additional data would vary depending on the target application, but for the MIPS benchmark that we tested, the area required for storage gets tripled if ALU operations are fingerprinted in addition to memory write operations. 
 
 \subsection{Operating Frequency}
-Irsim, which is a“switch-level”digital circuit simulator, is used to perform a timing analysis of the fingerprint design. This simulator tool would generate a timing simulation based on the extracted capacitance and lumped resistance from the transistors in the circuit.
-    
-    The Irsim simulation requires a Irsim deck, a prm file and a testbench file for simulation. The irsim deck, which contains all the connection information of the transistors in the schematic(or layout) design, can be automatically generated from Electric. A prm file, available from the Irsim Built-in lib, consists of all the resistance and capacitance value of transistors based on the technology involovd. The testbench can be written based on Irsim test-language-grammer.
-    
-    The components of the finger-printing design, including the multiplexer, the fingerprinting code generator and the counter, are simulated individually for their path delay. This path delay can be found by observing the time difference between a rising clock edge and its next output value transition. Also, an average delay value from a set of distinct clocking edges is calculated to counter the value variance from different time intervals.
-    
-\begin{table}[ht] 
-\caption{Average Delay of Each Components} % title of Table 
-\centering % used for centering table 
-\begin{tabular}{c c c c } % centered columns (4 columns) 
-\hline\hline %inserts double horizontal lines 
-Mux & Counter & Fingerprint & Shift Register\\ [0.5ex] % inserts table 
-%heading 
-\hline % inserts single horizontal line 
-\\ [0.2 ex]
-0.146ns & 0.967ns & 3.812ns & 0.699ns \\ [1ex] % [1ex] adds vertical space 
-\hline %inserts single line 
-\end{tabular} 
-\label{table:nonlin} % is used to refer this table in the text 
-\end{table} 
 
-    A “slowest bit” analysis is also performed on the CRC code generator. As all the 16 bits in fingerprinting block are processed in parallel, each bit is simulated individually for their single-bit path delay. The purpose of this test is to find the the slowest bit of the fingerprinting block. From the simulation, it is observed that the largest single-bit delay is 3.4ns, while the shortest is 2.27ns. Thus the range is calculated to be 1.13ns.
-    
-    Lastly, an overall timing analysis is performed on the whole design. From the simulation, it is shown that a reset signal from the counter will always slows down the CRC code output, due to the additional delay from the generation of these reset signals. Therefore, in order to find the worst case scenario of the system delay, only clock edges with a reset signal are analysed. From the collected data, the max delay for the design is found to be 6.90ns. To ensure the reliability of the worst case scenario, the range from “slowest bit” analysis mentioned above is also added to the worst case analysis.
+ 
+As all the 16 bits in fingerprinting block are processed in parallel, each bit is simulated individually and differently for their single-bit path delay. The purpose of this test is to find the the slowest bit of the fingerprinting block. From the simulation, it is observed that the largest single-bit delay is 3.4ns, while the shortest is 2.27ns.
+
+ From the simulation, it is shown that a reset signal from the counter will always slow down the CRC code output, due to the additional delay from the generation of these reset signals. Therefore, in order to find the worst case scenario of the system delay, only clock edges with a reset signal are analysed. From the collected data, the maximum delay for the design is found to be 6.90ns. To ensure the reliability of the worst case scenario, the range from “slowest bit” analysis mentioned above is also added to the worst case analysis. Table 1 shows the maximum delay of each component and of the system in order to determine the maximum operating frequency. The whole system delay is found to be 8.03ns. Based on this result, the maximum system operating frequency is estimated to be 125 Mhz. 
     
     \begin{table}[ht] 
 \caption{Max Delay of Each Components and System} % title of Table 
@@ -144,13 +160,14 @@ Mux & Counter & Fingerprint & Shift Register & System\\ [0.5ex] % inserts table
 \label{table:nonlin} % is used to refer this table in the text 
 \end{table} 
 
-    In clonsion, the whole system delay is calculated to be 8.03ns. Based on this result, the maximum system operating frequency is estimated to be 124.53 Mhz. 
 
 \section{Conclusion}
 One of the key observations from this project is the importance of understanding the limitations of tools used. For example, we learned after the project that NCC may not be reliable for large designs. So, while SRAM was tested for timing using the schematic description, the layout, though passing NCC, may be incorrect. Hence, if more time was available, the SRAM fifo layout would have also been thoroughly tested for any inconsistencies. Furthermore, the fifo could have been optimized further, for example by performing a path effort analysis for the row decoder. This would have shortened the time required to charge the capacitance of all the 16 SRAM cells and allowed for a higher operational frequency. 
 The project would have benefited with more time evaluating the circuit in IRSIM because a timing analysis exposes various vulnerabilities of the design that Modelsim cannot check for. 
 
+Wiring proved to be a challenge when implementing the layout. If the design was to be repeated, more attention would be placed on wire planning and pitch matching than on logic minimization, as a decrease in functional blocks or transistor count may not necessarily lead to improvements in area, and pitch matching can allow for menial tasks such as wire routing to be left to automation tools rather than the designer. Long and complex wires also decrease the modularity of a design, introduce additional parasitic resistances and capacitances, and make the system more vulnerable to noise, so it is generally a good idea to try and minimize them.
 
+For this project, we have started with an early implementation of fingerprinting using only memory writes and storing in shift register. However, through better design iteration, we are now able to fingerprint ALU results and storing in SRAM which is much more efficient and provides better error detection capability.
 
 
 
