@@ -112,14 +112,14 @@ The SRAM based design needs 3 times fewer transistors compared to the FF based d
 The fingerprinting circuit can be tuned for various modes of operation, and some decisions have an impact on area and cost. The counter determines the compression ratio, so increasing the counter's modulus will decrease the area required to store the fingerprints for the same amount of CPU execution information. Another important factor is the choice of execution data to fingerprint. At a minimum, the fingerprinting circuit needs to verify memory writes and adresses for data corruptions. However, if aditional data, such as ALU operations, are also fingerprinted, the amount of execution data will increase, and so will the area required to store all fingerprints. The impact of fingerprinting additional data would vary depending on the target application, but for the MIPS benchmark that we tested, the area required for storage gets tripled if ALU operations are fingerprinted in addition to memory write operations. 
 
 \subsection{Operating Frequency}
-As this is a transistor-level design, besides functional simulation, a timing performance simulation may also be required in order to have a more precise system performance prediction. Irsim “switch-level” digital circuit simulator, and it will use extracted capacitance and lumped resistance values to produce a timing analysis simulation for a certain design.
+As this is a transistor-level design, besides functional simulation, a timing performance simulation may also be required in order to have a more precise system performance prediction. IRSIM is a “switch-level” digital circuit simulator, and it uses extracted capacitance and lumped resistance values to produce a timing analysis simulation for a certain design.
 
-In order to perform the Irsim simulation, a Irsim deck, a prm file and a testbench file are needed. The irsim deck, which contains all the connection information of the transistors in the schematic(or layout) design, can be automatically generated from a schematic design in Electric. The prm file contains all the resistance and capacitance information of transistors, and the testbench can be written based on Irsim test-language-grammer.
+In order to perform the IRSIM simulation, an IRSIM deck, a prm file and a testbench file are needed. The IRSIM deck, which contains all the connection information of the transistors in the schematic(or layout) design, can be automatically generated from a schematic design in Electric. The prm file contains all the resistance and capacitance information of transistors, and the testbench can be written based on IRSIM test-language-grammer.
 
-Here is a sample C++ based irsim testbench generator, which is used to test the multiplexer.
+Here is a sample C++ based IRSIM testbench generator, which is used to test the multiplexer.
 
-The components of the finger-printing design, including the multiplexer, the fingerprinting code generator, and the counter, are tested individually in the first place. The delay of each component can be found by observing the time difference between a rising clock edge and its next output value transition. As there are some slight variance for the delay at different clock edges, an average delay is calculated by observing multiple clock rising edges. 
-Here are the average delay of each component. 
+The components of the fingerprinting design, including the multiplexer, the fingerprinting code generator, and the counter, are first tested individually. The delay of each component can be found by observing the time difference between a rising clock edge and the next output value transition. As there is slight variance for the delay at different clock edges, an average delay is calculated by observing multiple clock rising edges. 
+Here are the average delays of each component. 
 
 \begin{table}[ht] 
 \caption{Delay of Each Components} % title of Table 
@@ -138,14 +138,14 @@ Mux & Counter & Fingerprint & Shift Register\\ [0.5ex] % inserts table
 \end{table} 
 
 
-Next, a “slowest bit” analysis is performed on the CRC code generator. As all the 16 bits in fingerprinting block are processed in parallel, each bit is tested individually for the range of delay data. From the test, it is shown that the longest delay is 3.4ns, while the shortest is 2.27. And the difference is 1.13ns.
+Next, a “slowest bit” analysis is performed on the CRC code generator. As all the 16 bits in the fingerprinting block are processed in parallel, each bit is tested individually for the range of delay data. From the test, it is shown that the longest delay is 3.4ns, while the shortest is 2.27ns, for a difference of 1.13ns.
 
-After that, the whole design is tested. From the test, it is shown that a reset signal from the counter will always slows down the CRC code output. In order to find the worst case scenario of the system delay, only clock edge with a reset signal are analysis. In order to ensure the worst case scenario is reliable, the difference from “slowest bit” is added to the worst case delay observed from the collected data.
+After that, the whole design is tested. From the test, it is shown that a reset signal from the counter will always slow down the CRC code output. In order to find the worst case scenario of the system delay, only clock edges with a reset signal are analysed. In order to ensure the worst case scenario is reliable, the difference from “slowest bit” is added to the worst case delay observed from the collected data.
 
-In clonsion, the whole system delay is calculated to be 8.03ns. Based on this result, the maximum system operating frequency is estimated to be 120 Mhz. 
+In conclusion, the whole system delay is calculated to be 8.03ns. Based on this result, the maximum system operating frequency is estimated to be 120 Mhz. 
 
 \section{Conclusion}
-One of the key observations from this project is the importance of understanding the limitations of tools used. For example, we learnt after the project that NCC may not be reliable for large designs. So, while SRAM was tested for timing using the schematic description, the layout though passing NCC, may be incorrect. Hence, if more time was available, the SRAM fifo layout would have also been thoroughly tested for any inconsistencies. Further, the fifo could have been optimized further, for example by performing a path effort analysis for the row decoder. This would have shortened the time required to charge the capacitance of all the 16 SRAM cells and allowed for a higher operational frequency. 
+One of the key observations from this project is the importance of understanding the limitations of tools used. For example, we learned after the project that NCC may not be reliable for large designs. So, while SRAM was tested for timing using the schematic description, the layout, though passing NCC, may be incorrect. Hence, if more time was available, the SRAM fifo layout would have also been thoroughly tested for any inconsistencies. Furthermore, the fifo could have been optimized further, for example by performing a path effort analysis for the row decoder. This would have shortened the time required to charge the capacitance of all the 16 SRAM cells and allowed for a higher operational frequency. 
 The project would have benefited with more time evaluating the circuit in IRSIM because a timing analysis exposes various vulnerabilities of the design that Modelsim cannot check for. 
 
 
