@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.8)  3 DEC 2013 20:40
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.8)  3 DEC 2013 20:50
 entering extended mode
 **E:/Dropbox/graduate/git/VLSI---Fingerprinting/backup/VLSI---Fingerprinting/re
 port/group1_report.tex
@@ -120,64 +120,64 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 31.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 24.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 31.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 31.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 24.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11> on input line 31.
+(Font)              <11> on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.69997> on input line 31.
+(Font)              <7.69997> on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.5> on input line 31.
-LaTeX Font Info:    Try loading font information for U+pzd on input line 31.
+(Font)              <5.5> on input line 24.
+LaTeX Font Info:    Try loading font information for U+pzd on input line 24.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 38.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <12> not available
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 38.
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 26.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 54.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 42.
 
 
-LaTeX Warning: Citation `techcon' on page 1 undefined on input line 56.
+LaTeX Warning: Citation `techcon' on page 1 undefined on input line 44.
 
 
-LaTeX Warning: Citation `Koopman' on page 1 undefined on input line 64.
+LaTeX Warning: Citation `Koopman' on page 1 undefined on input line 52.
 
 [1{C:/Users/Mojo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 88.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 76.
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 []\OT1/ppl/m/n/8 Havery Mudd Col-lege \OT1/ppl/m/it/8 E158 Spring
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 \OT1/ppl/m/it/8 2007 MIPS Project \OT1/ppl/m/n/8 [On-line]. Avail-able:
  []
 
 
-Overfull \hbox (15.49963pt too wide) in paragraph at lines 116--117
+Overfull \hbox (15.49963pt too wide) in paragraph at lines 104--105
 \OT1/ppl/m/n/8 http://www4.hmc.edu:8001/Engineering/158/07/project/index.html 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 []\OT1/ppl/m/n/8 Static Free Soft-ware, \OT1/ppl/m/it/8 Elec-tric \OT1/ppl/m/n/
 8 [On-line]. Avail-able:
  []
@@ -207,7 +207,7 @@ KTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files (x86)/MiKTeX 2.
 type1/urw/palatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/ur
 w/palatino/uplri8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/zapfd
 ing/uzdr.pfb>
-Output written on group1_report.pdf (3 pages, 93396 bytes).
+Output written on group1_report.pdf (3 pages, 93409 bytes).
 PDF statistics:
  41 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

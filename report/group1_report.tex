@@ -11,14 +11,9 @@
 \\McGill University}
 
 
-
-% for Computer Society papers, we must declare the abstract and index terms
-% PRIOR to the title within the \IEEEcompsoctitleabstractindextext IEEEtran
-% command as these need to go into the title area created by \maketitle.
-
 \IEEEcompsoctitleabstractindextext{%
 \begin{abstract}
-%\boldmath
+
 Traditional error mitigation techniques such as Error Correcting Code (ECC) and Dual Modular
 Redundancy (DMR)  in Lockstep provide error detection at great cost of power, area and performance. In this
 paper, we present the implementation and verification of an Execution Fingerprinting Unit using
@@ -26,14 +21,7 @@ CRC16 operating on a MIPS8 architecture. Our design provides a 255 times decreas
 compared to DMR Lockstep and 300MHz max operating frequency unpipelined.
 \end{abstract}}
 
-
-% make the title area
 \maketitle
-
-
-
-
-
 
 \section{Introduction}
 \IEEEPARstart{T}{raditional} 
@@ -59,7 +47,7 @@ Only memory write address and data were originally available through the MIPS8 a
 
 \subsection{Compressing the Data: The CRC Fingerprint}
 
-The Cyclic Redundancy Check algorithm can be used to compress data for later verification. CRC is a good choice for fingerprinting, because it is a simple and widely used algorithm that was designed with error detection in mind. Although CRC is more ideal for transmission channel error detection, as it can guarantee resilience to burst errors to within a given number of corrupt bits, it can still offer strong error detection for randomly distributed error when compared to other techniques such as Fletcher's Checksum.\
+The Cyclic Redundancy Check (CRC) algorithm can be used to compress data for later verification. CRC is a good choice for fingerprinting, because it is a simple and widely used algorithm that was designed with error detection in mind. Although CRC is more ideal for transmission channel error detection, as it can guarantee resilience to burst errors to within a given number of corrupt bits, it can still offer strong error detection for randomly distributed error when compared to other techniques such as Fletcher's Checksum.
 
 A 16-bit wide CRC was chosen, as it offers much stronger error detection characteristics than a lower bit alternative, but is not too large to be considered overkill for a MIPS-8 core. The 0x1755b polynomial was used, since it is a good choice for larger block sizes\cite{Koopman}. A set of logical equations for each output bit were found\cite{Parcrc} and implemented using combinational logic. The produced combinational circuit was linked to a register to store the CRC result after each iteration, as its value is required for the next calculation. 
 
