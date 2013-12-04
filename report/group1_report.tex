@@ -52,22 +52,28 @@ As the processors are out of sync,however the execution data still needs to be v
 Fingerprinting can be implemented in three steps. First, the execution data of the processor needs to be extracted and fed into the fingerprinting circuit. Second, this data is compress using CRC16 to generate the fingerprints, which will be explained in details in this section. At last, fingeprints needs to be stored for later comparison for error detection. The implementation of fingerpriting was based on the MIPS8 architecture and a standard cell library provided by Harvey Mudd College\cite{harvey} using Electric VLSI Design System\cite{electric}. The goal of this work is to prove the feasibility of using fingerprinting for error detection Therefore error coverage analysis is not in the scope of this work.
 
 \subsection{Execution Information Extraction}
+
 Only memory write address and data were originally available through the MIPS8 architecture. Fingerprinting additional execution has been proven to improve error dectection coverage and latency\cite{techcon}. Therefore we added to the export list the results of the ALU within the datapath. However, only ALU results that are written to the register file are needed and therefore a control signal composed of \emph{memtoreg} and \emph{regwrite} were used to signal a useful ALU result to be fingerprinted. As the MIPS8 core within this project  cannot ouput a valid ALU result and memory write data, hence an additional multiplexer was added in order to help choosing the right set of signals for the fingerprinting circuit.
 
 
 
 \subsection{Compressing the Data: The CRC Fingerprint}
 
-The Cyclic Redundancy Check algorithm can be used to compress data for later verification. CRC is a good choice for fingerprinting, because it is a simple and widely used algorithm that was designed with error detection in mind. Although CRC is more ideal for transmission channel error detection, as it can guarantee resilience to burst errors to within a given number of corrupt bits, it can still offer strong error detection for randomly distributed error when compared to other techniques such as Fletcher's Checksum.
-A 16-bit wide CRC was chosen, as it offers much stronger error detection characteristics than a lower bit alternative, but is not too large to be considered overkill for a MIPS-8 core. The 0x1755b polynomial was used, since it is a good choice for larger block sizes\cite{Koopman}. A set of logical equations for each output bit were found\cite{Parcrc} and implemented using combinational logic. The produced combinational circuit was linked to a register to store the CRC result after each iteration, as its value is required for the next calculation. 
-\subsection{Storing the Fingerprint: Shift Register vs SRAM}
-Every 1000 or so cycles, the CRC circuit generates a fingerprint. To avoid lockstep execution with a parallel processor, a limited set of these fingerprints can be stored in a buffer and read out later for comparison. A buffer size to store 8 16-bit fingerprints was chosen. Since the goal of the project was not memory design, a generic flipflop based shift register circuit was quickly implemented. The generic flipflop takes 2 clocks, en and reset as inputs and as a result needed 30 transistors per bit. This resulted in a significantly big buffer (needing 3872 transistors) relative to the size of the fingerprinting circuit and hence will skew the energy or performance savings primarily proposed. Hence the shift register was replaced with a FIFO built with SRAM. 
+The Cyclic Redundancy Check algorithm can be used to compress data for later verification. CRC is a good choice for fingerprinting, because it is a simple and widely used algorithm that was designed with error detection in mind. Although CRC is more ideal for transmission channel error detection, as it can guarantee resilience to burst errors to within a given number of corrupt bits, it can still offer strong error detection for randomly distributed error when compared to other techniques such as Fletcher's Checksum.\
 
-The FIFO features a single read/write per cycle composed of 6T SRAM cells, 2 3-bit counters for pointers to memory, row decoder to drive specific word lines, bitline conditioning and read/write driver logic to operate the SRAM cells. This implementation needed 1374 transistors laid on a 45 lamda pitch and doesn’t move data around every clock cycle. So, the area and power consumption is much smaller, allowing for a more compelling case be made for the fingerprinting circuit. 
+A 16-bit wide CRC was chosen, as it offers much stronger error detection characteristics than a lower bit alternative, but is not too large to be considered overkill for a MIPS-8 core. The 0x1755b polynomial was used, since it is a good choice for larger block sizes\cite{Koopman}. A set of logical equations for each output bit were found\cite{Parcrc} and implemented using combinational logic. The produced combinational circuit was linked to a register to store the CRC result after each iteration, as its value is required for the next calculation. 
+
+
+\subsection{Storing the Fingerprint: Shift Register vs SRAM}
+Every 1000 or so cycles, the CRC circuit generates a fingerprint. To avoid lockstep execution with a parallel processor, a limited set of these fingerprints can be stored in a buffer and read out later for comparison. A buffer size to store 8 16-bit fingerprints was chosen. Since the goal of the project was not memory design, a generic flipflop based shift register circuit was quickly implemented. The generic flipflop takes 2 clocks, en and reset as inputs and as a result needed 30 transistors per bit. This resulted in a significantly big buffer (needing 3872 transistors) relative to the size of the fingerprinting circuit, skewing the energy or performance savings primarily proposed. Hence the shift register was replaced by a FIFO built with SRAM. 
+
+The FIFO features a single read/write per cycle composed of 6T SRAM cells, 2 3-bit counters for pointers to memory, row decoder to drive specific word lines, bitline conditioning and read/write driver logic to operate the SRAM cells. This implementation needed 1374 transistors laid on a 45 lamda pitch and did not involve moving data around every clock cycle. So, the area and power consumption is much smaller, allowing a more compelling case to be made for the fingerprinting circuit. 
 
 
 \subsection{The Final Design}
 The fingerprinting system as a whole includes a multiplexer, a counter, and additional glue logic to integrate the CRC circuit into a fully functional design. The MIPS core serves as the external controller for the fingerprinting system, issuing the appropriate signals whenever new data is ready to be fingerprinted. A multiplexer performs the selection of data to be fingerprinted based on the CPUs signals. A counter is used to count each time new data comes in and it determines the data compression ratio of the fingerprint. When the desired amount of data has been fingerprinted, the counter signals the output buffer block to store the new fingerprint, and it also signals the CRC block to start computation for a new block. The CRC block needs to be able to handle data coming in at the same time as the counter's control signal, so additional logic was required to handle such a scenario. 
+
+Wiring proved to be a challenge when implementing the layout. If the design was to be repeated, more attention would be placed on wire planning and pitch matching than on logic minimization, as a decrease in functional blocks or transistor count may not necessarily lead to improvements in area, and pitch matching can allow for menial tasks such as wire routing to be left to automation tools rather than the designer. Long and complex wires also decrease the modularity of a design, introduce additional parasitic resistances and capacitances, and make the system more vulnerable to noise, so it is generally a good idea to try and minimize them.
 
 % might be nice to add a block diagram of the circuit here%
 
@@ -78,10 +84,16 @@ For the final circuit, the modified mips core was hooked up to the fingerprintin
 
 \subsection{Layout Verification}
 \subsection{Timing Analysis}
+
 \subsubsection {\qquad  SRAM timing}
 A 6T SRAM cell functions due to the 6 specially sized transistors that enable read and write stability. Since Modelsim is a functional/logic simulator which doesn’t consider transistor sizes, fifo cannot be tested in Modelsim with the rest of the circuit. Ideally, an SRAM cell model must be built which mimics the SRAM behaviour using logic. Since this would be time consuming, the entire circuit was instead tested with the earlier shift register implementation. The fifo was validated in a timing analyser tool (IRSIM) which uses the linear delay model to approximate switching delay. Once deemed functional, it is connected to the rest of the circuit and simulated together in IRSIM. This exercise exposed the limitations of Modelsim for testing and allowed the team to appreciate the importance of timing analysis for VLSI designs.
+
 \section{Results}
 \subsection{Area Overhead and Scaling}
+
+% a note about how SRAM area compares to register area (even though it was mentioned already %
+The fingerprinting circuit can be tuned for various modes of operation, and some decisions have an impact on area and cost. The counter determines the compression ratio, so increasing the counter's modulus will decrease the area required to store the fingerprints for the same amount of CPU execution information. Another important factor is the choice of execution data to fingerprint. At a minimum, the fingerprinting circuit needs to verify memory writes and adresses for data corruptions. However, if aditional data, such as ALU operations, are also fingerprinted, the amount of execution data will increase, and so will the area required to store all fingerprints. The impact of fingerprinting additional data would vary depending on the target application, but for the MIPS benchmark that we tested, the area required for storage gets tripled if ALU operations are fingerprinted in addition to memory write operations. 
+
 \subsection{Operating Frequency}
 
 
@@ -92,6 +104,7 @@ One of the key observations from this project is to understand the limitations o
 
 
 \begin{thebibliography}{1}
+
 
 \bibitem{DTR}
  Brett H. Meyer, Benton Calhoun, John Lach, Kevin Skadron, \emph{Cost-effective Safety and Fault Localization using Distributed Temporal Redundancy},CASES'11, October 2011.
@@ -104,7 +117,7 @@ Havery Mudd College \emph{E158 Spring 2007 MIPS Project} [Online]. Available: ht
 
 \bibitem{electric}
 Static Free Software, \emph{Electric} [Online]. Available: http://www.staticfreesoft.com/electric.html
-\bibitem{Koopman}
+
 P. ~Koopman and T.~Chakravarty, \emph{Cyclic Redundancy Code ({CRC}) Polynomial Selection For Embedded Networks}, Proceedings of the 2004 International Conference on Dependable Systems and Networks, 2004.
 
 \bibitem{Parcrc}
