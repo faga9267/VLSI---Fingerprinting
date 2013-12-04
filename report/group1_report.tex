@@ -60,12 +60,13 @@ So back to fingerprinting, as the processors are out of sync, in order to compar
 
 \section{Implementation }
 \subsection{Execution Information Extraction}
-The data that we decided to fingerprint is memory write address and  data as well as register data updates. We had to add additional exports to the original chip, which turned out to be a perfectl fit using all the pins. Thus we were able to maintain the original MIPS8 packaging, eliminating the cost of a new package,making use of the 9 remaining pins that were available. Eight of them are for the 8 bit register data and one is a control signal that tells us if a register was written. 
+The data that we decided to fingerprint is memory write address and  data as well as register data updates. We had to add additional exports to the original chip, which turned out to be a perfectl fit using all the pins. Thus we were able to maintain the original MIPS8 packaging, eliminating the cost of a new package, making use of the 9 remaining pins that were available. Eight of them are for the 8 bit register data and one is a control signal that tells us if a register was written. 
 
 
 \subsection{Compressing the Data: The CRC Fingerprint}
 
-The Cyclic Redundancy Check algorithm can be used to compress data for later verification. CRC is a good choice for fingerprinting, because it is a simple and widely used algorithm that was designed with error detection in mind. Although CRC is more ideal for transmission channel error detection, as it can guarantee resilience to burst errors to within a given number of corrupt bits, it can still offer strong error detection for randomly distributed error when compared to other techniques such as Fletcher's Checksum.
+The Cyclic Redundancy Check algorithm can be used to compress data for later verification. CRC is a good choice for fingerprinting, because it is a simple and widely used algorithm that was designed with error detection in mind. Although CRC is more ideal for transmission channel error detection, as it can guarantee resilience to burst errors to within a given number of corrupt bits, it can still offer strong error detection for randomly distributed error when compared to other techniques such as Fletcher's Checksum.\
+
 A 16-bit wide CRC was chosen, as it offers much stronger error detection characteristics than a lower bit alternative, but is not too large to be considered overkill for a MIPS-8 core. The 0x1755b polynomial was used, since it is a good choice for larger block sizes\cite{Koopman}. A set of logical equations for each output bit were found\cite{Parcrc} and implemented using combinational logic. The produced combinational circuit was linked to a register to store the CRC result after each iteration, as its value is required for the next calculation. 
 
 
