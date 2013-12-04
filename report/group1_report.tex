@@ -65,9 +65,9 @@ A 16-bit wide CRC was chosen, as it offers much stronger error detection charact
 
 
 \subsection{Storing the Fingerprint: Shift Register vs SRAM}
-Every 1000 or so cycles, the CRC circuit generates a fingerprint. To avoid lockstep execution with a parallel processor, a limited set of these fingerprints can be stored in a buffer and read out later for comparison. A buffer size to store 8 16-bit fingerprints was chosen. Since the goal of the project was not memory design, a generic flipflop based shift register circuit was quickly implemented. The generic flipflop takes 2 clocks, en and reset as inputs and as a result needed 30 transistors per bit. This resulted in a significantly big buffer (needing 3872 transistors) relative to the size of the fingerprinting circuit, skewing the energy or performance savings primarily proposed. Hence the shift register was replaced by a FIFO built with SRAM. 
-
-The FIFO features a single read/write per cycle composed of 6T SRAM cells, 2 3-bit counters for pointers to memory, row decoder to drive specific word lines, bitline conditioning and read/write driver logic to operate the SRAM cells. This implementation needed 1374 transistors laid on a 45 lamda pitch and did not involve moving data around every clock cycle. So, the area and power consumption is much smaller, allowing a more compelling case to be made for the fingerprinting circuit. 
+The CRC block generates a fingerprint every 256 memory/ALU operations executed by the MIPS processor. To avoid lockstep execution with a parallel processor, a limited set of these fingerprints are stored in a buffer and read out later for comparison, to detect whether the 256 batch of operations were executed correctly. A buffer size to store 8 16-bit fingerprints was chosen. Since the goal of the project was not memory design, rather to demonstrate the efficacies of fingerprinting, a generic flipflop based shift register circuit was quickly implemented. The generic flipflop takes ph1, ph2, enable and reset as inputs and as a result needed 30 transistors per bit. Though the layout was very modular using the standard cell library components, and hence implementation quick, this resulted in a significantly big buffer (needing 3872 transistors) relative to the size of the fingerprinting circuit. This will skew the energy or performance savings primarily proposed. The shift register also suffers from the hold time constraint with a really short contamination delay between two flipflops. So, this implementation would have needed a thorough timing analysis to ensure timing wont fail and is a poor choice of design for a buffer. Hence the shift register was replaced by a FIFO built with SRAM during our optimization phase.
+The FIFO features a single read/write per cycle composed of 6T SRAM cells, 2 3-bit counters, row decoder, bitline conditioning and read/write driver logic. Unlike the shift register, the FIFO moves a pointer to the data, instead of moving all the data physically. Two 3-bit counters are used to keep track of read and write pointers to the rows of bits. 3 2:1 multiplexers choose between the two pointers to drive the row decoder depending on whether data is to be read from or written to the SRAM. The row decoder composed of a 2 stage design; 8 3-in NANDs and 8 2-in NORs to drive the word lines. NOR stage makes the row decoder output ph1 qualified to drive the word lines only when ph1 is high. The 16 bitline conditioning blocks sitting on top of the SRAM slices, composed of 2 pmos transistors clocked with ph2b (dynamic logic), precharge the bitlines when ph1 is low, ready for the read/write operation. The read driver is a pair of high skew inverters which detect the voltage on the bitlines and drives the output to the rails or ground. The write driver consists of a series pair of nmos transistors on each bitline. The nmos transistors pull the ‘bit’ line to ground if writeq1 and datas1 are both high and the ‘bitb’ line behaves conversely.  
+This implementation needed 1374 transistors laid on a 45 lamda pitch and did not involve moving data around every clock cycle. So, the area and power consumption is much smaller and hence realistic, allowing a more compelling case to be made for the fingerprinting circuit. 
 
 
 \subsection{The Final Design}
@@ -86,10 +86,27 @@ For the final circuit, the modified mips core was hooked up to the fingerprintin
 \subsection{Timing Analysis}
 
 \subsubsection {\qquad  SRAM timing}
-A 6T SRAM cell functions due to the 6 specially sized transistors that enable read and write stability. Since Modelsim is a functional/logic simulator which doesn’t consider transistor sizes, fifo cannot be tested in Modelsim with the rest of the circuit. Ideally, an SRAM cell model must be built which mimics the SRAM behaviour using logic. Since this would be time consuming, the entire circuit was instead tested with the earlier shift register implementation. The fifo was validated in a timing analyser tool (IRSIM) which uses the linear delay model to approximate switching delay. Once deemed functional, it is connected to the rest of the circuit and simulated together in IRSIM. This exercise exposed the limitations of Modelsim for testing and allowed the team to appreciate the importance of timing analysis for VLSI designs.
+A 6T SRAM cell functions due to the 6 specially sized transistors that enable read and write stability. Since Modelsim is a functional/logic simulator which doesn’t consider transistor sizes, fifo cannot be tested in Modelsim with the rest of the circuit. Ideally, an SRAM cell model must be built which mimics the SRAM behaviour using logic. Since this would be time consuming, the entire circuit was instead tested with the earlier shift register implementation for functional verification. The fifo was validated in a timing analyser tool (IRSIM) which uses the linear delay model to approximate switching delay. 
+
+The functionality was validated by observing internal signals in the FIFO block to verify each component behaved as intended with the right set of inputs. Once verified individually, two sets of tests were performed. The first test checked whether the FIFO can write 8 fingerprints in a row sequentially and read them out sequentially after some arbitrary time. The other test alternates write followed by a subsequent read. This test is more realistic considering fingerprints are generated one every few hundred/ thousand clock cycles. Once validated, the SRAM was connected to the entire circuit and a timing simulation was performed to evaluate the delay.
+ This exercise exposed the limitations of Modelsim for testing and allowed the team to appreciate the importance of timing analysis for VLSI designs.
+
 
 \section{Results}
 \subsection{Area Overhead and Scaling}
+
+
+\begin{center}
+  \begin{tabular}{ l || c | r }
+    \hline
+     & Shift register & FIFO  \\ \hline
+    Transistor count & 3872 & 1374 \\ \hline
+    Area(lamda squared) & 2328 X 1000  & 1200 X 730 \\
+    \hline
+  \end{tabular}
+\end{center}
+
+The SRAM based design needs 3 times fewer transistors compared to the FF based design, consequently needing 3 times less area. The area could have been smaller if the row decoder was built using a 45 lamda pitch, if the 3-bit counters were built using latches rather than the generic FFs and if the white space could have been eliminated by using a less modular design. The SRAM block and consequently the read and write drivers could have been tighter if there was an additional layer to route vdd and gnd wires.	
 
 % a note about how SRAM area compares to register area (even though it was mentioned already %
 The fingerprinting circuit can be tuned for various modes of operation, and some decisions have an impact on area and cost. The counter determines the compression ratio, so increasing the counter's modulus will decrease the area required to store the fingerprints for the same amount of CPU execution information. Another important factor is the choice of execution data to fingerprint. At a minimum, the fingerprinting circuit needs to verify memory writes and adresses for data corruptions. However, if aditional data, such as ALU operations, are also fingerprinted, the amount of execution data will increase, and so will the area required to store all fingerprints. The impact of fingerprinting additional data would vary depending on the target application, but for the MIPS benchmark that we tested, the area required for storage gets tripled if ALU operations are fingerprinted in addition to memory write operations. 
@@ -128,7 +145,9 @@ After that, the whole design is tested. From the test, it is shown that a reset 
 In clonsion, the whole system delay is calculated to be 8.03ns. Based on this result, the maximum system operating frequency is estimated to be 120 Mhz. 
 
 \section{Conclusion}
-One of the key observations from this project is to understand the limitations of tools used. For example, we learnt after the project that NCC may not be reliable for large designs. So, while SRAM was tested for timing using the schematic description, the layout though passing NCC, may be incorrect. Hence, if more time was available, the SRAM fifo layout would have been tested for any inconsistencies. Further, the fifo could have been optimized further, performing a path effort analysis for a faster design with lower power consumption. 
+One of the key observations from this project is the importance of understanding the limitations of tools used. For example, we learnt after the project that NCC may not be reliable for large designs. So, while SRAM was tested for timing using the schematic description, the layout though passing NCC, may be incorrect. Hence, if more time was available, the SRAM fifo layout would have also been thoroughly tested for any inconsistencies. Further, the fifo could have been optimized further, for example by performing a path effort analysis for the row decoder. This would have shortened the time required to charge the capacitance of all the 16 SRAM cells and allowed for a higher operational frequency. 
+The project would have benefited with more time evaluating the circuit in IRSIM because a timing analysis exposes various vulnerabilities of the design that Modelsim cannot check for. 
+
 
 
 
