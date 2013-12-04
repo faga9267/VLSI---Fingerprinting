@@ -1,15 +1,5 @@
-\documentclass[12pt,journal,compsoc]{IEEEtran}
+\documentclass[10pt,journal,compsoc]{IEEEtran}
 \providecommand{\PSforPDF}[1]{#1}
-\newcommand\MYhyperrefoptions{bookmarks=true,bookmarksnumbered=true,
-pdfpagemode={UseOutlines},plainpages=false,pdfpagelabels=true,
-colorlinks=true,linkcolor={black},citecolor={black},pagecolor={black},
-urlcolor={black},
-pdftitle={Bare Demo of IEEEtran.cls for Computer Society Journals},%<!CHANGE!
-pdfsubject={Typesetting},%<!CHANGE!
-pdfauthor={Michael D. Shell},%<!CHANGE!
-pdfkeywords={Computer Society, IEEEtran, journal, LaTeX, paper,
-             template}}%<^!CHANGE!
-
 
 
 \begin{document}
@@ -55,12 +45,15 @@ the comparison passes. However large amount of computational ressource is wasted
 as not to mention the overwhelming complexcity of clock synchronization due to lockstep.
 
 \section{Background}
-Fingerprinting first uses TMR, which allows processors to execute out of sync, thus breaking the lockstep. This will create much more freedom in terms of schedulabilty, letting us apply a second technique called RD which allows the processor to also execute non critical tasks. Both techniques come from papers that prof Meyer has published and I invite you all to have a look. 
-So back to fingerprinting, as the processors are out of sync, in order to compare the execution data, we need to save it somewhere. However, directly saving this data would take a look of space, hence we compress it into a single word called fingerprint. The compression algorithm can be chosen by the designer and will have different impact in terms of error coverage and detection. 
+Fingerprinting first uses Distributed Temporal Redundancy, which allows processors to execute out of sync\cite{DTR}, thus breaking the lockstep. This will create much more freedom in terms of schedulabilty, letting us apply a second technique called Relaxed Dedication which allows the processor to also execute non critical tasks\cite{RD}. 
+As the processors are out of sync,however the execution data still needs to be verified through redundant exeuction data. Directly saving the redundant data would not be ressource efficient, hence fingerprinting compresses this block of data into a single word called fingerprint. The compression algorithm can be chosen by the designer and will have different impact in terms of error coverage and detection. 
 
 \section{Implementation }
+Fingerprinting can be implemented in three steps. First, the execution data of the processor needs to be extracted and fed into the fingerprinting circuit. Second, this data is compress using CRC16 to generate the fingerprints, which will be explained in details in this section. At last, fingeprints needs to be stored for later comparison for error detection. The implementation of fingerpriting was based on the MIPS8 architecture and a standard cell library provided by Harvey Mudd College\cite{harvey} using Electric VLSI Design System\cite{electric}. The goal of this work is to prove the feasibility of using fingerprinting for error detection Therefore error coverage analysis is not in the scope of this work.
+
 \subsection{Execution Information Extraction}
-The data that we decided to fingerprint is memory write address and  data as well as register data updates. We had to add additional exports to the original chip, which turned out to be a perfectl fit using all the pins. Thus we were able to maintain the original MIPS8 packaging, eliminating the cost of a new package,making use of the 9 remaining pins that were available. Eight of them are for the 8 bit register data and one is a control signal that tells us if a register was written. 
+Only memory write address and data were originally available through the MIPS8 architecture. Fingerprinting additional execution has been proven to improve error dectection coverage and latency\cite{techcon}. Therefore we added to the export list the results of the ALU within the datapath. However, only ALU results that are written to the register file are needed and therefore a control signal composed of \emph{memtoreg} and \emph{regwrite} were used to signal a useful ALU result to be fingerprinted. As the MIPS8 core within this project  cannot ouput a valid ALU result and memory write data, hence an additional multiplexer was added in order to help choosing the right set of signals for the fingerprinting circuit.
+
 
 
 \subsection{Compressing the Data: The CRC Fingerprint}
@@ -85,25 +78,32 @@ For the final circuit, the modified mips core was hooked up to the fingerprintin
 
 \subsection{Layout Verification}
 \subsection{Timing Analysis}
-\subsubsection {SRAM timing}
+\subsubsection {\qquad  SRAM timing}
 A 6T SRAM cell functions due to the 6 specially sized transistors that enable read and write stability. Since Modelsim is a functional/logic simulator which doesn’t consider transistor sizes, fifo cannot be tested in Modelsim with the rest of the circuit. Ideally, an SRAM cell model must be built which mimics the SRAM behaviour using logic. Since this would be time consuming, the entire circuit was instead tested with the earlier shift register implementation. The fifo was validated in a timing analyser tool (IRSIM) which uses the linear delay model to approximate switching delay. Once deemed functional, it is connected to the rest of the circuit and simulated together in IRSIM. This exercise exposed the limitations of Modelsim for testing and allowed the team to appreciate the importance of timing analysis for VLSI designs.
 \section{Results}
 \subsection{Area Overhead and Scaling}
 \subsection{Operating Frequency}
-\section {Evaluation}
-One of the key observations from this project is to understand the limitations of tools used. For example, we learnt after the project that NCC may not be reliable for large designs. So, while SRAM was tested for timing using the schematic description, the layout though passing NCC, may be incorrect. Hence, if more time was available, the SRAM fifo layout would have been tested for any inconsistencies. Further, the fifo could have been optimized further, performing a path effort analysis for a faster design with lower power consumption. 
+
+
 \section{Conclusion}
-The conclusion goes here.
+One of the key observations from this project is to understand the limitations of tools used. For example, we learnt after the project that NCC may not be reliable for large designs. So, while SRAM was tested for timing using the schematic description, the layout though passing NCC, may be incorrect. Hence, if more time was available, the SRAM fifo layout would have been tested for any inconsistencies. Further, the fifo could have been optimized further, performing a path effort analysis for a faster design with lower power consumption. 
 
 
 
 
 \begin{thebibliography}{1}
 
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to {\LaTeX}}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
- 
+\bibitem{DTR}
+ Brett H. Meyer, Benton Calhoun, John Lach, Kevin Skadron, \emph{Cost-effective Safety and Fault Localization using Distributed Temporal Redundancy},CASES'11, October 2011.
+
+\bibitem{RD}
+Brett H. Meyer, Nishant George, Benton Calhoun, John Lach, Kevin Skadron, \emph{Reducing the Cost of Redundant Execution in Safety-Critical Systems using Relaxed Dedication}, DATE'11, March 2011.
+
+\bibitem{harvey}
+Havery Mudd College \emph{E158 Spring 2007 MIPS Project} [Online]. Available: http://www4.hmc.edu:8001/Engineering/158/07/project/index.html
+
+\bibitem{electric}
+Static Free Software, \emph{Electric} [Online]. Available: http://www.staticfreesoft.com/electric.html
 \bibitem{Koopman}
 P. ~Koopman and T.~Chakravarty, \emph{Cyclic Redundancy Code ({CRC}) Polynomial Selection For Embedded Networks}, Proceedings of the 2004 International Conference on Dependable Systems and Networks, 2004.
 
