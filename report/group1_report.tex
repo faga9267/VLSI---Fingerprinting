@@ -90,6 +90,7 @@ For the final circuit, the modified mips core was hooked up to the fingerprintin
 
 \subsection{Layout Verification}
 \subsection{Timing Analysis}
+%% subsubsection looks ugly in the pdf. any way to fix that? 
 \subsubsection {SRAM timing}
 A 6T SRAM cell functions due to the 6 specially sized transistors that enable read and write stability. Since Modelsim is a functional/logic simulator which doesn’t consider transistor sizes, fifo cannot be tested in Modelsim with the rest of the circuit. Ideally, an SRAM cell model should be built, which mimics the SRAM behaviour using logic. Since this would be time consuming, the entire circuit was instead tested with the earlier shift register implementation. The fifo was validated in a timing analyser tool (IRSIM) which uses the linear delay model to approximate switching delay. Once deemed functional, the SRAM block was connected to and tested along with the rest of the circuit in IRSIM. This exercise exposed the limitations of Modelsim for testing and allowed the team to appreciate the importance of timing analysis for VLSI designs.
 \section{Results}
@@ -108,10 +109,6 @@ The conclusion goes here.
 
 
 \begin{thebibliography}{1}
-
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to {\LaTeX}}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
  
 \bibitem{Koopman}
 P. ~Koopman and T.~Chakravarty, \emph{Cyclic Redundancy Code ({CRC}) Polynomial Selection For Embedded Networks}, Proceedings of the 2004 International Conference on Dependable Systems and Networks, 2004.
