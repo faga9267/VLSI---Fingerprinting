@@ -104,11 +104,11 @@ The SRAM based design needs 3 times fewer transistors compared to the FF based d
 The fingerprinting circuit can be tuned for various modes of operation, and some decisions have an impact on area and cost. The counter determines the compression ratio, so increasing the counter's modulus will decrease the area required to store the fingerprints for the same amount of CPU execution information. Another important factor is the choice of execution data to fingerprint. At a minimum, the fingerprinting circuit needs to verify memory writes and adresses for data corruptions. However, if aditional data, such as ALU operations, are also fingerprinted, the amount of execution data will increase, and so will the area required to store all fingerprints. The impact of fingerprinting additional data would vary depending on the target application, but for the MIPS benchmark that we tested, the area required for storage gets tripled if ALU operations are fingerprinted in addition to memory write operations. 
 
 \subsection{Operating Frequency}
-Irsim, which is a“switch-level”digital circuit simulator, is used to perform a timing analysis of the fingerprint design. This simulator tool would generate a simulation based on the extracted capacitance and lumped resistance of transistors.
+Irsim, which is a“switch-level”digital circuit simulator, is used to perform a timing analysis of the fingerprint design. This simulator tool would generate a timing simulation based on the extracted capacitance and lumped resistance from the transistors in the circuit.
     
-    The Irsim simulation requires a Irsim deck, a prm file and a testbench file for simulation. The irsim deck, which contains all the connection information of the transistors in the schematic or layout design, can be automatically generated from Electric. A prm file, available from the Irsim Built-in lib, consists of all the resistance and capacitance value of transistors based on the technology involovd. The testbench can be written based on Irsim test-language-grammer.
+    The Irsim simulation requires a Irsim deck, a prm file and a testbench file for simulation. The irsim deck, which contains all the connection information of the transistors in the schematic(or layout) design, can be automatically generated from Electric. A prm file, available from the Irsim Built-in lib, consists of all the resistance and capacitance value of transistors based on the technology involovd. The testbench can be written based on Irsim test-language-grammer.
     
-    The components of the finger-printing design, including the multiplexer, the fingerprinting code generator, and the counter, are simulated individually for their path delay. This path delay can be found by observing the time difference between a rising clock edge and its next output value transition. Also, an average delay value from a set of distinct clocking edges is calculated to counter the value variance from different time intervals.
+    The components of the finger-printing design, including the multiplexer, the fingerprinting code generator and the counter, are simulated individually for their path delay. This path delay can be found by observing the time difference between a rising clock edge and its next output value transition. Also, an average delay value from a set of distinct clocking edges is calculated to counter the value variance from different time intervals.
     
 \begin{table}[ht] 
 \caption{Average Delay of Each Components} % title of Table 
@@ -125,9 +125,9 @@ Mux & Counter & Fingerprint & Shift Register\\ [0.5ex] % inserts table
 \label{table:nonlin} % is used to refer this table in the text 
 \end{table} 
 
-    A “slowest bit” analysis is also performed on the CRC code generator. As all the 16 bits in fingerprinting block are processed in parallel, each bit is tested individually for their single-bit path delay. The purpose of this test is to find the the slowest bit of the fingerprinting block. From the smulation, it is shown that the longest delay is 3.4ns, while the shortest is 2.27. Thus the range is calculated to be 1.13ns.
+    A “slowest bit” analysis is also performed on the CRC code generator. As all the 16 bits in fingerprinting block are processed in parallel, each bit is simulated individually for their single-bit path delay. The purpose of this test is to find the the slowest bit of the fingerprinting block. From the simulation, it is observed that the largest single-bit delay is 3.4ns, while the shortest is 2.27ns. Thus the range is calculated to be 1.13ns.
     
-    Lastly, an overall timing analysis is performed on the overall circuit. From the simulation, it is shown that a reset signal from the counter will always slows down the CRC code output, due to the additional delay for  generation of reset signal from the counter during these clock cycles. Therefore, in order to find the worst case scenario of the system delay, only clock edges with a reset signal are analysed. From the collected data, the max delay for the design is found to be 6.90ns. To ensure the reliability of the worst case scenario, the range from “slowest bit”analysis mentioned above is also added to the worst case delay observed from the collected data.
+    Lastly, an overall timing analysis is performed on the whole design. From the simulation, it is shown that a reset signal from the counter will always slows down the CRC code output, due to the additional delay from the generation of these reset signals. Therefore, in order to find the worst case scenario of the system delay, only clock edges with a reset signal are analysed. From the collected data, the max delay for the design is found to be 6.90ns. To ensure the reliability of the worst case scenario, the range from “slowest bit” analysis mentioned above is also added to the worst case analysis.
     
     \begin{table}[ht] 
 \caption{Max Delay of Each Components and System} % title of Table 
@@ -138,7 +138,7 @@ Mux & Counter & Fingerprint & Shift Register & System\\ [0.5ex] % inserts table
 %heading 
 \hline % inserts single horizontal line 
 \\ [0.2 ex]
-0.170ns & 0.960ns & 4.334ns & 0.892ns & 6.900ns \\ [1ex] % [1ex] adds vertical space 
+0.170ns & 0.990ns & 4.334ns & 0.892ns & 6.900ns \\ [1ex] % [1ex] adds vertical space 
 \hline %inserts single line 
 \end{tabular} 
 \label{table:nonlin} % is used to refer this table in the text 
